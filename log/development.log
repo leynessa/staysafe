@@ -24,3 +24,311 @@ Migrating to DeviseCreateUsers (20220525003130)
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIncidents (20220526223724)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (42.1ms)[0m  [1m[35mCREATE TABLE "incidents" ("id" bigserial primary key, "location" character varying, "title" character varying, "type" character varying, "description" character varying, "time" character varying, "date" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220526223724"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-05-26 19:38:40 -0300
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 394)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js
+- /home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js:1:87)
+    at Module._compile (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js:3:21)
+    at Module._compile (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/yargs/yargs.js:576:18)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 7952.7ms | Allocations: 116923)
+Completed 500 Internal Server Error in 7988ms (ActiveRecord: 0.0ms | Allocations: 121522)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ashley/code/leynessa/staysafe/staysafe/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2022-05-26 19:40:49 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js
+- /home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js:1:87)
+    at Module._compile (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js:3:21)
+    at Module._compile (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/yargs/yargs.js:576:18)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 1237.8ms | Allocations: 38548)
+Completed 500 Internal Server Error in 1245ms (ActiveRecord: 0.0ms | Allocations: 42124)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ashley/code/leynessa/staysafe/staysafe/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2022-05-26 19:41:42 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js
+- /home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js
+- /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js:1:87)
+    at Module._compile (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js:3:21)
+    at Module._compile (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/yargs/yargs.js:576:18)
+    at /home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/environment.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/config/webpack/development.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack-cli/bin/cli.js',
+    '/home/ashley/code/leynessa/staysafe/staysafe/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 1156.6ms | Allocations: 38488)
+Completed 500 Internal Server Error in 1166ms (ActiveRecord: 0.0ms | Allocations: 42064)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ashley/code/leynessa/staysafe/staysafe/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for ::1 at 2022-05-26 19:46:04 -0300
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ac100003a97ec04f124d
+Version: webpack 4.46.0
+Time: 3591ms
+Built at: 05/26/2022 7:46:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-aaa255b79dc0393863b2.js    460 KiB  application  [emitted] [immutable]  application
+js/application-aaa255b79dc0393863b2.js.map    439 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-aaa255b79dc0393863b2.js js/application-aaa255b79dc0393863b2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.55 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 62 hidden modules
+
+ERROR in ./app/javascript/controllers/index.js
+Module not found: Error: Can't resolve 'stimulus' in '/home/ashley/code/leynessa/staysafe/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/index.js 3:0-39 5:18-29
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/controllers/hello_controller.js
+Module not found: Error: Can't resolve 'stimulus' in '/home/ashley/code/leynessa/staysafe/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/hello_controller.js 29:0-38 50:2-12
+ @ ./app/javascript/controllers sync _controller\.js$
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/controllers/index.js
+Module not found: Error: Can't resolve 'stimulus/webpack-helpers' in '/home/ashley/code/leynessa/staysafe/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/index.js 4:0-66 9:17-39
+ @ ./app/javascript/packs/application.js
+
+  Rendered shared/_navbar.html.erb (Duration: 3.6ms | Allocations: 819)
+  Rendered shared/_flashes.html.erb (Duration: 1.3ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 5729.8ms | Allocations: 39035)
+Completed 200 OK in 5744ms (Views: 5734.3ms | ActiveRecord: 0.0ms | Allocations: 42659)
+
+
