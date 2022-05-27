@@ -4,7 +4,7 @@ First of all make sure you've created a rails app
 rails new APP_NAME
 ```
 
-## Setup
+# Setup
 
 Ensure you have bootstrap and it's dependencies
 
@@ -43,7 +43,7 @@ unzip stylesheets.zip -d app/assets && rm stylesheets.zip && mv app/assets/rails
 Note that when you update the colors in `config/colors`, the (text) color of your buttons might change from white to black. This is done automatically by Bootstrap using the [WCAG 2.0 algorithm](https://getbootstrap.com/docs/5.1/customize/sass/#color-contrast) which makes sure that the contrast between the text and the background color meets accessibility standards.
 
 
-## Bootstrap JS
+# Bootstrap JS
 
 Import bootstrap:
 
@@ -52,7 +52,7 @@ Import bootstrap:
 import 'bootstrap';
 ```
 
-## Adding new `.scss` files
+# Adding new `.scss` files
 
 Look at your main `application.scss` file to see how SCSS files are imported. There should **not** be a `*= require_tree .` line in the file.
 
@@ -91,7 +91,7 @@ For every folder (**`components`**, **`pages`**), there is one `_index.scss` par
 @import "card";
 ```
 
-## Navbar template
+# Navbar template
 
 Our `layouts/_navbar.scss` code works well with our home-made ERB template which you can find here:
 
