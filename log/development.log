@@ -779,3 +779,34 @@ Completed 200 OK in 27ms (Views: 15.4ms | ActiveRecord: 4.4ms | Allocations: 191
   
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
   
+Started GET "/" for 127.0.0.1 at 2022-05-28 21:57:55 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 3.8ms | Allocations: 1134)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 139.1ms | Allocations: 54986)
+Completed 200 OK in 147ms (Views: 141.4ms | ActiveRecord: 0.0ms | Allocations: 58738)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-28 21:58:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 1061)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1491)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 598)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 11817)
+Completed 200 OK in 24ms (Views: 13.7ms | ActiveRecord: 3.3ms | Allocations: 19190)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
