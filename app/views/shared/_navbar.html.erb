@@ -1,54 +1,28 @@
-<<<<<<< HEAD
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-
     <div class="staysafe-logo">
       <%= link_to "#", class: "navbar-brand" do %>
         <a class="navbar-brand" href="#"><%= image_tag "logo.png" %><a href="/" class="title">StaySafe</a></a>
       <% end %>
     </div>
-
     <div></div>
     <div></div>
-
     <div class="text-center">
       <div class="search-box">
         <div class="where">🔍︎ Where Would Like To Go ?</div>
-     </div>
+      </div>
     </div>
-
-     <div></div>
-     <div></div>
-<div class="nav-links-box">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">about</a>
-        <a class="nav-link" href="#">Alerts ▼  </a>
-        <a class="nav-link" href="#">Maps</a>
-</div>
+    <div></div>
+    <div></div>
+    <div class="nav-links-box">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">about</a>
+      <a class="nav-link" href="#">Alerts ▼  </a>
+      <a class="nav-link" href="#">Maps</a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
-=======
-<div class="navbar">
-  <div class="logo"></div>
-    <div class="search-box">
-      <img class="x" src="staysafelogo" />
-                      <p class="where-would-like-to-go">Where Would Like To Go ?</p>
-                    </div>
-                    <div class="nav-links">
-                      <div class="placeinter-normal-white-16px">Home</div>
-                      <div class="frame-2">
-                        <div class="alertsinter-normal-white-16px">Alerts</div>
-                        <img class="akar-iconschevron-down" src="akar-icons-chevron-down.svg" />
-                      </div>
-                      <div class="aboutinter-normal-white-16px">About</div>
-                      <div class="mapinter-normal-white-16px">Map</div>
-                    </div>
-                    <div class="button"></div>
-                  </div>
-                  <img class="navbar-image" src="navbar-image-1.png" />
->>>>>>> master
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
@@ -57,18 +31,16 @@
           <li class="nav-item dropdown">
             <%= image_tag "logo.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "See all our Candles", candles_path, class: "dropdown-item" %>
-                <%= link_to "Go to your Cart", profile_orders_path, class: "dropdown-item" %>
-                <%= link_to "Sell with Us", new_candle_url, class: "dropdown-item" %>
-                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+              <%= link_to "See all our Candles", candles_path, class: "dropdown-item" %>
+              <%= link_to "Go to your Cart", profile_orders_path, class: "dropdown-item" %>
+              <%= link_to "Sell with Us", new_candle_url, class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
-
-              <div class="btn-login">
-                  <div class="btn-label">login</div>
-              </div>
-
+          <div class="btn-login">
+            <div class="btn-label">login</div>
+          </div>
         <% end %>
       </ul>
     </div>
