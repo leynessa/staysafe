@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
+
+.navbar {
+  height: 70;
+  background-color: #011E30;
+}
+
+.nav-link {
+  color : #E4E0DC;
+  display: inline-block;
+
+  }
+
+.nav-item {
+  color : #E4E0DC;
+  text-decoration: none;
+
+}
+a {
+
+color: #E4E0DC;
+text-decoration: none;
+}
+
+
+.btn-login {
+  background-color:#efefef;
+  border-radius: 10px;
+  height: 30px;
+  left: 1347px;
+  mix-blend-mode: normal;
+  top: 18px;
+  width: 97px;
+}
+
+.btn-label {
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+.search-box {
+  background-color: #E4E0DC;
+  border-radius: 25px;
+  height: 30px;
+  left: 461px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 12px;
+  width: 336px;
+}
+
+.where {
+  background-color:transparent;
+  color: #004B7A;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: 2%;
+  left: 72px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: auto;
+}
+
+.nav-links-box {
+  top: 9px;
+  display: inline-block;
+
+}
