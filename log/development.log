@@ -10557,3 +10557,210 @@ Started GET "/map-pin.svg" for ::1 at 2022-05-26 21:42:33 -0300
 ActionController::RoutingError (No route matches [GET] "/map-pin.svg"):
 >>>>>>> master
   
+Started GET "/" for 127.0.0.1 at 2022-05-28 21:17:17 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 534)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1f110ed5ebaaefa7c2df
+Version: webpack 4.46.0
+Time: 803ms
+Built at: 05/28/2022 9:17:19 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2a38f25ea441e0f37508.js    460 KiB  application  [emitted] [immutable]  application
+js/application-2a38f25ea441e0f37508.js.map    438 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2a38f25ea441e0f37508.js js/application-2a38f25ea441e0f37508.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 216 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.26 KiB {application} [built]
+[./app/javascript/controllers/index.js] 335 bytes {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 62 hidden modules
+
+ERROR in ./app/javascript/controllers/application.js
+Module not found: Error: Can't resolve '@hotwired/stimulus' in '/home/andrejulio/code/andrejulio072/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/application.js 1:0-49 2:18-29
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/controllers/hello_controller.js
+Module not found: Error: Can't resolve '@hotwired/stimulus' in '/home/andrejulio/code/andrejulio072/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/hello_controller.js 21:0-48 42:2-12
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/packs/application.js
+
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 1158)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 2104.8ms | Allocations: 54762)
+Completed 200 OK in 2114ms (Views: 2107.3ms | ActiveRecord: 0.0ms | Allocations: 58512)
+
+
+Started GET "/staysafelogo" for 127.0.0.1 at 2022-05-28 21:17:19 +0100
+Started GET "/akar-icons-chevron-down.svg" for 127.0.0.1 at 2022-05-28 21:17:19 +0100
+Started GET "/navbar-image-1.png" for 127.0.0.1 at 2022-05-28 21:17:19 +0100
+Started GET "/slanted-green-bg.svg" for 127.0.0.1 at 2022-05-28 21:17:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/staysafelogo"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/akar-icons-chevron-down.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/slanted-green-bg.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/navbar-image-1.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_index.scss"):
+  
+Started GET "/slash-white-1.svg" for 127.0.0.1 at 2022-05-28 21:17:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/slash-white-1.svg"):
+  
+Started GET "/photo-1.png" for 127.0.0.1 at 2022-05-28 21:17:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo-1.png"):
+  
+Started GET "/slash-black.svg" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/slash-black.svg"):
+  
+Started GET "/rectangle-37.png" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/rectangle-37.png"):
+  
+Started GET "/photo.svg" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo.svg"):
+  
+Started GET "/photo-1.svg" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+Started GET "/screenshot-from-2022-04-16-15-43-08-1.png" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo-1.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/screenshot-from-2022-04-16-15-43-08-1.png"):
+  
+Started GET "/map-pin.svg" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/map-pin.svg"):
+  
+Started GET "/photo-hero.svg" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+Started GET "/photo.png" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/photo-hero.svg"):
+  
+Started GET "/navbar-image.png" for 127.0.0.1 at 2022-05-28 21:17:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/navbar-image.png"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-05-28 21:17:28 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 661)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 37.0ms | Allocations: 19740)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 589)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 29916)
+Completed 200 OK in 64ms (Views: 52.5ms | ActiveRecord: 4.0ms | Allocations: 37268)
+
+
+Started GET "/users/akar-icons-chevron-down.svg" for ::1 at 2022-05-28 21:17:28 +0100
+Started GET "/users/navbar-image-1.png" for ::1 at 2022-05-28 21:17:28 +0100
+Started GET "/users/staysafelogo" for ::1 at 2022-05-28 21:17:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/akar-icons-chevron-down.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/staysafelogo"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/navbar-image-1.png"):
+  
+Started GET "/" for ::1 at 2022-05-28 21:17:43 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 593)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 10080)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 10562)
+
+
+Started GET "/staysafelogo" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/staysafelogo"):
+  
+Started GET "/akar-icons-chevron-down.svg" for ::1 at 2022-05-28 21:17:43 +0100
+Started GET "/navbar-image-1.png" for ::1 at 2022-05-28 21:17:43 +0100
+Started GET "/slash-white-1.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/navbar-image-1.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/slash-white-1.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_index.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/akar-icons-chevron-down.svg"):
+  
+Started GET "/slanted-green-bg.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/slanted-green-bg.svg"):
+  
+Started GET "/screenshot-from-2022-04-16-15-43-08-1.png" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/screenshot-from-2022-04-16-15-43-08-1.png"):
+  
+Started GET "/slash-black.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/slash-black.svg"):
+  
+Started GET "/photo-1.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo-1.svg"):
+  
+Started GET "/photo-1.png" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo-1.png"):
+  
+Started GET "/rectangle-37.png" for ::1 at 2022-05-28 21:17:43 +0100
+Started GET "/photo.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/rectangle-37.png"):
+  
+Started GET "/photo.png" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/photo.png"):
+  
+Started GET "/map-pin.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/map-pin.svg"):
+  
+Started GET "/navbar-image.png" for ::1 at 2022-05-28 21:17:43 +0100
+Started GET "/photo-hero.svg" for ::1 at 2022-05-28 21:17:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/photo-hero.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/navbar-image.png"):
+  
