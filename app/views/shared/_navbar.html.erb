@@ -47,8 +47,6 @@
                     <div class="button"></div>
                   </div>
                   <img class="navbar-image" src="navbar-image-1.png" />
->>>>>>> master
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
@@ -57,18 +55,13 @@
           <li class="nav-item dropdown">
             <%= image_tag "logo.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "See all our Candles", candles_path, class: "dropdown-item" %>
-                <%= link_to "Go to your Cart", profile_orders_path, class: "dropdown-item" %>
-                <%= link_to "Sell with Us", new_candle_url, class: "dropdown-item" %>
-                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+                <%= link_to "Alerts", incidents_path, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
-
               <div class="btn-login">
                   <div class="btn-label">login</div>
               </div>
-
         <% end %>
       </ul>
     </div>
