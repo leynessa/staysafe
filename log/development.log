@@ -10728,3 +10728,78 @@ Started GET "/photo-hero.svg" for ::1 at 2022-05-28 17:22:56 -0300
   
 ActionController::RoutingError (No route matches [GET] "/photo-hero.svg"):
   
+Started GET "/" for ::1 at 2022-05-28 17:23:48 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 618)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10289)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 10852)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_index.scss"):
+  
+Started GET "/staysafelogo" for ::1 at 2022-05-28 17:23:49 -0300
+Started GET "/akar-icons-chevron-down.svg" for ::1 at 2022-05-28 17:23:49 -0300
+Started GET "/slash-white-1.svg" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/akar-icons-chevron-down.svg"):
+  
+Started GET "/navbar-image-1.png" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/slash-white-1.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/staysafelogo"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/navbar-image-1.png"):
+  
+Started GET "/rectangle-37.png" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/rectangle-37.png"):
+  
+Started GET "/slash-black.svg" for ::1 at 2022-05-28 17:23:49 -0300
+Started GET "/map-pin.svg" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/slash-black.svg"):
+  
+Started GET "/screenshot-from-2022-04-16-15-43-08-1.png" for ::1 at 2022-05-28 17:23:49 -0300
+Started GET "/photo-1.png" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/map-pin.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/screenshot-from-2022-04-16-15-43-08-1.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/photo-1.png"):
+  
+Started GET "/photo.svg" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/photo.svg"):
+  
+Started GET "/photo-1.svg" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/photo-1.svg"):
+  
+Started GET "/photo.png" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/photo.png"):
+  
+Started GET "/slanted-green-bg.svg" for ::1 at 2022-05-28 17:23:49 -0300
+Started GET "/navbar-image.png" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/navbar-image.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/slanted-green-bg.svg"):
+  
+Started GET "/photo-hero.svg" for ::1 at 2022-05-28 17:23:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/photo-hero.svg"):
+  
