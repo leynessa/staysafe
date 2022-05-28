@@ -1,50 +1,43 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
-
-.hero-top{
+.hero-top {
   padding-bottom: 100px;
 }
 
-
-.hero-top-pic{
-
+.hero-top-pic {
   height: 410px;
 
   position: absolute;
 
   width: 696px;
-
 }
 
-
 .hero-text {
-position: absolute;
+  position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   width: fit-content;
 }
 
-.hero-h1{
-  font-family: 'Epilogue', sans-serif;
-  font-size:400%;
-
-
+.hero-h1 {
+  font-family: "Epilogue", sans-serif;
+  font-size: 400%;
 }
-.hero-btn{
+.hero-btn {
   width: 150px;
-  color:#0579ce ;
+  color: #0579ce;
   font-weight: bold;
   align-items: center;
   border: none;
-
 }
 
-.hero-image{
-background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), asset-url("riocity.jpg");
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    asset-url("riocity.jpg");
   height: 614px;
   mix-blend-mode: normal;
   position: absolute;
