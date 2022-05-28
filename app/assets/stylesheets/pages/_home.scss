@@ -1,23 +1,59 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
 
-.hero {
-  position: relative;
-
-  height: 50%;
+.hero-top{
+  padding-bottom: 100px;
 }
-.hero::before {
+
+
+.hero-top-pic{
+
+  height: 410px;
+
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("images/riocity.png");
+
+  width: 696px;
+
+}
+
+
+.hero-text {
+position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Epilogue', sans-serif;
+  width: fit-content;
+}
+
+.hero-h1{
+  font-family: 'Epilogue', sans-serif;
+  font-size:400%;
+
+
+}
+.hero-btn{
+  width: 150px;
+  color:#0579ce ;
+  font-weight: bold;
+  align-items: center;
+  border: none;
+
+}
+
+.hero-image{
+background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), asset-url("riocity.jpg");
+  height: 614px;
+  mix-blend-mode: normal;
+  position: absolute;
+  width: 943px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: brightness(60%);
-}
-.hero-content {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
 }
