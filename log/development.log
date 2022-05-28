@@ -14187,3 +14187,17 @@ Completed 200 OK in 27ms (Views: 15.4ms | ActiveRecord: 4.4ms | Allocations: 191
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
   
 >>>>>>> 807a1a58cc80ec06b6db45d3cf443447e45ca0e8
+Started GET "/" for ::1 at 2022-05-28 20:00:22 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 1124)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4100.9ms | Allocations: 148075)
+Completed 200 OK in 4112ms (Views: 4105.2ms | ActiveRecord: 0.0ms | Allocations: 151826)
+
+
