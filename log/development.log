@@ -332,3 +332,256 @@ Module not found: Error: Can't resolve 'stimulus/webpack-helpers' in '/home/ashl
 Completed 200 OK in 5744ms (Views: 5734.3ms | ActiveRecord: 0.0ms | Allocations: 42659)
 
 
+Started GET "/" for 127.0.0.1 at 2022-05-27 01:35:58 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 393)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.18
+$ /home/andrejulio/code/andrejulio072/staysafe/node_modules/.bin/webpack --config /home/andrejulio/code/andrejulio072/staysafe/config/webpack/development.js
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+/bin/sh: 1: /home/andrejulio/code/andrejulio072/staysafe/node_modules/.bin/webpack: not found
+error Command failed with exit code 127.
+
+  Rendered layout layouts/application.html.erb (Duration: 6130.9ms | Allocations: 116354)
+Completed 500 Internal Server Error in 6145ms (ActiveRecord: 0.0ms | Allocations: 121047)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/andrejulio/code/andrejulio072/staysafe/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "staysafe_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "staysafe_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-05-27 01:37:18 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 288)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 95f574a6b73778cafebf
+Version: webpack 4.46.0
+Time: 2277ms
+Built at: 05/27/2022 1:37:22 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-aaa255b79dc0393863b2.js    460 KiB  application  [emitted] [immutable]  application
+js/application-aaa255b79dc0393863b2.js.map    439 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-aaa255b79dc0393863b2.js js/application-aaa255b79dc0393863b2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.55 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 62 hidden modules
+
+ERROR in ./app/javascript/controllers/index.js
+Module not found: Error: Can't resolve 'stimulus' in '/home/andrejulio/code/andrejulio072/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/index.js 3:0-39 5:18-29
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/controllers/hello_controller.js
+Module not found: Error: Can't resolve 'stimulus' in '/home/andrejulio/code/andrejulio072/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/hello_controller.js 29:0-38 50:2-12
+ @ ./app/javascript/controllers sync _controller\.js$
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/controllers/index.js
+Module not found: Error: Can't resolve 'stimulus/webpack-helpers' in '/home/andrejulio/code/andrejulio072/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/index.js 4:0-66 9:17-39
+ @ ./app/javascript/packs/application.js
+
+  Rendered shared/_navbar.html.erb (Duration: 2.0ms | Allocations: 819)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 3524.8ms | Allocations: 43597)
+Completed 200 OK in 3531ms (Views: 3526.3ms | ActiveRecord: 0.0ms | Allocations: 47316)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-05-27 01:39:44 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 562)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 59.1ms | Allocations: 24607)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 34151)
+Completed 200 OK in 99ms (Views: 77.2ms | ActiveRecord: 7.1ms | Allocations: 41111)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-05-27 01:41:38 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 468)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 7870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 548)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 18384)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 20393)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:43:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 639)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 10696)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 550)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 21202)
+Completed 200 OK in 37ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 23914)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:47:41 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 664)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 20170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 623)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 82.0ms | Allocations: 57157)
+Completed 200 OK in 99ms (Views: 84.9ms | ActiveRecord: 3.0ms | Allocations: 66787)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:49:27 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 9059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 158)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 18185)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 19010)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:49:31 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 8871)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 17880)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 18574)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-05-27 01:49:33 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 151)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 7739)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 17003)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 18597)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:49:35 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 8900)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 17916)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 18702)
+
+
+Started GET "/users/password/new" for ::1 at 2022-05-27 01:49:37 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 156)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 4037)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 188)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 13567)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 15140)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:49:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 8886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 17897)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 18652)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-27 01:59:28 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 523)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 9879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 548)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 20105)
+Completed 200 OK in 25ms (Views: 24.3ms | Allocations: 22098)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-05-27 01:59:30 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 7368)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 187)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 16836)
+Completed 200 OK in 18ms (Views: 16.8ms | Allocations: 18236)
+
+
