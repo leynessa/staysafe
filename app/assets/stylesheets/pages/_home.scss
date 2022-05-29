@@ -1,28 +1,18 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
-.hero-top {
-  padding-bottom: 100px;
-}
 
-.hero-top-pic {
-  height: 410px;
 
-  position: absolute;
-
-  width: 696px;
-}
-
-.hero-text {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+//block 1
+.h1{
   font-family: "Epilogue", sans-serif;
-  width: fit-content;
+  color: black;
+  font-weight: bolder;
 }
 
+
+
+
+// block 2
 .hero-h1 {
   font-family: "Epilogue", sans-serif;
   font-size: 400%;
