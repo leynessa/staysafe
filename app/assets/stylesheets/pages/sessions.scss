@@ -1,85 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Source+Sans+Pro:wght@300&display=swap');
+ .cascading-right {
+      margin-right: -50px;
+    }
 
-.form-actions {
-  color: #EFEAD8 !important;
-  font-size: 10px;
-  text-decoration: none;
-  background-color: #82A284;
-  width: max-content;
-  margin-left: 790px;
-  margin-top: 30px;
-  border-radius: 10px;
-}
-.nav-title2 {
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #82A284;
-  font-family: 'Playfair Display', serif;
-  margin-left: 20px;
-  margin-top: 30px;
-  text-align: center;
-}
-.links {
-  color: #82A284 !important;
-  font-size: 10px !important;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 30px;
-}
-/* Bordered form */
-form {
-  border: 3px solid #F1F1F1;
-}
-/* Full-width inputs */
-input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-/* Set a style for all buttons */
-button {
-  background-color: #82A284;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-/* Add a hover effect for buttons */
-button:hover {
-  opacity: 1;
-}
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  width: 400px;
-}
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-* {
-  box-sizing: border-box
-}
-.bg-image-vertical {
-position: relative;
-overflow: hidden;
-background-repeat: no-repeat;
-background-position: right center;
-background-size: auto 100%;
-}
-
-@media (min-width: 1025px) {
-.h-custom-2 {
-height: 100%;
-}
-}
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
