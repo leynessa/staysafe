@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
 
 
-//block 1
+//block 1 banner
 .h1{
   font-family: "Epilogue", sans-serif;
   color: black;
@@ -11,8 +11,7 @@
 
 
 
-
-// block 2
+// block 2 about us
 .hero-h1 {
   font-family: "Epilogue", sans-serif;
   font-size: 400%;
@@ -39,4 +38,25 @@
   justify-content: center;
   align-items: center;
   padding-top: 10%;
+}
+
+
+// block 3- how it works
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: rgb(34, 10, 192);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: center;
+}
+
+.community{
+  display: absolute;
+  align-items:center ;
+  padding: 200px;
+  margin-top: 3000%;
+  text-align: center;
 }
