@@ -41,9 +41,10 @@
 }
 
 
+
 // block 3- how it works
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: rgb(34, 10, 192);
   padding: 15px 32px;
@@ -51,6 +52,7 @@
   text-decoration: none;
   font-size: 16px;
   position: center;
+
 }
 
 .community{
@@ -59,4 +61,8 @@
   padding: 200px;
   margin-top: 3000%;
   text-align: center;
+
+}
+.container-work{
+background-image: asset-url("background3.png");
 }
