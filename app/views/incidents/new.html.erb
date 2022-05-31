@@ -1,3 +1,7 @@
 <h1>
 use to report a incident page
 </h1>
+
+<% if policy(Incident).create? %>
+  <%= link_to "New incident", new_incident_path %>
+<% end %>
