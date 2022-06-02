@@ -3,3 +3,6 @@
 show all incidents
 
          </h1>
+<% if policy(Incident).create? %>
+  <%= link_to "New incident", new_incident_path %>
+<% end %>
