@@ -22,6 +22,20 @@ class LocationsController < ApplicationController
    end
   end
 
+   def update
+    @location = Location.find(params[:id])
+    @location.update(params[:location])
+    # Will raise ActiveModel::ForbiddenAttributesError
+  end
+
+  def destroy
+    @location = Location.find(params[:id])
+    @location.destroy
+
+    # no need for app/views/incidents/destroy.html.erb
+    redirect_to locations_path
+  end
+
   private
 
   def incident_params
