@@ -13,17 +13,17 @@
       </div>
     </div>
     <div></div>
-    <div></div>
-    <div class="nav-links-box">
-      <a class="nav-link" href="/">Home</a>
-      <a class="nav-link" href="#"> <%= link_to "About Us", abouts_path %></a>
-      <a class="nav-link" href="#"><%= link_to "Alerts", incidents_path %> </a>
-      <a class="nav-link" href="#"><%= link_to "Report incident", new_incident_path %></a>
-    </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="nav-options">
+      <div class="nav-links-box">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="#"> <%= link_to "About Us", abouts_path %></a>
+        <a class="nav-link" href="#"><%= link_to "Alerts", incidents_path %> </a>
+        <a class="nav-link" href="#"><%= link_to "Report incident", new_incident_path %></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-
+      </button>
+    </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
@@ -40,6 +40,7 @@
         <% else %>
           <div class="btn-login">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+
           </div>
         <% end %>
       </ul>

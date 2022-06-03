@@ -38,11 +38,29 @@
   justify-content: center;
   align-items: center;
   padding-top: 10%;
+  color: #f4f4f4;
+  text-align: center;
+  margin-top: 242px;
+  margin-bottom: 9028px;
+
+
+
+
+}
+
+.block3{
+  background-color: white;
+   background-image: image-url("bckblock3.png");
+   height: 900px;
+background-repeat: no-repeat;
+background-size: cover;
+
+
 }
 
 
-
 // block 3- how it works
+
 .button {
   background-color: #4CAF50;
   border: none;
@@ -55,14 +73,134 @@
 
 }
 
+
+.blue-background{
+background-image: image-url("bkblock4.png");
+height: 1400px;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+font-size: larger;
+
+}
+
+.works{
+
+  padding-top: 250px;
+  margin-left: 450px;
+  margin-right: 300px;
+  text-align: justify;
+}
+
+.container-work{
+ margin-top: 644px;
+
+
+}
+
+
+.cards{
+  background-color: transparent;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 60px;
+  color: black;
+
+}
+
+
+
+.last-box{
+margin-top: 100px;
+text-align: justify;
+align-items: center;
+border-bottom: none;
+border: none;
+
+
+
+}
+
+.dangerzone-box{
+  margin-top: -190px;
+
+  text-align: justify;
+  align-items: center;
+  border-bottom: none;
+
+
+
+}
+
+.alert-box{
+  margin-top: 40px;
+
+  text-align: justify;
+  align-items: center;
+  border: none;
+
+
+}
+
+.card-text{
+  padding: 5%;
+  border-bottom: none;
+
+}
+.card-title{
+  padding: 5%;
+  text-align: center;
+  font-size: larger;
+  font-weight: 1500;
+}
+
+//block5
+
+.test-title{
+  color: black;
+  font-weight: 5400;
+  text-align: center;
+  margin-top: 300px;
+
+}
+
+.card-body{
+ background-color: #011E30;
+ border-radius:0 0 36px  36px;
+ border: none;
+
+}
+.card-header{
+  background-color: #011E30;
+
+  border-collapse: separate;
+  perspective: 1px;
+
+
+}
+.card-header:first-child {
+border-radius: 35px 35px 0 0;
+border-color: transparent;
+}
+.test-box{
+  background-color: #011E30;
+   }
+
+
+.bg-dark{
+  --bs-bg-opacity: 0;
+}
+
 .community{
   display: absolute;
   align-items:center ;
   padding: 200px;
-  margin-top: 3000%;
+  margin-top: 200px;
   text-align: center;
+  color: #011E30;
 
 }
-.container-work{
-background-image: asset-url("background3.png");
+.boxes{
+  background-image: image-url("white.png");
+
 }
