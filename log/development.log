@@ -38932,3 +38932,310 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 12676)
 
 
+Started GET "/" for ::1 at 2022-06-02 22:33:28 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/ashley/code/leynessa/staysafe/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | Allocations: 1270)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 98.7ms | Allocations: 52097)
+Completed 200 OK in 109ms (Views: 101.0ms | ActiveRecord: 0.0ms | Allocations: 56679)
+
+
+Started GET "/" for ::1 at 2022-06-02 22:33:35 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.9ms | Allocations: 725)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 10997)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 11576)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:33:37 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 567)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 80.6ms | Allocations: 17556)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 716)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 28266)
+Completed 200 OK in 114ms (Views: 95.7ms | ActiveRecord: 7.5ms | Allocations: 36226)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:33:48 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 245)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.9ms | Allocations: 10117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 719)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 21135)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 23734)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:35:44 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.2ms | Allocations: 9923)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1074)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 22141)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 24199)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:36:25 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 29.8ms | Allocations: 8865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 3.6ms | Allocations: 672)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 19618)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 20353)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:36:27 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 8866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 672)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 19619)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 20320)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:36:44 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 96)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.4ms | Allocations: 7861)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 718)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 19097)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 20450)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:39:23 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 472)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 7794)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 1074)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 20022)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 22002)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:39:25 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 6702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 672)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 17462)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 18135)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:39:54 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 471)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 7796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1074)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 19999)
+Completed 200 OK in 54ms (Views: 52.7ms | Allocations: 21932)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:42:02 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 6706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 672)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 17465)
+Completed 200 OK in 35ms (Views: 33.9ms | Allocations: 18122)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:42:04 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 6707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 672)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 17467)
+Completed 200 OK in 40ms (Views: 39.2ms | Allocations: 18087)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-02 22:43:30 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 471)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 7789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1074)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 20016)
+Completed 200 OK in 46ms (Views: 44.5ms | Allocations: 21949)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:43:46 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 9968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1075)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 22271)
+Completed 200 OK in 57ms (Views: 48.6ms | Allocations: 24990)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:44:15 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 527)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.6ms | Allocations: 9919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 1074)
+  Rendered shared/_flashes.html.erb (Duration: 1.9ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 22138)
+Completed 200 OK in 44ms (Views: 42.5ms | Allocations: 24189)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:44:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 527)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 9913)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 1080)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 22138)
+Completed 200 OK in 58ms (Views: 57.1ms | Allocations: 24189)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-02 22:44:46 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.8ms | Allocations: 9925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 4.1ms | Allocations: 1074)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 22143)
+Completed 200 OK in 44ms (Views: 42.2ms | Allocations: 24194)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
