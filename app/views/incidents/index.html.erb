@@ -1,8 +1,20 @@
-  <h1>
-         incidents index page
-show all incidents
+<div class="dashboard">
+  <div class="title">Recent Incidents</div>
+    <div class="incidents">
+      <div>incident1</div>
+      <div>incident 2</div>
+      <div>incident 3</div>
+    </div>
+    <div class="maps">
+      <h1>maps</h1>
+    </div>
+    <div>
+    <div class="btn btn-primary">
+      <% if policy(Incident).create? %>
+        <%= link_to "report incident", new_incident_path %>
+      <% end %>
+    </div>
+    </div>
 
-         </h1>
-<% if policy(Incident).create? %>
-  <%= link_to "New incident", new_incident_path %>
-<% end %>
+  </div>
+</div>
