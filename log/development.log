@@ -42227,3 +42227,241 @@ Migrating to DropLocation (20220604152927)
   [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-06-04 15:08:44 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/ashley/code/leynessa/staysafe/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 978)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ashley/code/leynessa/staysafe/staysafe/public/packs
+[Webpacker] Hash: d0317f6e07c6a222dadd
+Version: webpack 4.46.0
+Time: 2177ms
+Built at: 06/04/2022 3:08:53 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-93a4c1b5e0f1af5809fc.js    2.2 MiB  application  [emitted] [immutable]  application
+js/application-93a4c1b5e0f1af5809fc.js.map   2.47 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-93a4c1b5e0f1af5809fc.js js/application-93a4c1b5e0f1af5809fc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.44 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 39.6ms | Allocations: 9254)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9078.9ms | Allocations: 193539)
+Completed 200 OK in 9094ms (Views: 9060.0ms | ActiveRecord: 21.4ms | Allocations: 198124)
+
+
+Started GET "/incidents" for ::1 at 2022-06-04 15:09:07 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (2.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1231)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 13004)
+Completed 200 OK in 101ms (Views: 21.3ms | ActiveRecord: 10.3ms | Allocations: 24788)
+
+
+Started GET "/incidents" for ::1 at 2022-06-04 15:20:36 -0300
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/ashley/code/leynessa/staysafe/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1756)
+[Webpacker] Compiling...
+Started GET "/incidents" for ::1 at 2022-06-04 15:20:38 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (2.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 849)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ashley/code/leynessa/staysafe/staysafe/public/packs
+[Webpacker] Hash: 877a79fd419d3396e61b
+Version: webpack 4.46.0
+Time: 3954ms
+Built at: 06/04/2022 3:20:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0a9f5ddc99a99086d2ee.js    2.2 MiB  application  [emitted] [immutable]  application
+js/application-0a9f5ddc99a99086d2ee.js.map   2.47 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0a9f5ddc99a99086d2ee.js js/application-0a9f5ddc99a99086d2ee.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.98 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 6.7ms | Allocations: 1685)
+  Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 6814.7ms | Allocations: 73524)
+Completed 200 OK in 6896ms (Views: 6820.3ms | ActiveRecord: 27.6ms | Allocations: 94391)
+
+
+[Webpacker] Compiled all packs in /home/ashley/code/leynessa/staysafe/staysafe/public/packs
+[Webpacker] Hash: 877a79fd419d3396e61b
+Version: webpack 4.46.0
+Time: 3466ms
+Built at: 06/04/2022 3:20:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0a9f5ddc99a99086d2ee.js    2.2 MiB  application  [emitted] [immutable]  application
+js/application-0a9f5ddc99a99086d2ee.js.map   2.47 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0a9f5ddc99a99086d2ee.js js/application-0a9f5ddc99a99086d2ee.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.98 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1287)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 5801.4ms | Allocations: 19334)
+Completed 200 OK in 5848ms (Views: 5800.3ms | ActiveRecord: 22.6ms | Allocations: 25664)
+
+
+Started GET "/incidents" for ::1 at 2022-06-04 15:25:34 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/ashley/code/leynessa/staysafe/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1756)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1687)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 229.7ms | Allocations: 53569)
+Completed 200 OK in 323ms (Views: 231.2ms | ActiveRecord: 28.9ms | Allocations: 74441)
+
+
+Started GET "/incidents" for ::1 at 2022-06-04 15:56:53 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (4.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 34.6ms | Allocations: 896)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: d5b81c30a474a5b366a2
+Version: webpack 4.46.0
+Time: 27527ms
+Built at: 06/04/2022 3:57:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6dd84b1782b47329367e.js   2.03 MiB  application  [emitted] [immutable]  application
+js/application-6dd84b1782b47329367e.js.map   2.28 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6dd84b1782b47329367e.js js/application-6dd84b1782b47329367e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 5.22 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+ERROR in ./app/javascript/controllers/mapbox_controller.js
+Module not found: Error: Can't resolve 'worker-loader' in '/home/ashley/code/leynessa/staysafe/staysafe/app/javascript/controllers'
+ @ ./app/javascript/controllers/mapbox_controller.js 29:0-77 31:23-35
+ @ ./app/javascript/controllers/index.js
+ @ ./app/javascript/packs/application.js
+
+  Rendered shared/_navbar.html.erb (Duration: 22.4ms | Allocations: 1204)
+  Rendered shared/_flashes.html.erb (Duration: 5.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 30775.2ms | Allocations: 13471)
+Completed 200 OK in 31156ms (Views: 30782.2ms | ActiveRecord: 119.4ms | Allocations: 19931)
+
+
+Started GET "/incidents" for ::1 at 2022-06-04 16:00:01 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (6.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 849)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ashley/code/leynessa/staysafe/staysafe/public/packs
+[Webpacker] Hash: 2b95da1b6b4f266a8744
+Version: webpack 4.46.0
+Time: 2712ms
+Built at: 06/04/2022 4:00:06 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e2e805d340ba674d8821.js   1.46 MiB  application  [emitted] [immutable]  application
+js/application-e2e805d340ba674d8821.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e2e805d340ba674d8821.js js/application-e2e805d340ba674d8821.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.98 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 6.3ms | Allocations: 1195)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 4861.1ms | Allocations: 13306)
+Completed 200 OK in 5029ms (Views: 4862.3ms | ActiveRecord: 19.5ms | Allocations: 16020)
+
+
