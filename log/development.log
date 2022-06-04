@@ -44611,3 +44611,25 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 13067)
 
 
+Started GET "/incidents" for ::1 at 2022-06-04 18:32:42 -0300
+Processing by IncidentsController#index as HTML
+Completed 401 Unauthorized in 34ms (Allocations: 411)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-04 18:32:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 657)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 173.1ms | Allocations: 18541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 7.2ms | Allocations: 721)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 265.5ms | Allocations: 29640)
+Completed 200 OK in 510ms (Views: 290.0ms | ActiveRecord: 98.3ms | Allocations: 40154)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
