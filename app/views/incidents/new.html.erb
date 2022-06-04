@@ -4,7 +4,7 @@ use to report a incident page
 <%= simple_form_for (@incident) do |f| %>
     <div class="form-group ">
       <strong> <%= f.input :title %> </strong>
-      <strong><%= f.input :type %></strong>
+      <strong><%= f.input :incident_type %></strong>
       <strong><%= f.input :time %></strong>
       <%= f.input :photo, as: :file %>
       <strong><%= f.input :date %></strong>
