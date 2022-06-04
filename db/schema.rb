@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_03_162336) do
+ActiveRecord::Schema.define(version: 2022_06_03_182138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,10 +21,11 @@ ActiveRecord::Schema.define(version: 2022_06_03_162336) do
     t.string "description"
     t.datetime "time"
     t.date "date"
-    t.bigint "location_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["location_id"], name: "index_incidents_on_location_id"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "address"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -47,5 +48,4 @@ ActiveRecord::Schema.define(version: 2022_06_03_162336) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "incidents", "locations"
 end

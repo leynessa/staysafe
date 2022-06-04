@@ -2,19 +2,29 @@
   <div class="title">Recent Incidents</div>
     <div class="incidents">
       <div>incident1</div>
+       <% @incidents.each do |incident| %>
+
+                <%= incident.title %>
+                <%= incident.address %>
+                <%= incident.description %>
+                <%= incident.type %>
+                <%= incident.time %>
+                <%= incident.date %>
+       <% end %>
       <div>incident 2</div>
-      <div>incident 3</div>
-    </div>
-    <div class="maps">
-      <h1>maps</h1>
-    </div>
     <div>
     <div class="btn btn-primary">
       <% if policy(Incident).create? %>
-        <%= link_to "report incident", new_incident_path %>
+        <%= link_to "report an incident", new_incident_path %>
       <% end %>
     </div>
     </div>
 
   </div>
 </div>
+
+
+<div style="width: 100%; height: 600px;"
+  data-controller="mapbox"
+  data-mapbox-markers-value="<%= @markers.to_json %>"
+  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
