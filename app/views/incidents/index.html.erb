@@ -1,8 +1,208 @@
-  <h1>
-         incidents index page
-show all incidents
 
-         </h1>
-<% if policy(Incident).create? %>
-  <%= link_to "New incident", new_incident_path %>
-<% end %>
+
+
+  <div id="carouselExampleControls" class="carousel slide  carousel-fade " data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/01/08/19/30/rio-de-janeiro-1963744__480.jpg" height= "700px" alt="First slide">
+        <div class="carousel-caption btn btn-lg position-absolute top-0 start-0 font-weight-bold text-justify  bg-light text-dark w-25">
+            <br>
+            <h1 class= "hero-top-header text-uppercase bolder"><strong>StaySafe </strong></h1>
+             <br>
+
+             <br>
+            <p>Connect and live more safely.</p>
+              <p>StaySafe is a personal safety navigation network that enpowwers you
+              to protect yourself and the people and places you care about.</p>
+              <p>It helps you route, share and rate your journey while keeping safe</p>
+            <button type="button" class="btn btn-secondary rounded"><%= link_to "Sign Up", new_user_registration_path %></button>
+            <button type="button" class="btn btn-outline-dark rounded"><%= link_to "Browse Map", incidents_path %></button>
+        </div>
+      </div>
+
+
+      <div class="carousel-item ">
+        <img class="d-block w-100" src="https://media.istockphoto.com/photos/empty-highway-street-with-church-on-the-back-during-covid19-outbreak-picture-id1250318147?k=20&m=1250318147&s=612x612&w=0&h=CmsFuGZ7w1EbZoTXPRqx7mPyObjUq4PU0yxDrD2nLPI=" height= "600px" alt="second slide">
+
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class= "hero-top-header"><strong>StaySafe </strong> </h1>
+            <p>
+                Connect and live more safely.
+            </p>
+          <button type="button" class="btn btn-secondary "> <%= link_to "Sign Up", new_user_registration_path %></button>
+            <button type="button" class="btn btn-outline-light"><%= link_to "Browse Map", incidents_path %> </button>
+          </div>
+      </div>
+
+
+
+      <div class="carousel-item ">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" height= "600px" alt="third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class= "hero-top-header"><strong> StaySafe </strong> </h1>
+            <p class= " text-light">
+              Enjoy the city without being robbed
+<br>
+          <button type="button" class="btn btn-secondary"><%= link_to "Sign Up", new_user_registration_path %></button>
+            <button type="button" class="btn btn-outline-light"><%= link_to "Browse Map", incidents_path %></button>
+             </p>
+        </div>
+      </div>
+
+    </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+<div class="block3">
+<div class="d-flex justify-content-center">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 class = "hero-h1"><strong> Get Anywhere Safely</strong> </h1>
+      <p>your personal navigation site</p>
+      <button type="button" class="btn btn-outline-light btn-lg"><strong> <%= link_to "About Us", abouts_path %></strong></button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="blue-background">
+<div class="work-container">
+  <div class="works">
+    <h1><strong> How does StaySafe Work ? </strong></h1>
+    <div class="works-txt">
+      <p>  STAYSAFE  community reports incidents on the app. When reporting, people can opt-in
+      to share the details you want the local authorities and police to know about a witnessed or direct experience
+      </p>
+    </div>
+  </div>
+
+  <div class="cards d-flex flex-row justify-content-between">
+  <div class="dangerzone-box">
+    <div class="card" style= "width: 18rem;">
+      <div class="card-img">
+        <img src="data:image/jpeg;base64,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" alt="map"  height="300px"  style="width:100%">
+      </div>
+      <div class="container-content">
+        <h2 class="card-title"> <strong>DANGERZONE</strong></h2>
+        <p class="card-text">Our map shows community reports of dangers such as knife crime, sexual assault, shooting & mugging</p>
+      </div>
+    </div>
+    </div>
+
+
+<div class="alert-box">
+    <div class="card" style= "width: 18rem;">
+      <div class="card-img">
+        <img src="https://media.istockphoto.com/photos/closeup-shot-of-an-unrecognisable-man-using-a-cellphone-picture-id1334841790?b=1&k=20&m=1334841790&s=170667a&w=0&h=2maJjy4xYE1B_tE2wbM1LxYy-t_dCntAPcgO7DWpYLo=" alt="map"  style="width:100%">
+      </div>
+      <div class="container-content">
+          <h2 class="card-title"> <strong> ALERTS </strong></h2>
+          <p class="card-text">StaySafe alerts you of dangerzone in your vicinity.</p>
+      </div>
+    </div>
+
+</div>
+
+    <div class="last-box">
+    <div class="card" style= "width: 18rem;">
+
+      <div class="card-img">
+        <img src="https://media.istockphoto.com/photos/beautiful-mid-adult-woman-walking-and-texting-message-on-mobile-phone-picture-id1339296498?b=1&k=20&m=1339296498&s=170667a&w=0&h=adq_9ilgFz78PVQVZrz6nerpa_78gpD2nVtGs5lwL5U=" alt="map" style="width:100%">
+      </div>
+      <div class="container-content">
+        <h2 class="card-title"><STRONG> EMERGENCY CONTACT</STRONG> </h2>
+        <p class="card-text">With our quick call button you can immediately be connected to loved ones while walking home</p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+<div class="testimonies ">
+
+<h1 class="test-title">Testimonies </h1>
+
+  <div class="boxes d-flex justify-content-around">
+
+
+      <div class=" card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class=" card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">
+            <p>“i love staysafe is a life saver”</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text"><i>-nicole, user since 2022</i></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">“staysafe helped me avoid a robbery”
+        </div>
+        <div class="card-body">
+
+          <p class="card-text"><i>-Maria, user since 2022</i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">“with staysafe I took a route home where there were no danger zones”
+        </div>
+        <div class="card-body">
+          <p class="card-text"><i>-Jose, user since 2022 </i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">“this staysafe i could warn my sister about a shoot out”
+        </div>
+        <div class="card-body">
+          <p class="card-text"><i> -marta</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="container">
+      <div class="community">
+        <h1> <strong>  Join our community to help keep our neighbourhood safer.</strong></h1>
+         <button type="button" class="btn btn-secondary rounded"><%= link_to "Sign Up", new_user_registration_path %></button>
+      </div>
+  </div>
+
+
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+</iframe>
+
+</body>
