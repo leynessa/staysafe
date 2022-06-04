@@ -1,18 +1,21 @@
 <div class="dashboard">
   <div class="title">Recent Incidents</div>
     <div class="incidents">
-      <div>incident1</div>
-       <% @incidents.each do |incident| %>
-
+      <% @incidents.each do |incident| %>
+        <div class="incident card" style="width: 18rem;">
+          <div >
+            <p class="incident card-text">
                 <%= incident.title %>
                 <%= incident.address %>
                 <%= incident.description %>
                 <%= incident.type %>
                 <%= incident.time %>
                 <%= incident.date %>
+            </p>
+          </div>
+          </div>
        <% end %>
-      <div>incident 2</div>
-    <div>
+
     <div class="btn btn-primary">
       <% if policy(Incident).create? %>
         <%= link_to "report an incident", new_incident_path %>

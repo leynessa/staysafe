@@ -3,7 +3,7 @@ class IncidentsController < ApplicationController
 
 
   def index
-    @incidents = Incident.all
+    @incidents = policy_scope(Incident).order(created_at: :desc)
     @markers = @incidents.geocoded.map do |incident|
       {
         lat: incident.latitude,
