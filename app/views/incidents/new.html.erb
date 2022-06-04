@@ -1,7 +1,16 @@
 <h1>
 use to report a incident page
 </h1>
-
-<% if policy(Incident).create? %>
-  <%= link_to "New incident", new_incident_path %>
-<% end %>
+<%= simple_form_for (@incident) do |f| %>
+    <div class="form-group ">
+      <strong> <%= f.input :title %> </strong>
+      <strong><%= f.input :type %></strong>
+      <strong><%= f.input :time %></strong>
+      <%= f.input :photo, as: :file %>
+      <strong><%= f.input :date %></strong>
+      <strong><%= f.input :description %></strong>
+    </div>
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+  <% end %>
