@@ -42227,6 +42227,7 @@ Migrating to DropLocation (20220604152927)
   [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+<<<<<<< HEAD
 Started GET "/incidents/new" for ::1 at 2022-06-04 16:41:09 -0300
   [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -42477,5 +42478,2004 @@ Completed 200 OK in 5050ms (Views: 5044.2ms | ActiveRecord: 0.0ms | Allocations:
 
 
 Completed 200 OK in 1375ms (Views: 1373.3ms | ActiveRecord: 0.0ms | Allocations: 178999)
+=======
+Started GET "/" for 127.0.0.1 at 2022-06-04 20:30:44 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 14.8ms | Allocations: 9271)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4568.0ms | Allocations: 179789)
+Completed 200 OK in 4577ms (Views: 4564.5ms | ActiveRecord: 5.4ms | Allocations: 184370)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:30:51 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 73.3ms | Allocations: 32138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1248)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 43769)
+Completed 200 OK in 147ms (Views: 126.5ms | ActiveRecord: 6.5ms | Allocations: 55351)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 20:30:57 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"19", "time(5i)"=>"30", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (0.8ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["type", ""], ["description", ""], ["time", "2022-06-04 19:30:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 19:30:57.711116"], ["updated_at", "2022-06-04 19:30:57.711116"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (20.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/3
+Completed 302 Found in 30ms (ActiveRecord: 22.8ms | Allocations: 5787)
+
+
+Started GET "/incidents/3" for 127.0.0.1 at 2022-06-04 20:30:57 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 5504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1239)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 17017)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 3.6ms | Allocations: 20028)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:32:38 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 6412)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1700)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 94.2ms | Allocations: 59753)
+Completed 200 OK in 122ms (Views: 93.2ms | ActiveRecord: 10.6ms | Allocations: 76955)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:32:43 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 29.0ms | Allocations: 32094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1218)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 43489)
+Completed 200 OK in 45ms (Views: 38.7ms | ActiveRecord: 2.5ms | Allocations: 46023)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:32:45 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1203)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 12222)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 1.8ms | Allocations: 15172)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:32:46 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 18117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 29446)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.5ms | Allocations: 31347)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:32:47 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1205)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 12209)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.7ms | Allocations: 14879)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:34:07 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 6414)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1696)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 79.2ms | Allocations: 59824)
+Completed 200 OK in 107ms (Views: 78.9ms | ActiveRecord: 8.5ms | Allocations: 77032)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:34:31 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1216)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 12431)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 1.9ms | Allocations: 15450)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:34:35 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 31.2ms | Allocations: 34158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1218)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 45549)
+Completed 200 OK in 45ms (Views: 38.9ms | ActiveRecord: 2.4ms | Allocations: 47802)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:34:36 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 8.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 12224)
+Completed 200 OK in 24ms (Views: 18.6ms | ActiveRecord: 1.7ms | Allocations: 15175)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (2122.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_development"[0m
+  [1m[35m (18.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_test"[0m
+  [1m[35m (110.7ms)[0m  [1m[35mCREATE DATABASE "staysafe_development" ENCODING = 'unicode'[0m
+  [1m[35m (80.8ms)[0m  [1m[35mCREATE DATABASE "staysafe_test" ENCODING = 'unicode'[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220525003130)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525003130"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUsers (20220531232435)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220531232435"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLocations (20220602225758)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "address" character varying, "city" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220602225758"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateIncidents (20220602230055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "incidents" ("id" bigserial primary key, "title" character varying, "type" character varying, "description" character varying, "time" timestamp, "date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220602230055"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCoordinatesToIncidents (20220603173239)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" ADD "latitude" float[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "incidents" ADD "longitude" float[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603173239"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAddressToIncidents (20220603182138)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" ADD "address" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603182138"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveLocationIdFromIncidents (20220604152042)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveLocationIdFromIncidents (20220604152042)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-04 19:43:46.402817"], ["updated_at", "2022-06-04 19:43:46.402817"]]
+  [1m[36mTRANSACTION (19.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (36.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_development"[0m
+  [1m[35m (15.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_test"[0m
+  [1m[35m (103.4ms)[0m  [1m[35mCREATE DATABASE "staysafe_development" ENCODING = 'unicode'[0m
+  [1m[35m (80.5ms)[0m  [1m[35mCREATE DATABASE "staysafe_test" ENCODING = 'unicode'[0m
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220525003130)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525003130"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUsers (20220531232435)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220531232435"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLocations (20220602225758)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "address" character varying, "city" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220602225758"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateIncidents (20220602230055)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "incidents" ("id" bigserial primary key, "title" character varying, "type" character varying, "description" character varying, "time" timestamp, "date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220602230055"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCoordinatesToIncidents (20220603173239)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" ADD "latitude" float[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "incidents" ADD "longitude" float[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603173239"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAddressToIncidents (20220603182138)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" ADD "address" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603182138"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveLocationIdFromIncidents (20220604152042)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-04 19:52:57.164532"], ["updated_at", "2022-06-04 19:52:57.164532"]]
+  [1m[36mTRANSACTION (19.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (35.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_development"[0m
+  [1m[35m (21.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_test"[0m
+  [1m[35m (101.4ms)[0m  [1m[35mCREATE DATABASE "staysafe_development" ENCODING = 'unicode'[0m
+  [1m[35m (82.2ms)[0m  [1m[35mCREATE DATABASE "staysafe_test" ENCODING = 'unicode'[0m
+  [1m[35m (26.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220525003130)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525003130"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUsers (20220531232435)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220531232435"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateIncidents (20220602230055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "incidents" ("id" bigserial primary key, "title" character varying, "type" character varying, "description" character varying, "time" timestamp, "date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220602230055"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCoordinatesToIncidents (20220603173239)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "incidents" ADD "latitude" float[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "incidents" ADD "longitude" float[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603173239"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAddressToIncidents (20220603182138)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "incidents" ADD "address" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603182138"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20220604175130)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220604175130"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-04 19:53:05.232495"], ["updated_at", "2022-06-04 19:53:05.232495"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-06-04 20:53:13 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 12.2ms | Allocations: 5058)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 90.9ms | Allocations: 57770)
+Completed 200 OK in 100ms (Views: 87.9ms | ActiveRecord: 5.4ms | Allocations: 62353)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-04 20:53:38 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 731)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 11239)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 11816)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2022-06-04 20:53:40 +0100
+Processing by AboutsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-04 20:53:40 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 657)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.7ms | Allocations: 18521)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 722)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 29473)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 35649)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:53:41 +0100
+Processing by IncidentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 410)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-04 20:53:41 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 9075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 684)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 20203)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 20976)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-04 20:53:44 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 8952)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 675)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 19632)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 20320)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-04 20:53:47 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 154)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 7725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 725)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 18996)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 20603)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-06-04 20:53:59 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"andre@stay.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "andre@stay.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "andre@stay.com"], ["encrypted_password", "$2a$12$dVOkFaJTNjvyb9q4HxnbluCRtqik9Ex.5.k7AFFGDfjU4H6SsWEwW"], ["created_at", "2022-06-04 19:53:59.949612"], ["updated_at", "2022-06-04 19:53:59.949612"]]
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/incidents
+Completed 302 Found in 217ms (ActiveRecord: 22.4ms | Allocations: 9095)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:53:59 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.0ms | Allocations: 1265)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 12977)
+Completed 200 OK in 25ms (Views: 13.6ms | ActiveRecord: 3.8ms | Allocations: 20320)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:54:08 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 780)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 12412)
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 2.0ms | Allocations: 15243)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:54:13 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 27.6ms | Allocations: 25691)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1221)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 37404)
+Completed 200 OK in 48ms (Views: 35.9ms | ActiveRecord: 3.7ms | Allocations: 44090)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:54:16 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 12093)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 2.1ms | Allocations: 15019)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:54:27 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 18128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 29321)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 1.0ms | Allocations: 31222)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:54:31 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 780)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1204)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 12088)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 1.7ms | Allocations: 14752)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:54:39 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 18123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 29642)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.8ms | Allocations: 31550)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 20:54:51 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"incident copacabana", "type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"19", "time(5i)"=>"54", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007fa538135d78 @tempfile=#<Tempfile:/tmp/RackMultipart20220604-2613-vnqkdc.webp>, @original_filename="1886.webp", @content_type="image/webp", @headers="Content-Disposition: form-data; name=\"incident[photo]\"; filename=\"1886.webp\"\r\nContent-Type: image/webp\r\n">, "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.1ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "incident copacabana"], ["type", ""], ["description", ""], ["time", "2022-06-04 19:54:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 19:54:51.977619"], ["updated_at", "2022-06-04 19:54:51.977619"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Create (1.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "eewhkdswgy1aokaxdedogoqpb32a"], ["filename", "1886.webp"], ["content_type", "image/webp"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 32642], ["checksum", "XkNvmE+cPlUiZafp2WtVEA=="], ["created_at", "2022-06-04 19:54:51.999330"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Create (1.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Incident"], ["record_id", 1], ["blob_id", 1], ["created_at", "2022-06-04 19:54:52.002832"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Update (0.8ms)[0m  [1m[33mUPDATE "incidents" SET "updated_at" = $1 WHERE "incidents"."id" = $2[0m  [["updated_at", "2022-06-04 19:54:52.005270"], ["id", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+[36m  Disk Storage (0.5ms) [0m[32mUploaded file to key: eewhkdswgy1aokaxdedogoqpb32a (checksum: XkNvmE+cPlUiZafp2WtVEA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 5a90244f-bd74-4a00-a3db-a9a938e55607) to Async(default) with arguments: #<GlobalID:0x00007fa554052bb0 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/1>>
+Redirected to http://127.0.0.1:3000/incidents/1
+Completed 302 Found in 61ms (ActiveRecord: 15.8ms | Allocations: 32273)
+
+
+Started GET "/incidents/1" for 127.0.0.1 at 2022-06-04 20:54:52 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5a90244f-bd74-4a00-a3db-a9a938e55607] Performing ActiveStorage::AnalyzeJob (Job ID: 5a90244f-bd74-4a00-a3db-a9a938e55607) from Async(default) enqueued at 2022-06-04T19:54:52Z with arguments: #<GlobalID:0x00007fa5541475e8 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/1>>
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5a90244f-bd74-4a00-a3db-a9a938e55607] [36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: eewhkdswgy1aokaxdedogoqpb32a[0m
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 8948)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1244)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 20864)
+Completed 200 OK in 31ms (Views: 21.9ms | ActiveRecord: 3.2ms | Allocations: 25355)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5a90244f-bd74-4a00-a3db-a9a938e55607]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5a90244f-bd74-4a00-a3db-a9a938e55607]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":930,\"height\":558,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5a90244f-bd74-4a00-a3db-a9a938e55607]   [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5a90244f-bd74-4a00-a3db-a9a938e55607] Performed ActiveStorage::AnalyzeJob (Job ID: 5a90244f-bd74-4a00-a3db-a9a938e55607) from Async(default) in 78.58ms
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:54:55 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 12156)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 2.1ms | Allocations: 15121)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:55:10 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1208)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 12172)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 2.1ms | Allocations: 14837)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 20:55:12 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 18358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 29877)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.7ms | Allocations: 31785)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 20:55:16 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"19", "time(5i)"=>"55", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.1ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["type", ""], ["description", ""], ["time", "2022-06-04 19:55:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 19:55:16.224107"], ["updated_at", "2022-06-04 19:55:16.224107"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/2
+Completed 302 Found in 31ms (ActiveRecord: 22.7ms | Allocations: 4556)
+
+
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-04 20:55:16 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1216)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 12948)
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 1.9ms | Allocations: 15452)
+
+
+  [1m[36mIncident Load (0.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIncident Create (0.4ms)[0m  [1m[32mINSERT INTO "incidents" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2022-06-04 19:56:04.683506"], ["updated_at", "2022-06-04 19:56:04.683506"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIncident Load (0.2ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/abouts" for 127.0.0.1 at 2022-06-04 20:58:50 +0100
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1295)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 11766)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.7ms | Allocations: 14358)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 20:58:51 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 903)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1205)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 12251)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 2.0ms | Allocations: 15158)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:01:39 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 6403)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/andrejulio/code/andrejulio072/staysafe/public/packs
+[Webpacker] Hash: da2ec9e6204d8703bf60
+Version: webpack 4.46.0
+Time: 11428ms
+Built at: 06/04/2022 9:01:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-93a4c1b5e0f1af5809fc.js    2.2 MiB  application  [emitted] [immutable]  application
+js/application-93a4c1b5e0f1af5809fc.js.map   2.47 MiB  application  [emitted] [dev]        application
+          js/my_js-70fa0f747feeb8cb013e.js   4.74 KiB        my_js  [emitted] [immutable]  my_js
+      js/my_js-70fa0f747feeb8cb013e.js.map   4.63 KiB        my_js  [emitted] [dev]        my_js
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-93a4c1b5e0f1af5809fc.js js/application-93a4c1b5e0f1af5809fc.js.map
+Entrypoint my_js = js/my_js-70fa0f747feeb8cb013e.js js/my_js-70fa0f747feeb8cb013e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.44 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./app/javascript/packs/my_js.js] 898 bytes {my_js} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 1696)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12773.2ms | Allocations: 61236)
+Completed 200 OK in 12800ms (Views: 12771.9ms | ActiveRecord: 10.2ms | Allocations: 77918)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:02:08 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1216)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 12397)
+Completed 200 OK in 28ms (Views: 19.1ms | ActiveRecord: 2.7ms | Allocations: 15396)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:02:49 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 871)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/andrejulio/code/andrejulio072/staysafe/public/packs
+[Webpacker] Hash: 8d60ab38356559fe9147
+Version: webpack 4.46.0
+Time: 1437ms
+Built at: 06/04/2022 9:02:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bf95f49f2fa2949a95bf.js   1.46 MiB  application  [emitted] [immutable]  application
+js/application-bf95f49f2fa2949a95bf.js.map   1.46 MiB  application  [emitted] [dev]        application
+          js/my_js-70fa0f747feeb8cb013e.js   4.74 KiB        my_js  [emitted] [immutable]  my_js
+      js/my_js-70fa0f747feeb8cb013e.js.map   4.63 KiB        my_js  [emitted] [dev]        my_js
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-bf95f49f2fa2949a95bf.js js/application-bf95f49f2fa2949a95bf.js.map
+Entrypoint my_js = js/my_js-70fa0f747feeb8cb013e.js js/my_js-70fa0f747feeb8cb013e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.44 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./app/javascript/packs/my_js.js] 898 bytes {my_js} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2651.9ms | Allocations: 13412)
+Completed 200 OK in 2658ms (Views: 2651.8ms | ActiveRecord: 2.1ms | Allocations: 16076)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:04:07 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 44.9ms | Allocations: 34161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 45878)
+Completed 200 OK in 68ms (Views: 58.1ms | ActiveRecord: 3.7ms | Allocations: 48245)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:04:53 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"incident copacabana", "type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"04", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>"bla bla"}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.0ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "incident copacabana"], ["type", ""], ["description", "bla bla"], ["time", "2022-06-04 20:04:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 20:04:53.533953"], ["updated_at", "2022-06-04 20:04:53.533953"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/4
+Completed 302 Found in 14ms (ActiveRecord: 4.4ms | Allocations: 5659)
+
+
+Started GET "/incidents/4" for 127.0.0.1 at 2022-06-04 21:04:53 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1240)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 16942)
+Completed 200 OK in 31ms (Views: 20.4ms | ActiveRecord: 4.7ms | Allocations: 19836)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:04:58 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (3.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1023)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 20.5ms | Allocations: 1205)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 78.7ms | Allocations: 12347)
+Completed 200 OK in 88ms (Views: 75.8ms | ActiveRecord: 5.4ms | Allocations: 15957)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:05:24 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1205)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 12221)
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 2.9ms | Allocations: 14891)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:05:29 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 719)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 6.6ms | Allocations: 2602)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 14599)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 1.3ms | Allocations: 16006)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2022-06-04 21:05:30 +0100
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1292)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 11843)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.8ms | Allocations: 15573)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:05:31 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 944)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 12250)
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 2.6ms | Allocations: 15160)
+
+
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIncident Create (0.6ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "created_at", "updated_at", "latitude", "longitude", "address") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "robbery"], ["created_at", "2022-06-04 20:06:28.679178"], ["updated_at", "2022-06-04 20:06:28.679178"], ["latitude", -22.94754055], ["longitude", -43.18341209095465], ["address", "400 praia de botafogo, rio de janeiro"]]
+  [1m[36mTRANSACTION (19.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:06:44 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1203)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 12259)
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 2.5ms | Allocations: 14964)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:07:44 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 947)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 12579)
+Completed 200 OK in 34ms (Views: 23.9ms | ActiveRecord: 3.4ms | Allocations: 15265)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:07:46 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 18.1ms | Allocations: 18284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1205)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 30527)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.7ms | Allocations: 32436)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:07:50 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"07", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (0.8ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["type", ""], ["description", ""], ["time", "2022-06-04 20:07:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 20:07:50.268136"], ["updated_at", "2022-06-04 20:07:50.268136"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/6
+Completed 302 Found in 29ms (ActiveRecord: 22.4ms | Allocations: 4578)
+
+
+Started GET "/incidents/6" for 127.0.0.1 at 2022-06-04 21:07:50 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1753)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1221)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 12970)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 1.9ms | Allocations: 15470)
+
+
+Started GET "/incidents/6" for 127.0.0.1 at 2022-06-04 21:09:00 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5309)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5443)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.4ms | Allocations: 8899)
+
+
+  
+ActionView::Template::Error ():
+    1: <h1>My page </h1>
+    2: 
+    3: <%= cl_image_tag @incident.photo.key, height: 400, width: 300, crop: :thumb %>
+    4: <% raise %>
+  
+app/views/incidents/show.html.erb:4
+Started PUT "/__web_console/repl_sessions/ad838f588c459ebd601aca1cf8992d6f" for 127.0.0.1 at 2022-06-04 21:09:20 +0100
+Started PUT "/__web_console/repl_sessions/ad838f588c459ebd601aca1cf8992d6f" for 127.0.0.1 at 2022-06-04 21:09:26 +0100
+Started PUT "/__web_console/repl_sessions/ad838f588c459ebd601aca1cf8992d6f" for 127.0.0.1 at 2022-06-04 21:09:37 +0100
+Started PUT "/__web_console/repl_sessions/ad838f588c459ebd601aca1cf8992d6f" for 127.0.0.1 at 2022-06-04 21:09:39 +0100
+Started PUT "/__web_console/repl_sessions/ad838f588c459ebd601aca1cf8992d6f" for 127.0.0.1 at 2022-06-04 21:09:40 +0100
+Started PUT "/__web_console/repl_sessions/ad838f588c459ebd601aca1cf8992d6f" for 127.0.0.1 at 2022-06-04 21:09:45 +0100
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:15:20 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 17.7ms | Allocations: 9301)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 120.0ms | Allocations: 62060)
+Completed 200 OK in 130ms (Views: 115.8ms | ActiveRecord: 6.4ms | Allocations: 66642)
+
+
+Started GET "/incidents/6" for 127.0.0.1 at 2022-06-04 21:15:30 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 11.7ms | Allocations: 8394)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1279)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 19935)
+Completed 200 OK in 42ms (Views: 20.7ms | ActiveRecord: 7.8ms | Allocations: 31964)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:15:35 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 72.5ms | Allocations: 29354)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 84.1ms | Allocations: 40965)
+Completed 200 OK in 104ms (Views: 86.4ms | ActiveRecord: 2.5ms | Allocations: 44007)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:15:43 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"15", "photo"=>#<ActionDispatch::Http::UploadedFile:0x000056292eac4c40 @tempfile=#<Tempfile:/tmp/RackMultipart20220604-5056-2k9ig2.webp>, @original_filename="1886.webp", @content_type="image/webp", @headers="Content-Disposition: form-data; name=\"incident[photo]\"; filename=\"1886.webp\"\r\nContent-Type: image/webp\r\n">, "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.2ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["type", ""], ["description", ""], ["time", "2022-06-04 20:15:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 20:15:43.786560"], ["updated_at", "2022-06-04 20:15:43.786560"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Create (1.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "cm52ee72xo4k2m0dc88ygfg1b1ku"], ["filename", "1886.webp"], ["content_type", "image/webp"], ["metadata", "{\"identified\":true}"], ["service_name", "cloudinary"], ["byte_size", 32642], ["checksum", "XkNvmE+cPlUiZafp2WtVEA=="], ["created_at", "2022-06-04 20:15:43.807160"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Create (1.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Incident"], ["record_id", 7], ["blob_id", 2], ["created_at", "2022-06-04 20:15:43.809959"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Update (1.0ms)[0m  [1m[33mUPDATE "incidents" SET "updated_at" = $1 WHERE "incidents"."id" = $2[0m  [["updated_at", "2022-06-04 20:15:43.812687"], ["id", 7]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+[36m  Cloudinary Storage (959.2ms) [0m[32mUploaded file to key: cm52ee72xo4k2m0dc88ygfg1b1ku (checksum: XkNvmE+cPlUiZafp2WtVEA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: fc1f3c2c-189b-46d0-9694-7dd24781be89) to Async(default) with arguments: #<GlobalID:0x000056292e651b18 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/2>>
+Redirected to http://127.0.0.1:3000/incidents/7
+Completed 302 Found in 1026ms (ActiveRecord: 23.2ms | Allocations: 187414)
+
+
+Started GET "/incidents/7" for 127.0.0.1 at 2022-06-04 21:15:44 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc1f3c2c-189b-46d0-9694-7dd24781be89] Performing ActiveStorage::AnalyzeJob (Job ID: fc1f3c2c-189b-46d0-9694-7dd24781be89) from Async(default) enqueued at 2022-06-04T20:15:44Z with arguments: #<GlobalID:0x000056292ec75c60 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/2>>
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1238)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 14189)
+Completed 200 OK in 24ms (Views: 15.8ms | ActiveRecord: 2.6ms | Allocations: 18609)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc1f3c2c-189b-46d0-9694-7dd24781be89] [36m  Cloudinary Storage (692.9ms) [0m[34mDownloaded file from key: cm52ee72xo4k2m0dc88ygfg1b1ku[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc1f3c2c-189b-46d0-9694-7dd24781be89]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc1f3c2c-189b-46d0-9694-7dd24781be89]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":930,\"height\":558,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc1f3c2c-189b-46d0-9694-7dd24781be89]   [1m[36mTRANSACTION (20.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [fc1f3c2c-189b-46d0-9694-7dd24781be89] Performed ActiveStorage::AnalyzeJob (Job ID: fc1f3c2c-189b-46d0-9694-7dd24781be89) from Async(default) in 764.38ms
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:22:29 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 14.2ms | Allocations: 9298)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 88.2ms | Allocations: 62142)
+Completed 200 OK in 96ms (Views: 84.6ms | ActiveRecord: 5.5ms | Allocations: 66726)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:22:48 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 5.8ms | Allocations: 2581)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 13089)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 1.2ms | Allocations: 13673)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2022-06-04 21:22:49 +0100
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1287)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 11838)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.8ms | Allocations: 15582)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:22:51 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1240)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 13283)
+Completed 200 OK in 37ms (Views: 14.3ms | ActiveRecord: 7.6ms | Allocations: 26250)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:22:56 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 41.9ms | Allocations: 32230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 43950)
+Completed 200 OK in 59ms (Views: 51.6ms | ActiveRecord: 2.6ms | Allocations: 46932)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:24:31 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 9.7ms | Allocations: 2566)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 12912)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 2.3ms | Allocations: 13458)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:27:46 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 18115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1205)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 29442)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 1.9ms | Allocations: 31995)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:28:00 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "type"=>"assault", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"27", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms | Allocations: 2925)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'assault'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Incident.inheritance_column to use another column for that information.):
+  
+app/controllers/incidents_controller.rb:27:in `create'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5012.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_development"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (35.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_development"[0m
+  [1m[35m (17.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "staysafe_test"[0m
+  [1m[35m (102.2ms)[0m  [1m[35mCREATE DATABASE "staysafe_development" ENCODING = 'unicode'[0m
+  [1m[35m (81.7ms)[0m  [1m[35mCREATE DATABASE "staysafe_test" ENCODING = 'unicode'[0m
+  [1m[35m (26.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220525003130)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220525003130"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUsers (20220531232435)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220531232435"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateIncidents (20220602230055)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "incidents" ("id" bigserial primary key, "title" character varying, "type" character varying, "description" character varying, "time" timestamp, "date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220602230055"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddCoordinatesToIncidents (20220603173239)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" ADD "latitude" float[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "incidents" ADD "longitude" float[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603173239"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAddressToIncidents (20220603182138)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" ADD "address" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220603182138"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20220604175130)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220604175130"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-04 20:30:19.609795"], ["updated_at", "2022-06-04 20:30:19.609795"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:30:28 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 13.9ms | Allocations: 5058)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 110.0ms | Allocations: 57921)
+Completed 200 OK in 119ms (Views: 105.3ms | ActiveRecord: 6.4ms | Allocations: 62502)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:30:35 +0100
+Processing by IncidentsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-04 21:30:35 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 657)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 26.3ms | Allocations: 18521)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 722)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 29600)
+Completed 200 OK in 50ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 35765)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-04 21:30:37 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 9679)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 689)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 21007)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 21845)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:30:46 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 701)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 11362)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 11841)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-04 21:30:47 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 51.0ms | Allocations: 8989)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 678)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 20109)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 0.0ms | Allocations: 20835)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-04 21:30:50 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 8406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 725)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 19898)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 21526)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-06-04 21:31:15 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"andre@stay.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "andre@stay.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "andre@stay.com"], ["encrypted_password", "$2a$12$U9Jvq54NeTvHbqklBniLie.5oEyn8Yu4BiM7K8uv3.z85yhnrPAWi"], ["created_at", "2022-06-04 20:31:15.211656"], ["updated_at", "2022-06-04 20:31:15.211656"]]
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/incidents/new
+Completed 302 Found in 217ms (ActiveRecord: 12.8ms | Allocations: 11012)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:31:15 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 23598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1271)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 35436)
+Completed 200 OK in 52ms (Views: 34.4ms | ActiveRecord: 4.7ms | Allocations: 46255)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:31:31 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"incident copacabana", "type"=>"assault", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"31", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f0fac968e90 @tempfile=#<Tempfile:/tmp/RackMultipart20220604-6842-aqi1jw.jpg>, @original_filename="pexels-monica-silvestre-1118877.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"incident[photo]\"; filename=\"pexels-monica-silvestre-1118877.jpg\"\r\nContent-Type: image/jpeg\r\n">, "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>"ocorreu um assalto de um pivete na praia de copacabana"}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms | Allocations: 2856)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'assault'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Incident.inheritance_column to use another column for that information.):
+  
+app/controllers/incidents_controller.rb:27:in `create'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4292085212923257225)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to FixTypeColumn (20220604203745)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "incidents" RENAME COLUMN "type" TO "incident_type"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220604203745"]]
+  [1m[36mTRANSACTION (20.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIncident Create (0.7ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "created_at", "updated_at", "latitude", "longitude", "address") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "robbery"], ["created_at", "2022-06-04 20:39:40.145266"], ["updated_at", "2022-06-04 20:39:40.145266"], ["latitude", -22.94754055], ["longitude", -43.18341209095465], ["address", "400 praia de botafogo, rio de janeiro"]]
+  [1m[36mTRANSACTION (20.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIncident Load (0.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:42:57 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"incident copacabana", "type"=>"assault", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"31", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f54fcc44750 @tempfile=#<Tempfile:/tmp/RackMultipart20220604-10939-8d2u70.jpg>, @original_filename="pexels-monica-silvestre-1118877.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"incident[photo]\"; filename=\"pexels-monica-silvestre-1118877.jpg\"\r\nContent-Type: image/jpeg\r\n">, "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>"ocorreu um assalto de um pivete na praia de copacabana"}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameter: :type[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (0.9ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "incident copacabana"], ["description", "ocorreu um assalto de um pivete na praia de copacabana"], ["time", "2022-06-04 20:31:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 20:42:57.994038"], ["updated_at", "2022-06-04 20:42:57.994038"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Create (1.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "v2u3clx0x9sjwnwu262b49bf9ev3"], ["filename", "pexels-monica-silvestre-1118877.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "cloudinary"], ["byte_size", 2042524], ["checksum", "VHk2Yw5DVzSEjMaEjw5dBg=="], ["created_at", "2022-06-04 20:42:58.020276"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Create (1.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Incident"], ["record_id", 2], ["blob_id", 1], ["created_at", "2022-06-04 20:42:58.023097"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Update (0.8ms)[0m  [1m[33mUPDATE "incidents" SET "updated_at" = $1 WHERE "incidents"."id" = $2[0m  [["updated_at", "2022-06-04 20:42:58.025459"], ["id", 2]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+[36m  Cloudinary Storage (3058.2ms) [0m[32mUploaded file to key: v2u3clx0x9sjwnwu262b49bf9ev3 (checksum: VHk2Yw5DVzSEjMaEjw5dBg==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 2dd3e426-7a40-42d1-8e22-587676b89e1e) to Async(default) with arguments: #<GlobalID:0x00007f54fcb83320 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/1>>
+Redirected to http://127.0.0.1:3000/incidents/2
+Completed 302 Found in 3163ms (ActiveRecord: 26.1ms | Allocations: 211183)
+
+
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-04 21:43:01 +0100
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2dd3e426-7a40-42d1-8e22-587676b89e1e] Performing ActiveStorage::AnalyzeJob (Job ID: 2dd3e426-7a40-42d1-8e22-587676b89e1e) from Async(default) enqueued at 2022-06-04T20:43:01Z with arguments: #<GlobalID:0x00007f54fcd50130 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/1>>
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3379)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1736)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 194)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 89.5ms | Allocations: 56798)
+Completed 200 OK in 106ms (Views: 89.7ms | ActiveRecord: 8.8ms | Allocations: 66202)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2dd3e426-7a40-42d1-8e22-587676b89e1e] [36m  Cloudinary Storage (1467.7ms) [0m[34mDownloaded file from key: v2u3clx0x9sjwnwu262b49bf9ev3[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2dd3e426-7a40-42d1-8e22-587676b89e1e]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2dd3e426-7a40-42d1-8e22-587676b89e1e]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":3024,\"height\":4032,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2dd3e426-7a40-42d1-8e22-587676b89e1e]   [1m[36mTRANSACTION (19.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2dd3e426-7a40-42d1-8e22-587676b89e1e] Performed ActiveStorage::AnalyzeJob (Job ID: 2dd3e426-7a40-42d1-8e22-587676b89e1e) from Async(default) in 1699.3ms
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:43:05 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 26.8ms | Allocations: 28147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1218)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 39738)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 1.2ms | Allocations: 42678)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:43:19 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"incident copacabana", "incident_type"=>"assault", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"43", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f55040d1c30 @tempfile=#<Tempfile:/tmp/RackMultipart20220604-10939-1obpcb.jpeg>, @original_filename="shutterstock-188781878_main_1459927528886.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"incident[photo]\"; filename=\"shutterstock-188781878_main_1459927528886.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.0ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "incident copacabana"], ["incident_type", "assault"], ["description", ""], ["time", "2022-06-04 20:43:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 20:43:19.450607"], ["updated_at", "2022-06-04 20:43:19.450607"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Blob Create (1.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "37dqa0pmu84lpqm01qmcqkmka4ol"], ["filename", "shutterstock-188781878_main_1459927528886.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "cloudinary"], ["byte_size", 102482], ["checksum", "Kcq0OyKlCUSBkEoy/ekw7A=="], ["created_at", "2022-06-04 20:43:19.462373"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mActiveStorage::Attachment Create (1.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Incident"], ["record_id", 3], ["blob_id", 2], ["created_at", "2022-06-04 20:43:19.466329"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Update (1.1ms)[0m  [1m[33mUPDATE "incidents" SET "updated_at" = $1 WHERE "incidents"."id" = $2[0m  [["updated_at", "2022-06-04 20:43:19.469621"], ["id", 3]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+[36m  Cloudinary Storage (918.9ms) [0m[32mUploaded file to key: 37dqa0pmu84lpqm01qmcqkmka4ol (checksum: Kcq0OyKlCUSBkEoy/ekw7A==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 391328ef-f7aa-4660-ad77-18df116e4313) to Async(default) with arguments: #<GlobalID:0x00007f55043247f8 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/2>>
+Redirected to http://127.0.0.1:3000/incidents/3
+Completed 302 Found in 953ms (ActiveRecord: 11.0ms | Allocations: 15367)
+
+
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [391328ef-f7aa-4660-ad77-18df116e4313] Performing ActiveStorage::AnalyzeJob (Job ID: 391328ef-f7aa-4660-ad77-18df116e4313) from Async(default) enqueued at 2022-06-04T20:43:20Z with arguments: #<GlobalID:0x00007f54e0785fc8 @uri=#<URI::GID gid://staysafe/ActiveStorage::Blob/2>>
+Started GET "/incidents/3" for 127.0.0.1 at 2022-06-04 21:43:20 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1216)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 13671)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 2.9ms | Allocations: 16245)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [391328ef-f7aa-4660-ad77-18df116e4313] [36m  Cloudinary Storage (493.1ms) [0m[34mDownloaded file from key: 37dqa0pmu84lpqm01qmcqkmka4ol[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [391328ef-f7aa-4660-ad77-18df116e4313]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [391328ef-f7aa-4660-ad77-18df116e4313]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":945,\"height\":630,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [391328ef-f7aa-4660-ad77-18df116e4313]   [1m[36mTRANSACTION (10.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [391328ef-f7aa-4660-ad77-18df116e4313] Performed ActiveStorage::AnalyzeJob (Job ID: 391328ef-f7aa-4660-ad77-18df116e4313) from Async(default) in 528.87ms
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:43:40 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 7.5ms | Allocations: 2614)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 13644)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 1.3ms | Allocations: 15060)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2022-06-04 21:43:43 +0100
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1287)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 12631)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 1.0ms | Allocations: 15569)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:43:45 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 5088)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 5218)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.1ms | Allocations: 9146)
+
+
+  
+ActionView::Template::Error (undefined method `type' for #<Incident id: 3, title: "incident copacabana", incident_type: "assault", description: "", time: "2022-06-04 20:43:00.000000000 +0000", date: "2022-06-04", created_at: "2022-06-04 20:43:19.450607000 +0000", updated_at: "2022-06-04 20:43:19.469621000 +0000", latitude: nil, longitude: nil, address: nil>):
+     8:                 <%= incident.title %>
+     9:                 <%= incident.address %>
+    10:                 <%= incident.description %>
+    11:                 <%= incident.type %>
+    12:                 <%= incident.time %>
+    13:                 <%= incident.date %>
+    14:             </p>
+  
+app/views/incidents/index.html.erb:11
+app/views/incidents/index.html.erb:4
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:44:19 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1601)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 14456)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 2.3ms | Allocations: 18385)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-04 21:46:22 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 16.4ms | Allocations: 9304)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 121.0ms | Allocations: 61846)
+Completed 200 OK in 131ms (Views: 116.8ms | ActiveRecord: 6.2ms | Allocations: 66428)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:46:26 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 29.5ms | Allocations: 32167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1244)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 43782)
+Completed 200 OK in 64ms (Views: 39.6ms | ActiveRecord: 7.4ms | Allocations: 55733)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:46:28 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (2.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1204)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 12755)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 4.6ms | Allocations: 16915)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:46:30 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 22.1ms | Allocations: 18116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 30385)
+Completed 200 OK in 57ms (Views: 52.7ms | ActiveRecord: 1.0ms | Allocations: 32306)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:46:31 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 24.1ms | Allocations: 18111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 29304)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.7ms | Allocations: 31203)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2022-06-04 21:46:33 +0100
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1288)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11999)
+Completed 200 OK in 27ms (Views: 20.0ms | ActiveRecord: 1.8ms | Allocations: 15725)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 21:46:35 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 12426)
+Completed 200 OK in 25ms (Views: 16.1ms | ActiveRecord: 3.1ms | Allocations: 15352)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:46:36 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 27.6ms | Allocations: 18224)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1207)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 30497)
+Completed 200 OK in 53ms (Views: 47.1ms | ActiveRecord: 1.1ms | Allocations: 32424)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:48:41 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 18650)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1593)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 31321)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.6ms | Allocations: 34212)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-04 21:48:42 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 18084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1202)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 29598)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.6ms | Allocations: 31720)
+
+
+Started POST "/incidents" for 127.0.0.1 at 2022-06-04 21:48:44 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "incident_type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"48", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"4", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (0.9ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["incident_type", ""], ["description", ""], ["time", "2022-06-04 20:48:00"], ["date", "2022-06-04"], ["created_at", "2022-06-04 20:48:44.539910"], ["updated_at", "2022-06-04 20:48:44.539910"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (20.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/4
+Completed 302 Found in 33ms (ActiveRecord: 23.1ms | Allocations: 5619)
+
+
+Started GET "/incidents/4" for 127.0.0.1 at 2022-06-04 21:48:44 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:3
+  Rendered incidents/show.html.erb within layouts/application (Duration: 21.3ms | Allocations: 5580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1244)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 17334)
+Completed 200 OK in 45ms (Views: 33.8ms | ActiveRecord: 6.3ms | Allocations: 20228)
+>>>>>>> af7f2efb6673daf3ec2adcbbeca30851f15f4149
 
 
