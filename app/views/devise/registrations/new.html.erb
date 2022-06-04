@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>STAY SAFE</title>
+  <title>STAYSAFE</title>
   <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
 </head>
 <!-- Section: Design Block -->
@@ -15,7 +15,8 @@
             background: hsla(0, 0%, 100%, 0.55);
             backdrop-filter: blur(30px);
             ">
-          <div class="card-body p-5 shadow-5 text-center">
+
+          <div class="singcard-body p-5 shadow-5 text-center">
             <h2 class="fw-bold mb-5">Sign up now</h2>
             <form>
               <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -48,7 +49,7 @@
                 placeholder:"Enter Password",
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                 input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
+                <%= f.input :password_confirmation,
                 required: true,
                 placeholder:"Enter Password Again",
                 input_html: { autocomplete: "new-password" } %>
