@@ -43,6 +43,6 @@ class IncidentsController < ApplicationController
   private
 
   def incident_params
-    params.require(:incident).permit(:title, :type, :date, :time, :description)
+    params.require(:incident).permit(:title, :type, :date, :time, :description, :photo)
   end
 end
