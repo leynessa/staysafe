@@ -39239,3 +39239,82 @@ Completed 200 OK in 44ms (Views: 42.2ms | Allocations: 24194)
   
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
   
+Started GET "/" for 127.0.0.1 at 2022-06-04 14:29:33 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/ctrlju/code/ctrlju/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 24.3ms | Allocations: 9260)
+  Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 6586.3ms | Allocations: 155702)
+Completed 200 OK in 6598ms (Views: 6579.4ms | ActiveRecord: 9.8ms | Allocations: 160283)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 14:29:45 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  Rendered incidents/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1226)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 11986)
+Completed 200 OK in 29ms (Views: 16.5ms | ActiveRecord: 3.1ms | Allocations: 17237)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 14:29:49 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  Rendered incidents/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1195)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 11286)
+Completed 200 OK in 68ms (Views: 56.8ms | ActiveRecord: 0.7ms | Allocations: 13456)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-04 14:40:28 -0300
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  Rendered incidents/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 715)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ctrlju/code/ctrlju/staysafe/public/packs
+[Webpacker] Hash: e72b5db3312015f62216
+Version: webpack 4.46.0
+Time: 1369ms
+Built at: 06/04/2022 2:40:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-623bf0cc307fa763328b.js    565 KiB  application  [emitted] [immutable]  application
+js/application-623bf0cc307fa763328b.js.map    560 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-623bf0cc307fa763328b.js js/application-623bf0cc307fa763328b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.26 KiB {application} [built]
+[./app/javascript/controllers/index.js] 335 bytes {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 63 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1585)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 2912.6ms | Allocations: 14608)
+Completed 200 OK in 2939ms (Views: 2915.5ms | ActiveRecord: 11.3ms | Allocations: 20926)
+
+
