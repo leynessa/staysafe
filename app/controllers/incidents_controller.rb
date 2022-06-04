@@ -17,7 +17,6 @@ class IncidentsController < ApplicationController
 
   def create
     @incident = Incident.new(incident_params)
-    @incident.user = current_user
     authorize @incident
    if @incident.save
     redirect_to incident_path(@incident)
@@ -44,6 +43,6 @@ class IncidentsController < ApplicationController
   private
 
   def incident_params
-    params.require(:incident).permit(:name, :description, :photo)
+    params.require(:incident).permit(:title, :type, :date, :time, :description)
   end
 end
