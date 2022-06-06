@@ -1,9 +1,49 @@
-<h1>My page </h1>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Incident report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_incident.scss">
+  <link rel="stylesheet" href= "../../assets/stylesheets/application.scss">
+</head>
+<div class="container-fluid">
+<!-- Content here -->
+<h1>Yours incidents reported</h1>
+<div class='incidents-photo'>
 <%= cl_image_tag @incident.photo.key, height: 400, width: 300, crop: :thumb %>
+</div>
+<div class="information">
+  <h1>General information</h1>
+  <div class="incidents"></div>
+  <div class="card w-75">
+  <div class="card-body">
+    <h5 class="card-title">General information</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>
 
+<div class="card w-50">
+  <div class="card-body">
+    <h5 class="card-title">Description</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>
+</div>
 
 <div style="width: 100%; height: 600px;"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+
+</div>
+</html>

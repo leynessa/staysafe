@@ -45386,3 +45386,509 @@ ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
   
 ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
   
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 18780)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1610)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 31685)
+Completed 200 OK in 49ms (Views: 34.3ms | ActiveRecord: 7.3ms | Allocations: 38167)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-06 23:46:33 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 18161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1216)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 29586)
+Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 0.7ms | Allocations: 31698)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-06 23:46:34 +0100
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-06 23:46:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-06 23:46:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-06 23:46:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-06 23:46:34 +0100
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-06 23:46:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started POST "/incidents" for 127.0.0.1 at 2022-06-06 23:46:37 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "incident_type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"6", "time(4i)"=>"22", "time(5i)"=>"46", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"6", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.0ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["incident_type", ""], ["description", ""], ["time", "2022-06-06 22:46:00"], ["date", "2022-06-06"], ["created_at", "2022-06-06 22:46:37.580970"], ["updated_at", "2022-06-06 22:46:37.580970"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/2
+Completed 302 Found in 34ms (ActiveRecord: 22.5ms | Allocations: 5690)
+
+
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:46:37 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 11.8ms | Allocations: 5878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.0ms | Allocations: 1252)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 17534)
+Completed 200 OK in 31ms (Views: 21.0ms | ActiveRecord: 5.5ms | Allocations: 20554)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:49:03 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1647)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 15123)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 2.5ms | Allocations: 18792)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:50:12 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3614)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3737)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.9ms | Allocations: 7236)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:51:45 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3623)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3746)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.8ms | Allocations: 7269)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:51:46 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2972)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3078)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.9ms | Allocations: 5644)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:51:46 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 4637)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 4920)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 9.4ms | Allocations: 27659)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:51:46 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (8.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 8651)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 14245)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 25.4ms | Allocations: 68627)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:51:47 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+Started GET "/incidents/2" for 127.0.0.1 at 2022-06-06 23:51:47 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  [1m[36mActiveStorage::Attachment Load (2.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendering layout layouts/application.html.erb
+  Rendered incidents/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5245)
+  Rendering incidents/show.html.erb within layouts/application
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 5545)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 24.6ms | Allocations: 46401)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 106.5ms | Allocations: 116750)
+  Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 117111)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 17.2ms | Allocations: 219133)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: <div class="information">
+    22:   <h1>General information</h1>
+    23:   <div class="incidents">
+    24:       <% @incidents.each do |incident| %>
+    25:         <div class="incident card" style="width: 18rem;">
+    26:           <div >
+    27:             <p class="incident card-text">
+  
+app/views/incidents/show.html.erb:24
+Started PUT "/__web_console/repl_sessions/347927c43883ffe9907e3fe3a8223f5e" for 127.0.0.1 at 2022-06-06 23:51:53 +0100
+Started PUT "/__web_console/repl_sessions/347927c43883ffe9907e3fe3a8223f5e" for 127.0.0.1 at 2022-06-06 23:51:54 +0100
+Started PUT "/__web_console/repl_sessions/347927c43883ffe9907e3fe3a8223f5e" for 127.0.0.1 at 2022-06-06 23:52:05 +0100
+Started PUT "/__web_console/repl_sessions/347927c43883ffe9907e3fe3a8223f5e" for 127.0.0.1 at 2022-06-06 23:52:06 +0100
+  [1m[36mIncident Load (0.9ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:24
+Started GET "/" for 127.0.0.1 at 2022-06-06 23:58:15 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 20.1ms | Allocations: 9314)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 116.0ms | Allocations: 62579)
+Completed 200 OK in 123ms (Views: 110.8ms | ActiveRecord: 6.7ms | Allocations: 67161)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-06 23:58:33 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 10.8ms | Allocations: 2591)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 13249)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 1.6ms | Allocations: 13830)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-06 23:58:34 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 31.5ms | Allocations: 32404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1256)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 44071)
+Completed 200 OK in 59ms (Views: 41.5ms | ActiveRecord: 5.7ms | Allocations: 55896)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-06 23:58:34 +0100
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-06 23:58:34 +0100
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-06 23:58:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-06 23:58:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-06 23:58:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-06 23:58:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started POST "/incidents" for 127.0.0.1 at 2022-06-06 23:58:38 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "incident_type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"6", "time(4i)"=>"22", "time(5i)"=>"58", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"6", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (0.9ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["incident_type", ""], ["description", ""], ["time", "2022-06-06 22:58:00"], ["date", "2022-06-06"], ["created_at", "2022-06-06 22:58:38.906848"], ["updated_at", "2022-06-06 22:58:38.906848"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://127.0.0.1:3000/incidents/3
+Completed 302 Found in 14ms (ActiveRecord: 4.2ms | Allocations: 5703)
+
+
+Started GET "/incidents/3" for 127.0.0.1 at 2022-06-06 23:58:38 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.9ms | Allocations: 5614)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.7ms | Allocations: 1254)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 17397)
+Completed 200 OK in 29ms (Views: 19.5ms | ActiveRecord: 4.4ms | Allocations: 20399)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+Started GET "/incidents/3" for 127.0.0.1 at 2022-06-07 00:00:30 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.0ms | Allocations: 1649)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 15269)
+Completed 200 OK in 24ms (Views: 16.8ms | ActiveRecord: 2.0ms | Allocations: 18957)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+Started GET "/incidents/3" for 127.0.0.1 at 2022-06-07 00:00:39 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:19
+  Rendered incidents/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1231)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 13391)
+Completed 200 OK in 26ms (Views: 17.5ms | ActiveRecord: 3.0ms | Allocations: 16593)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_incident.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.scss"):
+  
