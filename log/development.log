@@ -44638,3 +44638,199 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/page
   [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4292085212923257225)[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-06-07 19:38:34 -0300
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/ashley/code/leynessa/staysafe/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.8ms | Allocations: 978)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ashley/code/leynessa/staysafe/staysafe/public/packs
+[Webpacker] Hash: 8d60ab38356559fe9147
+Version: webpack 4.46.0
+Time: 3120ms
+Built at: 06/07/2022 7:38:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bf95f49f2fa2949a95bf.js   1.46 MiB  application  [emitted] [immutable]  application
+js/application-bf95f49f2fa2949a95bf.js.map   1.46 MiB  application  [emitted] [dev]        application
+          js/my_js-70fa0f747feeb8cb013e.js   4.74 KiB        my_js  [emitted] [immutable]  my_js
+      js/my_js-70fa0f747feeb8cb013e.js.map   4.63 KiB        my_js  [emitted] [dev]        my_js
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-bf95f49f2fa2949a95bf.js js/application-bf95f49f2fa2949a95bf.js.map
+Entrypoint my_js = js/my_js-70fa0f747feeb8cb013e.js js/my_js-70fa0f747feeb8cb013e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers/application.js] 236 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [built]
+[./app/javascript/controllers/index.js] 437 bytes {application} [built]
+[./app/javascript/controllers/mapbox_controller.js] 4.44 KiB {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./app/javascript/packs/my_js.js] 898 bytes {my_js} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 6.8ms | Allocations: 1274)
+  Rendered shared/_flashes.html.erb (Duration: 1.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 6853.5ms | Allocations: 58203)
+Completed 200 OK in 6880ms (Views: 6865.1ms | ActiveRecord: 0.0ms | Allocations: 62663)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:39:57 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 3.9ms | Allocations: 1111)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 13043)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.0ms | Allocations: 14615)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:40:01 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 699)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 11064)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 11585)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:40:08 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 4.2ms | Allocations: 1111)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 13045)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 14493)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:40:29 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 4.6ms | Allocations: 1116)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 13375)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 14869)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:40:32 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 700)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 11385)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 11906)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:40:38 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 699)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 11062)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 11529)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:40:46 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.7ms | Allocations: 1113)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 13048)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 14495)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:41:14 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.3ms | Allocations: 1111)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 58.4ms | Allocations: 13049)
+Completed 200 OK in 73ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 14538)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:41:15 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 699)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 11064)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 11584)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:41:45 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 3.0ms | Allocations: 1111)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 13043)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 14483)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:42:03 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 704)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.7ms | Allocations: 1118)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 13065)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms | Allocations: 14552)
+
+
+Started GET "/" for ::1 at 2022-06-07 19:42:42 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 703)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 11387)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 11902)
+
+
