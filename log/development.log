@@ -46926,3 +46926,1141 @@ Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-0
   
 ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
   
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-08 01:33:49 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 19.0ms | Allocations: 18775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1608)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 31519)
+Completed 200 OK in 55ms (Views: 34.8ms | ActiveRecord: 10.1ms | Allocations: 37983)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-08 01:33:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-08 01:33:49 +0100
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-08 01:33:49 +0100
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-08 01:33:49 +0100
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-08 01:33:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-08 01:33:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-08 01:33:52 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 26.7ms | Allocations: 18185)
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-08 01:33:52 +0100
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-08 01:33:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-08 01:33:52 +0100
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-08 01:33:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-08 01:33:53 +0100
+[Webpacker] Everything's up-to-date. Nothing to do
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 8.7ms | Allocations: 4264)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 322.6ms | Allocations: 236859)
+Completed 200 OK in 328ms (Views: 323.5ms | ActiveRecord: 0.8ms | Allocations: 239120)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-08 01:33:53 +0100
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-08 01:33:53 +0100
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-08 01:33:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-08 01:33:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/" for ::1 at 2022-06-08 01:33:56 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 834)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 11946)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 13136)
+
+
+Started GET "/incidents/new" for ::1 at 2022-06-08 01:33:58 +0100
+Processing by IncidentsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 272)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-08 01:33:58 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 660)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.6ms | Allocations: 10986)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 730)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 21998)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms | Allocations: 24307)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-08 01:34:04 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 9600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 683)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 20523)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms | Allocations: 21265)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-06-08 01:34:27 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 7863)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 730)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 18887)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 21264)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started POST "/users" for ::1 at 2022-06-08 01:34:59 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"andre@stay.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "andre@stay.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "andre@stay.com"], ["encrypted_password", "$2a$12$gGOT/y85Vklz4vVUEWH.NOcfkRKteCOpc1JPUo58Hq6yWm.2XXwvK"], ["created_at", "2022-06-08 00:34:59.385482"], ["updated_at", "2022-06-08 00:34:59.385482"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/incidents/new
+Completed 302 Found in 203ms (ActiveRecord: 4.8ms | Allocations: 10455)
+
+
+Started GET "/incidents/new" for ::1 at 2022-06-08 01:34:59 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 51.0ms | Allocations: 18333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1224)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 29730)
+Completed 200 OK in 88ms (Views: 67.4ms | ActiveRecord: 0.9ms | Allocations: 31738)
+
+
+Started GET "/incidents/js/jquery.min.js" for ::1 at 2022-06-08 01:34:59 +0100
+Started GET "/incidents/js/popper.js" for ::1 at 2022-06-08 01:34:59 +0100
+Started GET "/incidents/js/jquery.validate.min.js" for ::1 at 2022-06-08 01:34:59 +0100
+Started GET "/incidents/js/main.js" for ::1 at 2022-06-08 01:34:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for ::1 at 2022-06-08 01:34:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for ::1 at 2022-06-08 01:34:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/new" for ::1 at 2022-06-08 01:35:04 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 21.3ms | Allocations: 18189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1215)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 29454)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.8ms | Allocations: 31353)
+
+
+Started GET "/incidents/js/jquery.min.js" for ::1 at 2022-06-08 01:35:04 +0100
+Started GET "/incidents/js/bootstrap.min.js" for ::1 at 2022-06-08 01:35:04 +0100
+Started GET "/incidents/js/popper.js" for ::1 at 2022-06-08 01:35:04 +0100
+Started GET "/incidents/js/jquery.validate.min.js" for ::1 at 2022-06-08 01:35:04 +0100
+Started GET "/incidents/js/main.js" for ::1 at 2022-06-08 01:35:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started POST "/incidents" for ::1 at 2022-06-08 01:35:09 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "incident_type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"8", "time(4i)"=>"00", "time(5i)"=>"35", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"8", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.2ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["incident_type", ""], ["description", ""], ["time", "2022-06-08 00:35:00"], ["date", "2022-06-08"], ["created_at", "2022-06-08 00:35:09.065134"], ["updated_at", "2022-06-08 00:35:09.065134"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (20.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://localhost:3000/incidents/6
+Completed 302 Found in 33ms (ActiveRecord: 23.7ms | Allocations: 4478)
+
+
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:35:09 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:6
+  Rendered incidents/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1929)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1229)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 13212)
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 2.4ms | Allocations: 15902)
+
+
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:38:32 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.2ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 6725)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6849)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.9ms | Allocations: 10266)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001b6e8>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:31 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 6703)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6826)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.9ms | Allocations: 10349)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001bb70>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:35 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 6156)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6262)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.0ms | Allocations: 8828)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001bf58>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:35 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6156)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6262)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.3ms | Allocations: 8717)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001c228>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:40 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 6703)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6826)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.8ms | Allocations: 10239)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001c548>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:40 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6156)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6262)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms | Allocations: 8828)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001c930>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:41 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 6156)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6262)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.8ms | Allocations: 8717)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000001cc00>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:46 +0100
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 17.8ms | Allocations: 13659)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 13823)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 13.2ms | Allocations: 34899)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000ab68>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:47 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6251)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6358)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.3ms | Allocations: 9116)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000afa0>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:48 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6156)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6263)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.1ms | Allocations: 8718)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000b270>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:48 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 6162)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6269)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 11.5ms | Allocations: 15506)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000b5e0>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:48 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 6660)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6875)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.4ms | Allocations: 10840)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000b6d0>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:48 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:39:48 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (2.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (2.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (3.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  ↳ app/views/incidents/show.html.erb:5
+  Rendering layout layouts/application.html.erb
+  Rendered incidents/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 13867)
+  Rendering incidents/show.html.erb within layouts/application
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 22057)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 34.5ms | Allocations: 71464)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000b888>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (80.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 209.9ms | Allocations: 197210)
+  Rendered layout layouts/application.html.erb (Duration: 225.7ms | Allocations: 208864)
+Completed 500 Internal Server Error in 300ms (ActiveRecord: 117.4ms | Allocations: 266287)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000ba90>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:40:02 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 6702)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6825)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.3ms | Allocations: 10237)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000c2d8>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/6" for ::1 at 2022-06-08 01:40:07 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 6156)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6262)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.1ms | Allocations: 8828)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000c6c0>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/" for ::1 at 2022-06-08 01:40:21 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 757)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 8.1ms | Allocations: 3065)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 100.3ms | Allocations: 55937)
+Completed 200 OK in 102ms (Views: 100.1ms | ActiveRecord: 1.3ms | Allocations: 57630)
+
+
+Started GET "/incidents/new" for ::1 at 2022-06-08 01:40:22 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 33.4ms | Allocations: 30252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1254)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 41805)
+Completed 200 OK in 49ms (Views: 41.9ms | ActiveRecord: 3.3ms | Allocations: 44750)
+
+
+Started GET "/incidents/js/jquery.min.js" for ::1 at 2022-06-08 01:40:22 +0100
+Started GET "/incidents/js/popper.js" for ::1 at 2022-06-08 01:40:22 +0100
+Started GET "/incidents/js/bootstrap.min.js" for ::1 at 2022-06-08 01:40:22 +0100
+Started GET "/incidents/js/main.js" for ::1 at 2022-06-08 01:40:22 +0100
+Started GET "/incidents/js/jquery.validate.min.js" for ::1 at 2022-06-08 01:40:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for ::1 at 2022-06-08 01:40:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started POST "/incidents" for ::1 at 2022-06-08 01:40:26 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"", "incident_type"=>"", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"8", "time(4i)"=>"00", "time(5i)"=>"40", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"8", "description"=>""}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.1ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["incident_type", ""], ["description", ""], ["time", "2022-06-08 00:40:00"], ["date", "2022-06-08"], ["created_at", "2022-06-08 00:40:26.411535"], ["updated_at", "2022-06-08 00:40:26.411535"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://localhost:3000/incidents/7
+Completed 302 Found in 15ms (ActiveRecord: 5.2ms | Allocations: 5658)
+
+
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:40:26 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 11.1ms | Allocations: 6541)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6649)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.4ms | Allocations: 9306)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000e038>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:40:36 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 6180)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6286)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.9ms | Allocations: 8741)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000e308>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:40:36 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.7ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 6689)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7030)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.1ms | Allocations: 10963)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000e380>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:40:36 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 7590)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 7941)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.7ms | Allocations: 12535)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000e3f8>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:40:36 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (6.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (5.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 16542)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 27560)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 16.8ms | Allocations: 75865)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000e6a0>
+Did you mean?  @incident):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= incident.title %>
+    14:         <%= incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:41:24 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 30.6ms | Allocations: 13086)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 13251)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 11.2ms | Allocations: 34322)
+
+
+  
+ActionView::Template::Error (undefined method `title' for Incident:Class):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= Incident.title %>
+    14:         <%= Incident.address %>
+    15:         <%= Incident.incident_type %>
+    16:         <%= Incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:41:25 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 5678)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5785)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.8ms | Allocations: 8543)
+
+
+  
+ActionView::Template::Error (undefined method `title' for Incident:Class):
+    10:     <div class="card w-75">
+    11:       <div class="card-body">
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= Incident.title %>
+    14:         <%= Incident.address %>
+    15:         <%= Incident.incident_type %>
+    16:         <%= Incident.time %>
+  
+app/views/incidents/show.html.erb:13
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:42:00 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.5ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 6741)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6865)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.4ms | Allocations: 10300)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `incident' for #<ActionView::Base:0x0000000000b338>
+Did you mean?  @incident):
+    12:         <h5 class="card-title">General information</h5>
+    13:         <%= @incident.title %>
+    14:         <%= @incident.address %>
+    15:         <%= incident.incident_type %>
+    16:         <%= incident.time %>
+    17:         <%= incident.date %>
+    18:         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+app/views/incidents/show.html.erb:15
+Started GET "/incidents/7" for ::1 at 2022-06-08 01:42:15 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.8ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.9ms | Allocations: 1771)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 56612)
+Completed 200 OK in 91ms (Views: 83.9ms | ActiveRecord: 2.3ms | Allocations: 60208)
+
+
+Started GET "/incidents/new" for ::1 at 2022-06-08 01:42:24 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 34.9ms | Allocations: 30135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1233)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 41919)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 2.4ms | Allocations: 44318)
+
+
+Started GET "/incidents/js/jquery.min.js" for ::1 at 2022-06-08 01:42:24 +0100
+Started GET "/incidents/js/popper.js" for ::1 at 2022-06-08 01:42:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for ::1 at 2022-06-08 01:42:24 +0100
+Started GET "/incidents/js/main.js" for ::1 at 2022-06-08 01:42:24 +0100
+Started GET "/incidents/js/bootstrap.min.js" for ::1 at 2022-06-08 01:42:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for ::1 at 2022-06-08 01:42:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started POST "/incidents" for ::1 at 2022-06-08 01:42:35 +0100
+Processing by IncidentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "incident"=>{"title"=>"incident copacabana", "incident_type"=>"assault", "time(1i)"=>"2022", "time(2i)"=>"6", "time(3i)"=>"8", "time(4i)"=>"00", "time(5i)"=>"42", "date(1i)"=>"2022", "date(2i)"=>"6", "date(3i)"=>"8", "description"=>"ocorreu um assalto na praia de copacabana"}, "commit"=>"Create Incident"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mIncident Create (1.3ms)[0m  [1m[32mINSERT INTO "incidents" ("title", "incident_type", "description", "time", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "incident copacabana"], ["incident_type", "assault"], ["description", "ocorreu um assalto na praia de copacabana"], ["time", "2022-06-08 00:42:00"], ["date", "2022-06-08"], ["created_at", "2022-06-08 00:42:35.802703"], ["updated_at", "2022-06-08 00:42:35.802703"]]
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incidents_controller.rb:29:in `create'
+Redirected to http://localhost:3000/incidents/8
+Completed 302 Found in 15ms (ActiveRecord: 4.7ms | Allocations: 5663)
+
+
+Started GET "/incidents/8" for ::1 at 2022-06-08 01:42:35 +0100
+Processing by IncidentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (0.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE "incidents"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/incidents_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 8], ["record_type", "Incident"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/incidents/show.html.erb:5
+  Rendered incidents/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 1247)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 13563)
+Completed 200 OK in 26ms (Views: 18.9ms | ActiveRecord: 2.4ms | Allocations: 16103)
+
+
+Started GET "/incidents" for ::1 at 2022-06-08 01:43:23 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.0ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1212)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 13568)
+Completed 200 OK in 27ms (Views: 19.6ms | ActiveRecord: 2.9ms | Allocations: 16558)
+
+
+Started GET "/incidents/new" for ::1 at 2022-06-08 01:43:32 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 27.7ms | Allocations: 18318)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1217)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 30063)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 0.9ms | Allocations: 32516)
+
+
+Started GET "/incidents/js/jquery.min.js" for ::1 at 2022-06-08 01:43:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for ::1 at 2022-06-08 01:43:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for ::1 at 2022-06-08 01:43:32 +0100
+Started GET "/incidents/js/popper.js" for ::1 at 2022-06-08 01:43:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for ::1 at 2022-06-08 01:43:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for ::1 at 2022-06-08 01:43:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  

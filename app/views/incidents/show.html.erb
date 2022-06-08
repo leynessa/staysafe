@@ -1,35 +1,36 @@
-
 <div class="container-fluid">
-<!-- Content here -->
-<h1>Yours incidents reported</h1>
-<div class='incidents-photo'>
-<%= cl_image_tag @incident.photo.key, height: 400, width: 300, crop: :thumb %>
-</div>
-<div class="information">
-  <h1>General information</h1>
-  <div class="incidents"></div>
-  <div class="card w-75">
-  <div class="card-body">
-    <h5 class="card-title">General information</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Button</a>
+  <!-- Content here -->
+  <h1>Yours incidents reported</h1>
+  <div class='incidents-photo'>
+    <%= cl_image_tag @incident.photo.key, height: 400, width: 300, crop: :thumb %>
   </div>
-</div>
-
-<div class="card w-50">
-  <div class="card-body">
-    <h5 class="card-title">Description</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Button</a>
+  <div class="information">
+    <h1>General information</h1>
+    <div class="incidents"></div>
+    <div class="card w-75">
+      <div class="card-body">
+        <h5 class="card-title">General information</h5>
+        <%= @incident.title %>
+        <%= @incident.address %>
+        <%= @incident.incident_type %>
+        <%= @incident.time %>
+        <%= @incident.date %>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Button</a>
+      </div>
+    </div>
+    <div class="card w-50">
+      <div class="card-body">
+        <h5 class="card-title">Description</h5>
+        <%= @incident.description %>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Button</a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-
-<div style="width: 100%; height: 600px;"
+  <div style="width: 100%; height: 600px;"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
-
-
 </div>
