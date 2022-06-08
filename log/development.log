@@ -50003,3 +50003,2834 @@ Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 119
 
 
 >>>>>>> 641f60585583ab69ba6afa06bd7f3000baf3c7c3
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:50:48 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 913.0ms | Allocations: 33146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 161.2ms | Allocations: 1802)
+  Rendered shared/_flashes.html.erb (Duration: 7.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12141.5ms | Allocations: 112220)
+Completed 200 OK in 12457ms (Views: 12200.6ms | ActiveRecord: 31.8ms | Allocations: 133130)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:51:01 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:51:01 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:51:01 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:51:01 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:51:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-06-07 22:51:37 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.1ms | Allocations: 714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 106.5ms | Allocations: 2769)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 1166.8ms | Allocations: 14872)
+Completed 200 OK in 1209ms (Views: 1178.4ms | ActiveRecord: 1.1ms | Allocations: 16290)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2022-06-07 22:51:59 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 68ms (ActiveRecord: 1.0ms | Allocations: 3729)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-07 22:51:59 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 59.7ms | Allocations: 866)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 30)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 931.4ms | Allocations: 12362)
+Completed 200 OK in 934ms (Views: 933.0ms | ActiveRecord: 0.0ms | Allocations: 12909)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-07 22:52:01 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 8.4ms | Allocations: 660)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 112.4ms | Allocations: 11603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 40.1ms | Allocations: 794)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 1040.6ms | Allocations: 23685)
+Completed 200 OK in 1077ms (Views: 1065.2ms | ActiveRecord: 0.0ms | Allocations: 25987)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-07 23:56:25 -0300
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.3ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 720.8ms | Allocations: 21036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 69.9ms | Allocations: 1238)
+  Rendered shared/_flashes.html.erb (Duration: 6.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 7769.3ms | Allocations: 77553)
+Completed 200 OK in 7927ms (Views: 7843.6ms | ActiveRecord: 20.3ms | Allocations: 88144)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-07 23:57:42 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.3ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 92.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1672.1ms | Allocations: 21065)
+Completed 200 OK in 1679ms (Views: 1676.3ms | ActiveRecord: 0.0ms | Allocations: 21901)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-07 23:58:25 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.0ms | Allocations: 745)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 697.7ms | Allocations: 21034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 55.4ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 4.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10901.2ms | Allocations: 77773)
+Completed 200 OK in 11392ms (Views: 11177.9ms | ActiveRecord: 65.9ms | Allocations: 88153)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-07 23:59:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 93.8ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1484.5ms | Allocations: 21090)
+Completed 200 OK in 1488ms (Views: 1486.4ms | ActiveRecord: 0.0ms | Allocations: 21926)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:14:46 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.1ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1020.9ms | Allocations: 21125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 147.9ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 11.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12098.1ms | Allocations: 77869)
+Completed 200 OK in 12419ms (Views: 12302.4ms | ActiveRecord: 32.2ms | Allocations: 88246)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:15:26 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 9132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 89.5ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2298.6ms | Allocations: 21076)
+Completed 200 OK in 2303ms (Views: 2301.0ms | ActiveRecord: 0.0ms | Allocations: 21926)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:16:12 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.8ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 668.9ms | Allocations: 20989)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 148.8ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 11.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9917.4ms | Allocations: 77622)
+Completed 200 OK in 10225ms (Views: 9986.3ms | ActiveRecord: 40.2ms | Allocations: 88164)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:18:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 9098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 37.7ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1843.9ms | Allocations: 21006)
+Completed 200 OK in 1847ms (Views: 1845.4ms | ActiveRecord: 0.0ms | Allocations: 21797)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:19:02 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.5ms | Allocations: 8959)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 37.0ms | Allocations: 746)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1390.2ms | Allocations: 20774)
+Completed 200 OK in 1393ms (Views: 1391.6ms | ActiveRecord: 0.0ms | Allocations: 21474)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:21:01 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.8ms | Allocations: 691)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 993.2ms | Allocations: 21129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 103.4ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 6.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.0ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10750.5ms | Allocations: 77641)
+Completed 200 OK in 10935ms (Views: 10852.6ms | ActiveRecord: 19.3ms | Allocations: 88148)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:21:53 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 98.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2372.2ms | Allocations: 21067)
+Completed 200 OK in 2375ms (Views: 2374.0ms | ActiveRecord: 0.0ms | Allocations: 21919)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:22:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 8955)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 93.3ms | Allocations: 746)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2278.6ms | Allocations: 20774)
+Completed 200 OK in 2282ms (Views: 2280.6ms | ActiveRecord: 0.0ms | Allocations: 21475)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:23:44 -0300
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 13.0ms | Allocations: 745)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 973.4ms | Allocations: 21126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 159.1ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 11.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 11.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10202.4ms | Allocations: 77830)
+Completed 200 OK in 10564ms (Views: 10388.5ms | ActiveRecord: 38.0ms | Allocations: 88157)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:24:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 48.4ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1700.6ms | Allocations: 21067)
+Completed 200 OK in 1703ms (Views: 1702.3ms | ActiveRecord: 0.0ms | Allocations: 21919)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:25:48 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.7ms | Allocations: 745)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 896.7ms | Allocations: 21128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 109.1ms | Allocations: 1238)
+  Rendered shared/_flashes.html.erb (Duration: 7.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9711.5ms | Allocations: 77637)
+Completed 200 OK in 10011ms (Views: 9869.0ms | ActiveRecord: 41.2ms | Allocations: 88052)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:26:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 65.9ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1945.8ms | Allocations: 21067)
+Completed 200 OK in 1950ms (Views: 1947.8ms | ActiveRecord: 0.0ms | Allocations: 21919)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:27:32 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.7ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1117.4ms | Allocations: 21132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 94.1ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 4.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9027.6ms | Allocations: 77704)
+Completed 200 OK in 9278ms (Views: 9153.2ms | ActiveRecord: 20.2ms | Allocations: 88251)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:29:05 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 9132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 77.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2148.4ms | Allocations: 21073)
+Completed 200 OK in 2152ms (Views: 2150.2ms | ActiveRecord: 0.0ms | Allocations: 21909)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:30:28 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 12.2ms | Allocations: 740)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 519.6ms | Allocations: 20893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 74.2ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 7.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10965.8ms | Allocations: 76914)
+Completed 200 OK in 11074ms (Views: 11023.0ms | ActiveRecord: 5.6ms | Allocations: 87156)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:31:49 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 62.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2133.6ms | Allocations: 21067)
+Completed 200 OK in 2137ms (Views: 2135.3ms | ActiveRecord: 0.0ms | Allocations: 21919)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:32:41 -0300
+  [1m[35m (34.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.3ms | Allocations: 691)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1049.7ms | Allocations: 21101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 72.7ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 4.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11313.4ms | Allocations: 77651)
+Completed 200 OK in 11625ms (Views: 11494.1ms | ActiveRecord: 35.5ms | Allocations: 88157)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:33:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 95.5ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1410.6ms | Allocations: 21063)
+Completed 200 OK in 1415ms (Views: 1412.7ms | ActiveRecord: 0.0ms | Allocations: 21915)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:34:11 -0300
+  [1m[35m (30.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.1ms | Allocations: 691)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 955.8ms | Allocations: 21102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 146.4ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 10.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 11.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10036.8ms | Allocations: 77490)
+Completed 200 OK in 10351ms (Views: 10205.7ms | ActiveRecord: 10.2ms | Allocations: 88037)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:36:02 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.5ms | Allocations: 724)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 793.9ms | Allocations: 21041)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 107.9ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 9.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11132.8ms | Allocations: 77799)
+Completed 200 OK in 11503ms (Views: 11350.1ms | ActiveRecord: 39.8ms | Allocations: 88266)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:36:46 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 9124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 69.7ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1187.0ms | Allocations: 21061)
+Completed 200 OK in 1190ms (Views: 1188.9ms | ActiveRecord: 0.0ms | Allocations: 21897)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 01:37:32 -0300
+  [1m[35m (28.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.5ms | Allocations: 691)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 944.4ms | Allocations: 21098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 122.2ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 7.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10914.4ms | Allocations: 77617)
+Completed 200 OK in 11268ms (Views: 11095.8ms | ActiveRecord: 41.5ms | Allocations: 88144)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:38:33 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 155)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 52.5ms | Allocations: 7726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 115.0ms | Allocations: 793)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 2554.7ms | Allocations: 19809)
+Completed 200 OK in 2603ms (Views: 2600.6ms | ActiveRecord: 0.0ms | Allocations: 21435)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:40:43 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 6782)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 60.6ms | Allocations: 746)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1606.8ms | Allocations: 18600)
+Completed 200 OK in 1610ms (Views: 1609.2ms | ActiveRecord: 0.0ms | Allocations: 19260)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:41:36 -0300
+  [1m[35m (14.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.2ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 868.7ms | Allocations: 18744)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 70.1ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 8.5ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9759.6ms | Allocations: 75546)
+Completed 200 OK in 9993ms (Views: 9926.9ms | ActiveRecord: 5.7ms | Allocations: 85588)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:44:27 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.2ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1007.4ms | Allocations: 18827)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 99.6ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 12.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 9.0ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10166.2ms | Allocations: 75681)
+Completed 200 OK in 10442ms (Views: 10363.6ms | ActiveRecord: 10.0ms | Allocations: 85687)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:45:16 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 6936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 111.0ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1873.9ms | Allocations: 18890)
+Completed 200 OK in 1878ms (Views: 1876.3ms | ActiveRecord: 0.0ms | Allocations: 19660)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:46:52 -0300
+  [1m[35m (36.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.2ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 437.3ms | Allocations: 18655)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 69.4ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 3.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10134.4ms | Allocations: 75598)
+Completed 200 OK in 10437ms (Views: 10317.3ms | ActiveRecord: 37.1ms | Allocations: 85641)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:48:25 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 82)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 6912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 66.9ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2413.3ms | Allocations: 18832)
+Completed 200 OK in 2416ms (Views: 2414.9ms | ActiveRecord: 0.0ms | Allocations: 19544)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:49:44 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.3ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 765.4ms | Allocations: 18795)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 78.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 5.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11610.0ms | Allocations: 75444)
+Completed 200 OK in 11873ms (Views: 11757.4ms | ActiveRecord: 8.2ms | Allocations: 85617)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:53:28 -0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.9ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 839.0ms | Allocations: 18765)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 123.0ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10431.7ms | Allocations: 75585)
+Completed 200 OK in 10600ms (Views: 10495.5ms | ActiveRecord: 19.0ms | Allocations: 85572)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:54:59 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 6938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 35.4ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1938.4ms | Allocations: 18892)
+Completed 200 OK in 1941ms (Views: 1939.6ms | ActiveRecord: 0.0ms | Allocations: 19662)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:56:21 -0300
+  [1m[35m (17.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.1ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1038.8ms | Allocations: 18801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 53.1ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 5.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11598.7ms | Allocations: 75344)
+Completed 200 OK in 11843ms (Views: 11771.9ms | ActiveRecord: 5.1ms | Allocations: 85522)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:57:32 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 6938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 30.3ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1795.9ms | Allocations: 18890)
+Completed 200 OK in 1798ms (Views: 1797.1ms | ActiveRecord: 0.0ms | Allocations: 19644)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:58:35 -0300
+  [1m[35m (17.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.5ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 718.2ms | Allocations: 18686)
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:58:46 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6799)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 52.1ms | Allocations: 2189)
+  Rendered shared/_navbar.html.erb (Duration: 30.9ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 2.6ms | Allocations: 226)
+  Rendered shared/_flashes.html.erb (Duration: 2.2ms | Allocations: 231)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 127)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 1607.7ms | Allocations: 33105)
+  Rendered layout layouts/application.html.erb (Duration: 12081.9ms | Allocations: 96900)
+Completed 200 OK in 1614ms (Views: 1612.7ms | ActiveRecord: 0.0ms | Allocations: 33977)
+
+
+Completed 200 OK in 12241ms (Views: 12170.1ms | ActiveRecord: 6.6ms | Allocations: 107162)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 01:59:52 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 6939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 113.4ms | Allocations: 758)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2798.7ms | Allocations: 18892)
+Completed 200 OK in 2807ms (Views: 2804.7ms | ActiveRecord: 0.0ms | Allocations: 19647)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:00:48 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.9ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1043.2ms | Allocations: 18806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 122.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 12.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 9.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11781.4ms | Allocations: 75553)
+Completed 200 OK in 12069ms (Views: 11977.5ms | ActiveRecord: 7.8ms | Allocations: 85616)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:01:20 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 6930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 91.9ms | Allocations: 758)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2280.9ms | Allocations: 19041)
+Completed 200 OK in 2284ms (Views: 2282.9ms | ActiveRecord: 0.0ms | Allocations: 19811)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:02:20 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.3ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 634.0ms | Allocations: 18658)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 69.6ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10376.9ms | Allocations: 75458)
+Completed 200 OK in 10637ms (Views: 10519.2ms | ActiveRecord: 10.1ms | Allocations: 85446)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:03:59 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 82)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 6902)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 95.8ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2345.3ms | Allocations: 18821)
+Completed 200 OK in 2349ms (Views: 2347.5ms | ActiveRecord: 0.0ms | Allocations: 19533)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:05:37 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 12.3ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 883.2ms | Allocations: 18749)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 75.3ms | Allocations: 1227)
+  Rendered shared/_flashes.html.erb (Duration: 7.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 12.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 47775.4ms | Allocations: 206164)
+Completed 200 OK in 48052ms (Views: 47974.5ms | ActiveRecord: 5.3ms | Allocations: 216269)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:07:47 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 6942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 110.0ms | Allocations: 761)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2637.6ms | Allocations: 18898)
+Completed 200 OK in 2641ms (Views: 2639.9ms | ActiveRecord: 0.0ms | Allocations: 19668)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:08:36 -0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.0ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 739.3ms | Allocations: 18718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 120.8ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11483.0ms | Allocations: 75523)
+Completed 200 OK in 11652ms (Views: 11586.5ms | ActiveRecord: 6.2ms | Allocations: 85566)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:12:45 -0300
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.2ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1078.1ms | Allocations: 18808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 89.1ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11151.1ms | Allocations: 75535)
+Completed 200 OK in 11461ms (Views: 11348.4ms | ActiveRecord: 8.7ms | Allocations: 85598)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:14:03 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 6939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 71.4ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1754.5ms | Allocations: 18892)
+Completed 200 OK in 1770ms (Views: 1756.2ms | ActiveRecord: 0.0ms | Allocations: 19666)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:15:02 -0300
+  [1m[35m (18.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.0ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 983.4ms | Allocations: 18821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 67.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 4.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.0ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10840.0ms | Allocations: 75614)
+Completed 200 OK in 11031ms (Views: 10949.5ms | ActiveRecord: 24.7ms | Allocations: 85608)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:19:07 -0300
+  [1m[35m (19.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.2ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 775.7ms | Allocations: 18685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 123.9ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 9.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11054.0ms | Allocations: 75348)
+Completed 200 OK in 11208ms (Views: 11137.3ms | ActiveRecord: 5.2ms | Allocations: 85441)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:25:03 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 8.6ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1080.5ms | Allocations: 18881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 88.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11745.8ms | Allocations: 75534)
+Completed 200 OK in 11920ms (Views: 11849.9ms | ActiveRecord: 6.5ms | Allocations: 85597)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:25:44 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.7ms | Allocations: 6930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 87.1ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1846.4ms | Allocations: 18884)
+Completed 200 OK in 1850ms (Views: 1848.4ms | ActiveRecord: 0.0ms | Allocations: 19654)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:26:42 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.4ms | Allocations: 654)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 791.0ms | Allocations: 18685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 88.8ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11807.2ms | Allocations: 75597)
+Completed 200 OK in 12138ms (Views: 12047.2ms | ActiveRecord: 6.6ms | Allocations: 85527)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:27:18 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 6930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 95.4ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1900.4ms | Allocations: 18884)
+Completed 200 OK in 1904ms (Views: 1902.6ms | ActiveRecord: 0.0ms | Allocations: 19654)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:28:26 -0300
+  [1m[35m (23.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.4ms | Allocations: 654)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 521.3ms | Allocations: 18710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 119.4ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 10.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 13.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11559.2ms | Allocations: 75562)
+Completed 200 OK in 11798ms (Views: 11703.8ms | ActiveRecord: 25.1ms | Allocations: 85570)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:30:55 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 13.4ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 837.4ms | Allocations: 18717)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 113.0ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10670.9ms | Allocations: 75486)
+Completed 200 OK in 10924ms (Views: 10815.1ms | ActiveRecord: 6.4ms | Allocations: 85531)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:31:56 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 6938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 90.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2101.8ms | Allocations: 18890)
+Completed 200 OK in 2106ms (Views: 2103.9ms | ActiveRecord: 0.0ms | Allocations: 19644)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:32:43 -0300
+  [1m[35m (27.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.8ms | Allocations: 650)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 866.7ms | Allocations: 21637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 165.2ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 12.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 12.8ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 10583.3ms | Allocations: 77575)
+Completed 200 OK in 10844ms (Views: 10764.1ms | ActiveRecord: 7.2ms | Allocations: 87692)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:34:18 -0300
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.9ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 781.6ms | Allocations: 18717)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 138.2ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 11.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 11.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10884.0ms | Allocations: 75524)
+Completed 200 OK in 11236ms (Views: 11105.2ms | ActiveRecord: 9.2ms | Allocations: 85564)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:35:07 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 31.8ms | Allocations: 6938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 90.6ms | Allocations: 758)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2128.2ms | Allocations: 18891)
+Completed 200 OK in 2133ms (Views: 2131.0ms | ActiveRecord: 0.0ms | Allocations: 19645)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:36:31 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.9ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1020.8ms | Allocations: 18806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 95.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 9.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10818.3ms | Allocations: 75512)
+Completed 200 OK in 11123ms (Views: 11011.7ms | ActiveRecord: 39.1ms | Allocations: 85499)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:38:31 -0300
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.4ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 983.4ms | Allocations: 18747)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 100.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12089.1ms | Allocations: 75391)
+Completed 200 OK in 12304ms (Views: 12191.1ms | ActiveRecord: 11.0ms | Allocations: 85454)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:40:53 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 6938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 54.5ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2236.0ms | Allocations: 18892)
+Completed 200 OK in 2239ms (Views: 2237.9ms | ActiveRecord: 0.0ms | Allocations: 19662)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:41:55 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.4ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1084.7ms | Allocations: 18849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 115.0ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12010.4ms | Allocations: 75629)
+Completed 200 OK in 12357ms (Views: 12244.5ms | ActiveRecord: 8.1ms | Allocations: 85689)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:42:20 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.8ms | Allocations: 6938)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 97.2ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2251.5ms | Allocations: 18892)
+Completed 200 OK in 2255ms (Views: 2253.4ms | ActiveRecord: 0.0ms | Allocations: 19662)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:46:40 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.8ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1031.2ms | Allocations: 18829)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 85.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 5.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 9.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11696.9ms | Allocations: 75499)
+Completed 200 OK in 11906ms (Views: 11833.0ms | ActiveRecord: 5.9ms | Allocations: 85542)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:47:39 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.5ms | Allocations: 6930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 70.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1970.7ms | Allocations: 18884)
+Completed 200 OK in 1974ms (Views: 1972.4ms | ActiveRecord: 0.0ms | Allocations: 19654)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:48:01 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 6762)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 97.0ms | Allocations: 746)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2372.4ms | Allocations: 18720)
+Completed 200 OK in 2376ms (Views: 2374.4ms | ActiveRecord: 0.0ms | Allocations: 19339)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:49:16 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.6ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 788.7ms | Allocations: 18742)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 148.8ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 5.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12550.1ms | Allocations: 75481)
+Completed 200 OK in 12862ms (Views: 12735.6ms | ActiveRecord: 11.2ms | Allocations: 85524)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:50:39 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.3ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 996.2ms | Allocations: 18806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 100.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 10.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12053.1ms | Allocations: 75530)
+Completed 200 OK in 12358ms (Views: 12239.1ms | ActiveRecord: 7.0ms | Allocations: 85557)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:51:38 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.4ms | Allocations: 6930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 116.8ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2803.5ms | Allocations: 18888)
+Completed 200 OK in 2807ms (Views: 2805.4ms | ActiveRecord: 0.0ms | Allocations: 19658)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:52:31 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 8.0ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 715.0ms | Allocations: 18720)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 130.6ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10291.1ms | Allocations: 75478)
+Completed 200 OK in 10516ms (Views: 10394.2ms | ActiveRecord: 31.3ms | Allocations: 85519)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:54:54 -0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.4ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 522.9ms | Allocations: 18680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 95.6ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 7348.3ms | Allocations: 75365)
+Completed 200 OK in 7567ms (Views: 7470.1ms | ActiveRecord: 18.3ms | Allocations: 85575)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:55:18 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 6931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 45.7ms | Allocations: 758)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2009.5ms | Allocations: 18885)
+Completed 200 OK in 2028ms (Views: 2011.1ms | ActiveRecord: 0.0ms | Allocations: 19658)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:56:18 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.1ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 998.5ms | Allocations: 18806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 96.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 9.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11346.3ms | Allocations: 75566)
+Completed 200 OK in 11643ms (Views: 11546.6ms | ActiveRecord: 6.9ms | Allocations: 85606)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 02:58:08 -0300
+  [1m[35m (34.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.8ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 827.5ms | Allocations: 18823)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 88.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11397.5ms | Allocations: 75485)
+Completed 200 OK in 11714ms (Views: 11610.5ms | ActiveRecord: 10.9ms | Allocations: 85548)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:01:40 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.4ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 892.0ms | Allocations: 18828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 94.2ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11969.2ms | Allocations: 75532)
+Completed 200 OK in 12223ms (Views: 12115.4ms | ActiveRecord: 8.4ms | Allocations: 85559)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:02:32 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 6931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 57.7ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1781.0ms | Allocations: 18884)
+Completed 200 OK in 1795ms (Views: 1793.7ms | ActiveRecord: 0.0ms | Allocations: 19657)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:03:26 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.8ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 868.8ms | Allocations: 18802)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 94.4ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11870.6ms | Allocations: 75564)
+Completed 200 OK in 12183ms (Views: 12085.3ms | ActiveRecord: 6.3ms | Allocations: 85531)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:05:05 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.1ms | Allocations: 654)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1031.3ms | Allocations: 18901)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 94.3ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.0ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11083.8ms | Allocations: 75812)
+Completed 200 OK in 11319ms (Views: 11242.6ms | ActiveRecord: 6.6ms | Allocations: 85834)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:07:58 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.1ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1037.4ms | Allocations: 18825)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 96.0ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 8.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 12634.9ms | Allocations: 75617)
+Completed 200 OK in 12996ms (Views: 12863.8ms | ActiveRecord: 10.9ms | Allocations: 85562)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:09:29 -0300
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.1ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 897.6ms | Allocations: 18801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 96.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 12.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11152.4ms | Allocations: 75538)
+Completed 200 OK in 11426ms (Views: 11342.1ms | ActiveRecord: 7.7ms | Allocations: 85505)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:11:05 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.5ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 946.9ms | Allocations: 18769)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 150.0ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 9.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11720.5ms | Allocations: 75628)
+Completed 200 OK in 12072ms (Views: 11951.7ms | ActiveRecord: 10.8ms | Allocations: 85718)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:13:04 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.3ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 868.2ms | Allocations: 18745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 83.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 7.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11357.7ms | Allocations: 75429)
+Completed 200 OK in 11525ms (Views: 11430.1ms | ActiveRecord: 23.6ms | Allocations: 85529)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:16:38 -0300
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 15.2ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1210.1ms | Allocations: 18833)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 92.9ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 9.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 19145.3ms | Allocations: 75319)
+Completed 200 OK in 19530ms (Views: 19280.5ms | ActiveRecord: 25.7ms | Allocations: 85462)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:18:50 -0300
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 15.8ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1299.4ms | Allocations: 18882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 79.0ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 17285.1ms | Allocations: 75593)
+Completed 200 OK in 17758ms (Views: 17545.8ms | ActiveRecord: 21.6ms | Allocations: 85531)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:20:44 -0300
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 19.5ms | Allocations: 601)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1713.9ms | Allocations: 18991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 215.4ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 18.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 18.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 18882.3ms | Allocations: 75680)
+Completed 200 OK in 19395ms (Views: 19210.4ms | ActiveRecord: 19.6ms | Allocations: 85659)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:22:51 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:22:53 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 67.7ms | Allocations: 734)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1696.9ms | Allocations: 24957)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 562.1ms | Allocations: 14749)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 97.4ms | Allocations: 1726)
+  Rendered shared/_navbar.html.erb (Duration: 112.7ms | Allocations: 2189)
+  Rendered shared/_flashes.html.erb (Duration: 16.7ms | Allocations: 274)
+  Rendered shared/_flashes.html.erb (Duration: 9.2ms | Allocations: 231)
+  Rendered shared/_footer.html.erb (Duration: 10.9ms | Allocations: 127)
+  Rendered shared/_footer.html.erb (Duration: 8.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 9283.5ms | Allocations: 136485)
+  Rendered layout layouts/application.html.erb (Duration: 7977.0ms | Allocations: 121162)
+Completed 200 OK in 9721ms (Views: 9551.7ms | ActiveRecord: 13.1ms | Allocations: 146542)
+
+
+Completed 200 OK in 8056ms (Views: 8052.6ms | ActiveRecord: 0.0ms | Allocations: 122145)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:27:00 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:27:00 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:27:00 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:27:00 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:27:00 -0300
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 246)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 259.4ms | Allocations: 38494)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 137)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 137)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 292.4ms | Allocations: 45463)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 291.1ms | Allocations: 45868)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 305.0ms | Allocations: 46305)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 304.1ms | Allocations: 46420)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 389.3ms | Allocations: 26130)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 106412.7ms | Allocations: 551128)
+Completed 200 OK in 106499ms (Views: 106494.4ms | Allocations: 555391)
+
+
+  Rendered shared/_navbar.html.erb (Duration: 328.5ms | Allocations: 8429)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 106740.0ms | Allocations: 560177)
+Completed 200 OK in 106822ms (Views: 106818.2ms | Allocations: 563553)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 74.8ms | Allocations: 6850)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered shared/_navbar.html.erb (Duration: 49.9ms | Allocations: 6203)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 109572.5ms | Allocations: 666425)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 109643ms (Views: 109639.2ms | Allocations: 670944)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 109594.9ms | Allocations: 669182)
+Completed 200 OK in 109680ms (Views: 109674.6ms | Allocations: 673029)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 107.2ms | Allocations: 747)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 112507.4ms | Allocations: 690225)
+Completed 200 OK in 112638ms (Views: 112604.7ms | Allocations: 695728)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:31:10 -0300
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.7ms | Allocations: 691)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1601.8ms | Allocations: 21271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 212.2ms | Allocations: 1225)
+  Rendered shared/_flashes.html.erb (Duration: 23.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 21.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 30698.2ms | Allocations: 97906)
+Completed 200 OK in 31298ms (Views: 31045.5ms | ActiveRecord: 65.7ms | Allocations: 108209)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:31:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 36.2ms | Allocations: 9118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 122.6ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2188.8ms | Allocations: 29656)
+Completed 200 OK in 2197ms (Views: 2194.0ms | ActiveRecord: 0.0ms | Allocations: 30506)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 03:31:57 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 206)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 64.3ms | Allocations: 4596)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 188.7ms | Allocations: 795)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4412.6ms | Allocations: 16718)
+Completed 200 OK in 4492ms (Views: 4431.8ms | ActiveRecord: 0.0ms | Allocations: 18407)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:38:59 -0300
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 14.8ms | Allocations: 568)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1139.9ms | Allocations: 17571)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 209.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 19.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 17.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 16669.5ms | Allocations: 73464)
+Completed 200 OK in 16873ms (Views: 16777.3ms | ActiveRecord: 10.7ms | Allocations: 82243)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:40:27 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 82)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 6906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 115.1ms | Allocations: 757)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2886.8ms | Allocations: 18834)
+Completed 200 OK in 2893ms (Views: 2890.1ms | ActiveRecord: 0.0ms | Allocations: 19547)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:41:37 -0300
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:41:37 -0300
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1387.4ms | Allocations: 23670)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1407.1ms | Allocations: 24965)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 29.2ms | Allocations: 1750)
+  Rendered shared/_navbar.html.erb (Duration: 33.0ms | Allocations: 2170)
+  Rendered shared/_flashes.html.erb (Duration: 4.2ms | Allocations: 226)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 231)
+  Rendered shared/_footer.html.erb (Duration: 5.9ms | Allocations: 127)
+  Rendered shared/_footer.html.erb (Duration: 5.9ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 7066.9ms | Allocations: 132301)
+  Rendered layout layouts/application.html.erb (Duration: 7081.7ms | Allocations: 132706)
+Completed 200 OK in 7412ms (Views: 7175.5ms | ActiveRecord: 13.8ms | Allocations: 145144)
+
+
+Completed 200 OK in 7491ms (Views: 7227.6ms | ActiveRecord: 10.6ms | Allocations: 146862)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-06-08 03:41:57 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 42.0ms | Allocations: 9553)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 100.4ms | Allocations: 766)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 3735.4ms | Allocations: 21558)
+Completed 200 OK in 4343ms (Views: 3738.9ms | ActiveRecord: 0.0ms | Allocations: 27388)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-06-08 03:44:56 -0300
+  [1m[35m (22.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 03:45:05 -0300
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 24.5ms | Allocations: 568)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1154.7ms | Allocations: 17540)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 100.7ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 6.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 16933.5ms | Allocations: 73542)
+Completed 200 OK in 17182ms (Views: 17042.2ms | ActiveRecord: 18.4ms | Allocations: 82117)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 03:46:09 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 246)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 142.3ms | Allocations: 10061)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 145.8ms | Allocations: 793)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3956.9ms | Allocations: 22140)
+Completed 200 OK in 4046ms (Views: 4018.3ms | ActiveRecord: 0.0ms | Allocations: 24083)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 03:46:17 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 1511)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms | Allocations: 3134)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <head>
+  <meta charset="utf-8">
+  <title>STAYSAFE</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+</head>
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <!-- Jumbotron -->
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card-login cascading-right">
+            <div class="singcard-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Forgot your password?</h2>
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                    <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+                      <%= f.error_notification %>
+                      <div class="form-inputs">
+                        <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" } %>
+                      </div>
+                      <div class="form-actions">
+                        <%= f.button :submit, "Send me reset password instructions" %>
+                      </div>
+                    <% end %>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                      <%= render "devise/shared/links" %>
+                    </button>
+
+):
+1:    <head>
+2:      <meta charset="utf-8">
+3:      <title>STAYSAFE</title>
+4:      <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+5:    </head>
+6:    <!-- Section: Design Block -->
+7:    <section class="text-center text-lg-start">
+8:      <!-- Jumbotron -->
+9:      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+10:        <%= f.error_notification %>
+11:        <div class="container py-4">
+12:          <div class="row g-0 align-items-center">
+13:            <div class="col-lg-6 mb-5 mb-lg-0">
+14:              <div class="card-login cascading-right">
+15:                <div class="singcard-body p-5 shadow-5 text-center">
+16:                  <h2 class="fw-bold mb-5">Forgot your password?</h2>
+17:                  <form>
+18:                    <!-- 2 column grid layout with text inputs for the first and last names -->
+19:                    <div class="row">
+20:                      <div class="col-md-6 mb-4">
+21:                        <div class="form-outline">
+22:                          <input type="text" id="form3Example1" class="form-control" />
+23:                          <label class="form-label" for="form3Example1">First name</label>
+24:                        </div>
+25:                        <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+26:                          <%= f.error_notification %>
+27:                          <div class="form-inputs">
+28:                            <%= f.input :email,
+29:                    required: true,
+30:                    autofocus: true,
+31:                    input_html: { autocomplete: "email" } %>
+32:                          </div>
+33:                          <div class="form-actions">
+34:                            <%= f.button :submit, "Send me reset password instructions" %>
+35:                          </div>
+36:                        <% end %>
+37:                        <button type="submit" class="btn btn-primary btn-block mb-4">
+38:                          <%= render "devise/shared/links" %>
+39:                        </button>
+  
+app/views/devise/passwords/new.html.erb:42: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:42: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:42: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:42: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:42: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:42: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 03:50:12 -0300
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 86.5ms | Allocations: 1882)
+  Rendered layout layouts/application.html.erb (Duration: 91.0ms | Allocations: 2105)
+Completed 500 Internal Server Error in 502ms (ActiveRecord: 7.3ms | Allocations: 12048)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <head>
+  <meta charset="utf-8">
+  <title>STAYSAFE</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+</head>
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <!-- Jumbotron -->
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card-login cascading-right">
+            <div class="singcard-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Forgot your password?</h2>
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                    <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+                      <%= f.error_notification %>
+                      <div class="form-inputs">
+                        <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" } %>
+                      </div>
+                      <div class="form-actions">
+                        <%= f.button :submit, "Send me reset password instructions" %>
+                      </div>
+                    <% end %>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                      <%= render "devise/shared/links" %>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+):
+1:    <head>
+2:      <meta charset="utf-8">
+3:      <title>STAYSAFE</title>
+4:      <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+5:    </head>
+6:    <!-- Section: Design Block -->
+7:    <section class="text-center text-lg-start">
+8:      <!-- Jumbotron -->
+9:      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+10:        <%= f.error_notification %>
+11:        <div class="container py-4">
+12:          <div class="row g-0 align-items-center">
+13:            <div class="col-lg-6 mb-5 mb-lg-0">
+14:              <div class="card-login cascading-right">
+15:                <div class="singcard-body p-5 shadow-5 text-center">
+16:                  <h2 class="fw-bold mb-5">Forgot your password?</h2>
+17:                  <form>
+18:                    <!-- 2 column grid layout with text inputs for the first and last names -->
+19:                    <div class="row">
+20:                      <div class="col-md-6 mb-4">
+21:                        <div class="form-outline">
+22:                          <input type="text" id="form3Example1" class="form-control" />
+23:                          <label class="form-label" for="form3Example1">First name</label>
+24:                        </div>
+25:                        <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+26:                          <%= f.error_notification %>
+27:                          <div class="form-inputs">
+28:                            <%= f.input :email,
+29:                    required: true,
+30:                    autofocus: true,
+31:                    input_html: { autocomplete: "email" } %>
+32:                          </div>
+33:                          <div class="form-actions">
+34:                            <%= f.button :submit, "Send me reset password instructions" %>
+35:                          </div>
+36:                        <% end %>
+37:                        <button type="submit" class="btn btn-primary btn-block mb-4">
+38:                          <%= render "devise/shared/links" %>
+39:                        </button>
+40:                      </form>
+41:                    </div>
+42:                  </div>
+43:                </div>
+44:              </div>
+45:            </div>
+46:          </div>
+47:        </div>
+48:      </div>
+49:    </section>
+  
+app/views/devise/passwords/new.html.erb:52: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:52: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:52: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:52: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:52: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/passwords/new.html.erb:52: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 03:55:53 -0300
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1850)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2096)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 10.5ms | Allocations: 12106)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <head>
+  <meta charset="utf-8">
+  <title>STAY SAFE</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+</head>
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <!-- Jumbotron -->
+  <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= f.error_notification %>
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card-login cascading-right">
+            <div class="signcard-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Forgot your password?</h2>
+              <form>
+                <!-- Email input -->
+                <div class="form-inputs">
+                  <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" } %>
+                </div>
+                <div class="form-actions">
+                  <%= f.button :submit, "Send me reset password instructions" %>
+                </div>
+              <% end %>
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                <%= render "devise/shared/links" %>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
+):
+1:    <head>
+2:      <meta charset="utf-8">
+3:      <title>STAY SAFE</title>
+4:      <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+5:    </head>
+6:    <!-- Section: Design Block -->
+7:    <section class="text-center text-lg-start">
+8:      <!-- Jumbotron -->
+9:      <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+10:        <%= f.error_notification %>
+11:        <div class="container py-4">
+12:          <div class="row g-0 align-items-center">
+13:            <div class="col-lg-6 mb-5 mb-lg-0">
+14:              <div class="card-login cascading-right">
+15:                <div class="signcard-body p-5 shadow-5 text-center">
+16:                  <h2 class="fw-bold mb-5">Forgot your password?</h2>
+17:                  <form>
+18:                    <!-- Email input -->
+19:                    <div class="form-inputs">
+20:                      <%= f.input :email,
+21:                    required: true,
+22:                    autofocus: true,
+23:                    input_html: { autocomplete: "email" } %>
+24:                    </div>
+25:                    <div class="form-actions">
+26:                      <%= f.button :submit, "Send me reset password instructions" %>
+27:                    </div>
+28:                  <% end %>
+29:                  <button type="submit" class="btn btn-primary btn-block mb-4">
+30:                    <%= render "devise/shared/links" %>
+31:                  </button>
+32:                </form>
+33:              </div>
+34:            </div>
+35:          </div>
+36:        </div>
+37:      </div>
+38:    </section>
+39:    <% end %>
+  
+app/views/devise/passwords/new.html.erb:41: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:41: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:41: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:41: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:41: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:41: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 03:56:42 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1213)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 1324)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1985)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<section class="text-center text-lg-start">
+  <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= f.error_notification %>
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card-login cascading-right">
+            <div class="signcard-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Forgot your password?</h2>
+              <form>
+                <div class="form-inputs">
+                  <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" } %>
+                </div>
+                <div class="form-actions">
+                  <%= f.button :submit, "Send me reset password instructions" %>
+                </div>
+              <% end %>
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                <%= render "devise/shared/links" %>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
+):
+1:    
+2:    <section class="text-center text-lg-start">
+3:      <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+4:        <%= f.error_notification %>
+5:        <div class="container py-4">
+6:          <div class="row g-0 align-items-center">
+7:            <div class="col-lg-6 mb-5 mb-lg-0">
+8:              <div class="card-login cascading-right">
+9:                <div class="signcard-body p-5 shadow-5 text-center">
+10:                  <h2 class="fw-bold mb-5">Forgot your password?</h2>
+11:                  <form>
+12:                    <div class="form-inputs">
+13:                      <%= f.input :email,
+14:                    required: true,
+15:                    autofocus: true,
+16:                    input_html: { autocomplete: "email" } %>
+17:                    </div>
+18:                    <div class="form-actions">
+19:                      <%= f.button :submit, "Send me reset password instructions" %>
+20:                    </div>
+21:                  <% end %>
+22:                  <button type="submit" class="btn btn-primary btn-block mb-4">
+23:                    <%= render "devise/shared/links" %>
+24:                  </button>
+25:                </form>
+26:              </div>
+27:            </div>
+28:          </div>
+29:        </div>
+30:      </div>
+31:    </section>
+32:    <% end %>
+  
+app/views/devise/passwords/new.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/devise/passwords/new.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 03:59:43 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 658)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 351.3ms | Allocations: 16272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 32.6ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 2.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3989.6ms | Allocations: 72132)
+Completed 200 OK in 3991ms (Views: 3990.6ms | ActiveRecord: 0.0ms | Allocations: 72786)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:00:51 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3818)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 27.5ms | Allocations: 756)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 748.3ms | Allocations: 15687)
+Completed 200 OK in 754ms (Views: 750.7ms | ActiveRecord: 0.0ms | Allocations: 16400)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:02:15 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 739)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 235.6ms | Allocations: 15101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 32.4ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 2.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3757.2ms | Allocations: 71778)
+Completed 200 OK in 3854ms (Views: 3780.7ms | ActiveRecord: 3.3ms | Allocations: 81895)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:04:11 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 26.0ms | Allocations: 756)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 597.1ms | Allocations: 15667)
+Completed 200 OK in 599ms (Views: 598.2ms | ActiveRecord: 0.0ms | Allocations: 16381)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:04:38 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 738)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 229.6ms | Allocations: 15122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 34.0ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 3.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3457.2ms | Allocations: 71908)
+Completed 200 OK in 3560ms (Views: 3480.4ms | ActiveRecord: 10.3ms | Allocations: 81876)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:07:24 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 718)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 317.5ms | Allocations: 15157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 36.9ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 3.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3825.2ms | Allocations: 71700)
+Completed 200 OK in 3937ms (Views: 3857.5ms | ActiveRecord: 13.8ms | Allocations: 81952)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:08:00 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 21.1ms | Allocations: 756)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 634.3ms | Allocations: 15673)
+Completed 200 OK in 637ms (Views: 635.7ms | ActiveRecord: 0.0ms | Allocations: 16400)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:08:33 -0300
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 686)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 250.1ms | Allocations: 14975)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 33.3ms | Allocations: 1241)
+  Rendered shared/_flashes.html.erb (Duration: 2.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3803.4ms | Allocations: 71772)
+Completed 200 OK in 3894ms (Views: 3824.9ms | ActiveRecord: 9.7ms | Allocations: 81792)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:12:09 -0300
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.1ms | Allocations: 725)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 282.8ms | Allocations: 14883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 36.3ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 2.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3722.2ms | Allocations: 71792)
+Completed 200 OK in 3834ms (Views: 3753.5ms | ActiveRecord: 3.7ms | Allocations: 81760)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 04:12:32 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 37.2ms | Allocations: 10309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 21.2ms | Allocations: 793)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 563.9ms | Allocations: 22394)
+Completed 200 OK in 580ms (Views: 573.7ms | ActiveRecord: 0.0ms | Allocations: 24371)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:12:39 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 135)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3553)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 41.2ms | Allocations: 748)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 777.0ms | Allocations: 72888)
+Completed 200 OK in 781ms (Views: 780.5ms | ActiveRecord: 0.0ms | Allocations: 73783)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:14:11 -0300
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 725)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 236.0ms | Allocations: 14861)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 35.6ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 2.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3778.0ms | Allocations: 71552)
+Completed 200 OK in 3874ms (Views: 3801.6ms | ActiveRecord: 10.9ms | Allocations: 81733)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:16:07 -0300
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 745)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 246.1ms | Allocations: 22510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 47.2ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 7.5ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4031.9ms | Allocations: 79075)
+Completed 200 OK in 4134ms (Views: 4055.3ms | ActiveRecord: 9.7ms | Allocations: 89251)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:19:18 -0300
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 692)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 256.2ms | Allocations: 18633)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 79.4ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 3.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 4092.2ms | Allocations: 75351)
+Completed 200 OK in 4176ms (Views: 4113.8ms | ActiveRecord: 3.1ms | Allocations: 85439)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:20:07 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.0ms | Allocations: 138)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 19.0ms | Allocations: 7156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 30.3ms | Allocations: 758)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 625.3ms | Allocations: 19098)
+Completed 200 OK in 627ms (Views: 626.2ms | ActiveRecord: 0.0ms | Allocations: 19826)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:20:30 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.2ms | Allocations: 692)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 257.1ms | Allocations: 18628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 41.5ms | Allocations: 1236)
+  Rendered shared/_flashes.html.erb (Duration: 2.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3721.9ms | Allocations: 75247)
+Completed 200 OK in 3801ms (Views: 3743.7ms | ActiveRecord: 3.8ms | Allocations: 85366)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:21:44 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 745)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 248.5ms | Allocations: 14915)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 41.9ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 3.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3948.9ms | Allocations: 71705)
+Completed 200 OK in 4049ms (Views: 3972.2ms | ActiveRecord: 4.8ms | Allocations: 81673)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2022-06-08 04:22:40 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 746)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 302.0ms | Allocations: 14915)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 34.8ms | Allocations: 1237)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 3918.4ms | Allocations: 71548)
+Completed 200 OK in 4006ms (Views: 3939.6ms | ActiveRecord: 9.6ms | Allocations: 81720)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 04:22:55 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 45.3ms | Allocations: 10434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 22.6ms | Allocations: 793)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 618.6ms | Allocations: 22519)
+Completed 200 OK in 642ms (Views: 634.1ms | ActiveRecord: 0.0ms | Allocations: 24573)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-06-08 04:23:02 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 7377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 21.6ms | Allocations: 793)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 591.7ms | Allocations: 19475)
+Completed 200 OK in 607ms (Views: 606.6ms | ActiveRecord: 0.0ms | Allocations: 21077)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-06-08 04:23:09 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 9555)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 24.6ms | Allocations: 747)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 633.5ms | Allocations: 79610)
+Completed 200 OK in 639ms (Views: 635.7ms | ActiveRecord: 0.0ms | Allocations: 80435)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/pages/_sessions.scss"):
+  

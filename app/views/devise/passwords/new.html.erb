@@ -1,16 +1,34 @@
-<h2>Forgot your password?</h2>
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
-  <div class="form-inputs">
-    <%= f.input :email,
+<head>
+  <meta charset="utf-8">
+  <title>STAYSAFE</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/pages/_sessions.scss">
+</head>
+<!-- Section: Design Block -->
+<section class="text-center">
+  <!-- Jumbotron -->
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <h2 class="fw-bold mb-5">Forgot your password?</h2>
+        <form>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <%= f.input :email,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "email" } %>
+                placeholder: "Enter Email",
+                input_html: { autocomplete: "email" }%>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mb-4">
+            Send me reset password instructions
+          </button>
+          <button type="submit" class="btn btn-primary btn-block mb-4">
+            <%= render "devise/shared/links" %>
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
-  </div>
+</section>
 <% end %>
-<button type="submit" class="btn btn-primary btn-block mb-4">
-  <%= render "devise/shared/links" %>
-</button>
