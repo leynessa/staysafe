@@ -46926,3 +46926,1763 @@ Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-0
   
 ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
   
+Started GET "/incidents" for 127.0.0.1 at 2022-06-07 20:48:28 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIncident Load (2.6ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.4ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 6522)
+Started GET "/" for 127.0.0.1 at 2022-06-07 20:48:57 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.9ms | Allocations: 723)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 96.3ms | Allocations: 7916)
+  Rendered shared/_flashes.html.erb (Duration: 4.7ms | Allocations: 384)
+  Rendered shared/_navbar.html.erb (Duration: 124.8ms | Allocations: 9091)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered shared/_footer.html.erb (Duration: 5.9ms | Allocations: 554)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 31066.7ms | Allocations: 258561)
+  Rendered layout layouts/application.html.erb (Duration: 2167.2ms | Allocations: 100922)
+Completed 200 OK in 31470ms (Views: 31095.4ms | ActiveRecord: 69.9ms | Allocations: 276188)
+
+
+Completed 200 OK in 2220ms (Views: 2157.6ms | ActiveRecord: 22.6ms | Allocations: 102579)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-07 20:49:00 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 70.4ms | Allocations: 2700)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 513.7ms | Allocations: 23748)
+Completed 200 OK in 517ms (Views: 515.0ms | ActiveRecord: 1.0ms | Allocations: 24597)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:49:05 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 325.6ms | Allocations: 32321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 89.2ms | Allocations: 1357)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1530.2ms | Allocations: 44861)
+Completed 200 OK in 1567ms (Views: 1530.4ms | ActiveRecord: 4.0ms | Allocations: 47399)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:49:07 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:49:07 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:49:07 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:49:07 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:49:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:49:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:50:15 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 60.8ms | Allocations: 18331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 176.5ms | Allocations: 1351)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2214.8ms | Allocations: 30785)
+Completed 200 OK in 2241ms (Views: 2229.0ms | ActiveRecord: 2.3ms | Allocations: 32916)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:50:18 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:50:18 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:50:18 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:50:18 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:50:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:50:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:51:23 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1066.4ms | Allocations: 33249)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 163.5ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 22.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 13.0ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 11908.3ms | Allocations: 90686)
+Completed 200 OK in 12436ms (Views: 11974.2ms | ActiveRecord: 102.1ms | Allocations: 111584)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:51:37 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:51:37 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:51:37 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:51:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:51:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:51:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:52:32 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 34.9ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 211.5ms | Allocations: 1356)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2632.2ms | Allocations: 30889)
+Completed 200 OK in 2646ms (Views: 2634.5ms | ActiveRecord: 2.1ms | Allocations: 33107)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:52:35 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:52:35 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:52:35 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:52:35 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:52:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:52:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:53:35 -0300
+  [1m[35m (19.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 977.2ms | Allocations: 33199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 133.9ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 6.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10027.1ms | Allocations: 90596)
+Completed 200 OK in 10349ms (Views: 10061.3ms | ActiveRecord: 44.2ms | Allocations: 111526)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:53:47 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:53:47 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:53:47 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:53:47 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:53:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:53:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:55:13 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 33.9ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 198.6ms | Allocations: 1353)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2467.2ms | Allocations: 30885)
+Completed 200 OK in 2479ms (Views: 2469.8ms | ActiveRecord: 1.5ms | Allocations: 33103)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:55:16 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:55:16 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:55:16 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:55:16 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:55:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:55:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:56:07 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 41.9ms | Allocations: 18165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 182.7ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 2140.1ms | Allocations: 30563)
+Completed 200 OK in 2155ms (Views: 2142.6ms | ActiveRecord: 1.9ms | Allocations: 32476)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:56:09 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:56:09 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:56:09 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:56:09 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:56:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:56:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:57:48 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 35.2ms | Allocations: 18161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 73.7ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1346.9ms | Allocations: 30557)
+Completed 200 OK in 1379ms (Views: 1350.2ms | ActiveRecord: 3.9ms | Allocations: 32470)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:57:50 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:57:50 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:57:50 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:57:50 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:57:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:57:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 20:58:22 -0300
+  [1m[35m (33.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1226.1ms | Allocations: 33291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 133.1ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 9.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9491.0ms | Allocations: 90663)
+Completed 200 OK in 10142ms (Views: 9572.8ms | ActiveRecord: 94.6ms | Allocations: 111534)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 20:58:33 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 20:58:33 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 20:58:33 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 20:58:33 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 20:58:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 20:58:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:00:57 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 30.3ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 72.9ms | Allocations: 1353)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1274.4ms | Allocations: 30881)
+Completed 200 OK in 1288ms (Views: 1277.6ms | ActiveRecord: 1.3ms | Allocations: 33099)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:00:59 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:00:59 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:00:59 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:00:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:00:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 21:01:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:01:31 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 700.9ms | Allocations: 33094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 120.8ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 12.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 13.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 10143.3ms | Allocations: 90578)
+Completed 200 OK in 10534ms (Views: 10202.3ms | ActiveRecord: 52.7ms | Allocations: 111485)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:01:42 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:01:42 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:01:42 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:01:42 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:01:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 21:01:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:04:34 -0300
+  [1m[35m (18.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 561.4ms | Allocations: 33074)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 116.9ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 4.5ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 7899.0ms | Allocations: 90656)
+Completed 200 OK in 8179ms (Views: 7924.9ms | ActiveRecord: 43.0ms | Allocations: 111523)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:04:42 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:04:42 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:04:42 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:04:42 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:04:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 21:04:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:13:05 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1158.3ms | Allocations: 33244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 217.8ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 10.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 10.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 8898.6ms | Allocations: 90470)
+Completed 200 OK in 9192ms (Views: 8928.6ms | ActiveRecord: 34.9ms | Allocations: 111454)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:13:14 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:13:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:13:15 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:13:15 -0300
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-07 21:13:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:13:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:15:54 -0300
+  [1m[35m (35.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 721.2ms | Allocations: 33072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 77.5ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 8.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 37247.7ms | Allocations: 213642)
+Completed 200 OK in 37691ms (Views: 37283.0ms | ActiveRecord: 49.4ms | Allocations: 234552)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:17:20 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1045.0ms | Allocations: 33218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 164.2ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 7.7ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 9410.5ms | Allocations: 90458)
+Completed 200 OK in 9843ms (Views: 9449.0ms | ActiveRecord: 61.0ms | Allocations: 111444)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:17:30 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:17:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:17:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:17:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:17:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:19:20 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 648.2ms | Allocations: 33073)
+  Rendered layout layouts/application.html.erb (Duration: 18641.0ms | Allocations: 75563)
+Completed 500 Internal Server Error in 18924ms (ActiveRecord: 49.0ms | Allocations: 96442)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$white".
+        on line 15:14 of app/assets/stylesheets/config/_bootstrap_variables.scss
+        from line 4:9 of app/assets/stylesheets/application.scss
+>> $success:    $white;
+
+   -------------^
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13: 
+  
+app/assets/stylesheets/config/_bootstrap_variables.scss:15
+app/views/layouts/application.html.erb:10
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:20:04 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 41.4ms | Allocations: 18350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 85.6ms | Allocations: 1786)
+  Rendered shared/_flashes.html.erb (Duration: 5.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 27950.7ms | Allocations: 199176)
+Completed 200 OK in 27962ms (Views: 27952.3ms | ActiveRecord: 1.1ms | Allocations: 201401)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:20:32 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:20:32 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:20:32 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:20:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:20:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:27:26 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 817.6ms | Allocations: 33076)
+  Rendered layout layouts/application.html.erb (Duration: 23344.6ms | Allocations: 113015)
+Completed 500 Internal Server Error in 23631ms (ActiveRecord: 32.7ms | Allocations: 133893)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$font-primary".
+        on line 4:15 of app/assets/stylesheets/pages/_incident.scss
+        from line 5:9 of app/assets/stylesheets/pages/_index.scss
+        from line 14:9 of app/assets/stylesheets/application.scss
+>> 	font-family: $font-primary;
+
+   --------------^
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13: 
+  
+app/assets/stylesheets/pages/_incident.scss:4
+app/views/layouts/application.html.erb:10
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:29:13 -0300
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 808.6ms | Allocations: 33159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 81.3ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 5.5ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 5.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 30193.3ms | Allocations: 218929)
+Completed 200 OK in 30661ms (Views: 30233.2ms | ActiveRecord: 101.3ms | Allocations: 239719)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:29:44 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:29:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:29:45 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:29:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:29:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:34:47 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 444.5ms | Allocations: 32990)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 89.5ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 4.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 27292.7ms | Allocations: 219907)
+Completed 200 OK in 27531ms (Views: 27323.8ms | ActiveRecord: 27.3ms | Allocations: 240849)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:35:15 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:35:15 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:35:15 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:35:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:35:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:38:03 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 723.3ms | Allocations: 33071)
+  Rendered layout layouts/application.html.erb (Duration: 15932.4ms | Allocations: 75636)
+Completed 500 Internal Server Error in 16332ms (ActiveRecord: 28.4ms | Allocations: 96459)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "	color: lighten(": expected expression (e.g. 1px, bold), was "#011E3,40%);"
+        on line 14:17 of app/assets/stylesheets/pages/_incident.scss
+        from line 5:1 of app/assets/stylesheets/pages/_index.scss
+        from line 14:1 of app/assets/stylesheets/application.scss
+>> 	color: lighten(#011E3,40%);
+
+   ----------------^
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    13: 
+  
+app/assets/stylesheets/pages/_incident.scss:14
+app/views/layouts/application.html.erb:10
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:38:45 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 59.3ms | Allocations: 18350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 81.7ms | Allocations: 1786)
+  Rendered shared/_flashes.html.erb (Duration: 3.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 27167.4ms | Allocations: 199982)
+Completed 200 OK in 27183ms (Views: 27169.9ms | ActiveRecord: 2.4ms | Allocations: 202207)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:39:13 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:39:13 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:39:13 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:39:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:39:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:41:58 -0300
+  [1m[35m (21.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 576.9ms | Allocations: 33013)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 104.8ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 7.3ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 28759.6ms | Allocations: 219343)
+Completed 200 OK in 29050ms (Views: 28795.4ms | ActiveRecord: 45.5ms | Allocations: 240267)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:42:27 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:42:27 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:42:27 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:42:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:42:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:47:28 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 868.0ms | Allocations: 33153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 202.6ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 11.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 39624.8ms | Allocations: 219676)
+Completed 200 OK in 40201ms (Views: 39705.0ms | ActiveRecord: 75.0ms | Allocations: 240671)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:48:10 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:48:10 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:48:10 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:48:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:48:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:48:53 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 37.1ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 68.7ms | Allocations: 1350)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 20249.8ms | Allocations: 139652)
+Completed 200 OK in 20264ms (Views: 20251.2ms | ActiveRecord: 2.2ms | Allocations: 141869)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:49:49 -0300
+  [1m[35m (17.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 544.0ms | Allocations: 33021)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 120.4ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 4.0ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 11.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 33741.8ms | Allocations: 219631)
+Completed 200 OK in 34056ms (Views: 33779.9ms | ActiveRecord: 49.4ms | Allocations: 240311)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:50:24 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:50:24 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:50:24 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:50:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:50:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:51:17 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 44.8ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 87.6ms | Allocations: 1350)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 22242.8ms | Allocations: 140586)
+Completed 200 OK in 22255ms (Views: 22244.3ms | ActiveRecord: 2.5ms | Allocations: 142803)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:51:40 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:51:40 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:51:40 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:51:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:51:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:52:14 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 108.6ms | Allocations: 18165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 89.3ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 21059.5ms | Allocations: 139663)
+Completed 200 OK in 21083ms (Views: 21061.8ms | ActiveRecord: 1.5ms | Allocations: 141565)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:52:36 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:52:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:52:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:52:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:52:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:53:51 -0300
+  [1m[35m (32.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 488.4ms | Allocations: 33046)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 88.4ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 6.2ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 30326.1ms | Allocations: 219485)
+Completed 200 OK in 30774ms (Views: 30352.8ms | ActiveRecord: 52.2ms | Allocations: 240351)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:54:23 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:54:23 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:54:23 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:54:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:54:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:56:23 -0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 544.9ms | Allocations: 35804)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 189.1ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 11.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 11.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 30155.8ms | Allocations: 221384)
+Completed 200 OK in 30503ms (Views: 30200.1ms | ActiveRecord: 44.4ms | Allocations: 242301)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:56:54 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:56:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:56:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:56:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:56:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 21:58:12 -0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 497.8ms | Allocations: 33049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 91.0ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 4.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 32338.2ms | Allocations: 219434)
+Completed 200 OK in 32744ms (Views: 32369.0ms | ActiveRecord: 72.9ms | Allocations: 240318)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 21:58:46 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 21:58:46 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 21:58:46 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 21:58:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 21:58:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:03:43 -0300
+  [1m[35m (35.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 520.9ms | Allocations: 33070)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 80.9ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 4.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 37795.3ms | Allocations: 219636)
+Completed 200 OK in 38203ms (Views: 37828.1ms | ActiveRecord: 58.9ms | Allocations: 240559)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:04:22 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:04:22 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:04:22 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:04:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:04:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:05:21 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 30.5ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 88.9ms | Allocations: 1350)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 19759.3ms | Allocations: 140602)
+Completed 200 OK in 19773ms (Views: 19762.7ms | ActiveRecord: 1.3ms | Allocations: 142819)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:05:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:05:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:05:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:05:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:05:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:06:45 -0300
+  [1m[35m (24.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1010.1ms | Allocations: 33164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 90.8ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 5.6ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 6.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 32395.8ms | Allocations: 220146)
+Completed 200 OK in 32893ms (Views: 32474.7ms | ActiveRecord: 31.5ms | Allocations: 241018)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:07:19 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:07:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:07:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:07:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:07:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:08:36 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 38.0ms | Allocations: 18359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 121.8ms | Allocations: 1350)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 21901.4ms | Allocations: 140113)
+Completed 200 OK in 21911ms (Views: 21903.7ms | ActiveRecord: 1.2ms | Allocations: 142335)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:08:58 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:08:58 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:08:58 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:08:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:08:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:10:00 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 51.5ms | Allocations: 18161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 136.7ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 22493.5ms | Allocations: 140614)
+Completed 200 OK in 22506ms (Views: 22496.9ms | ActiveRecord: 1.6ms | Allocations: 142527)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:10:23 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:10:23 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:10:23 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:10:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:10:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:10:36 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 40.2ms | Allocations: 18161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 142.7ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 27316.7ms | Allocations: 140514)
+Completed 200 OK in 27331ms (Views: 27318.7ms | ActiveRecord: 1.2ms | Allocations: 142426)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:11:04 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:11:04 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:11:04 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:11:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:11:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:12:50 -0300
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1142.4ms | Allocations: 33231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 195.6ms | Allocations: 1802)
+  Rendered shared/_flashes.html.erb (Duration: 12.1ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 12.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 33173.5ms | Allocations: 219820)
+Completed 200 OK in 33733ms (Views: 33246.6ms | ActiveRecord: 62.4ms | Allocations: 240656)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:13:25 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:13:25 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:13:25 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:13:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:13:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:15:09 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 34.7ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 103.9ms | Allocations: 1353)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1402.3ms | Allocations: 30817)
+Completed 200 OK in 1414ms (Views: 1404.1ms | ActiveRecord: 1.8ms | Allocations: 33035)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:15:11 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:15:11 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:15:11 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:15:11 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:15:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:16:24 -0300
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 834.7ms | Allocations: 33125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 123.8ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 4.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 4.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 8641.2ms | Allocations: 90500)
+Completed 200 OK in 8976ms (Views: 8684.8ms | ActiveRecord: 43.4ms | Allocations: 111509)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:16:34 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:16:34 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:16:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:16:35 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:16:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:18:00 -0300
+  [1m[35m (22.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 741.4ms | Allocations: 33156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 154.1ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 5.9ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 6927.2ms | Allocations: 90449)
+Completed 200 OK in 7192ms (Views: 6962.7ms | ActiveRecord: 27.8ms | Allocations: 111434)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:18:08 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:18:08 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:18:08 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:18:08 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:18:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:18:55 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 551.6ms | Allocations: 33064)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 149.6ms | Allocations: 1829)
+  Rendered shared/_flashes.html.erb (Duration: 8.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 8817.1ms | Allocations: 90686)
+Completed 200 OK in 9116ms (Views: 8855.2ms | ActiveRecord: 45.9ms | Allocations: 111565)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:19:05 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:19:05 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:19:05 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:19:05 -0300
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:19:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:20:20 -0300
+  [1m[35m (11.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 937.1ms | Allocations: 33152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 77.4ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 7.8ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 7.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 31831.5ms | Allocations: 220359)
+Completed 200 OK in 32377ms (Views: 31871.3ms | ActiveRecord: 51.9ms | Allocations: 241310)
+
+
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:20:54 -0300
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:20:54 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:20:54 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:20:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:20:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:23:35 -0300
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /mnt/c/Users/ana.chreem/Desktop/Le Wagon/staysafe/app/controllers/application_controller.rb:3)
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 1297.3ms | Allocations: 33234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 115.6ms | Allocations: 1801)
+  Rendered shared/_flashes.html.erb (Duration: 7.4ms | Allocations: 196)
+  Rendered shared/_footer.html.erb (Duration: 8.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 35499.8ms | Allocations: 220555)
+Completed 200 OK in 35976ms (Views: 35581.3ms | ActiveRecord: 74.7ms | Allocations: 241343)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:24:12 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:24:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:24:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:24:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:24:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:27:30 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 44.4ms | Allocations: 18353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 76.9ms | Allocations: 1350)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 24200.7ms | Allocations: 139690)
+Completed 200 OK in 24219ms (Views: 24202.5ms | ActiveRecord: 4.5ms | Allocations: 141907)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:27:54 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:27:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:27:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:27:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:27:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:28:23 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 40.0ms | Allocations: 18165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 87.6ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 20873.9ms | Allocations: 139699)
+Completed 200 OK in 20886ms (Views: 20877.8ms | ActiveRecord: 1.3ms | Allocations: 141611)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:28:44 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:28:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:28:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:28:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:28:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:29:06 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 35.3ms | Allocations: 18161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 113.2ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 27093.0ms | Allocations: 140121)
+Completed 200 OK in 27105ms (Views: 27095.5ms | ActiveRecord: 1.3ms | Allocations: 142019)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:29:34 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:29:34 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:29:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:29:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:29:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-07 22:29:48 -0300
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 18161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 114.0ms | Allocations: 1344)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 27050.7ms | Allocations: 140885)
+Completed 200 OK in 27062ms (Views: 27053.2ms | ActiveRecord: 1.4ms | Allocations: 142797)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-07 22:30:15 -0300
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-07 22:30:15 -0300
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-07 22:30:15 -0300
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-07 22:30:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-07 22:30:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
