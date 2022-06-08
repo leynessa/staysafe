@@ -1,16 +1,34 @@
-<h1>
-use to report a incident page
-</h1>
-<%= simple_form_for (@incident) do |f| %>
-    <div class="form-group ">
-      <strong> <%= f.input :title %> </strong>
-      <strong><%= f.input :incident_type %></strong>
-      <strong><%= f.input :time %></strong>
-      <%= f.input :photo, as: :file %>
-      <strong><%= f.input :date %></strong>
-      <strong><%= f.input :description %></strong>
+<div class="container">
+  <%= simple_form_for (@incident) do |f| %>
+    <div class="row-incident">
+      <h3 class="incident-title">Report an incident</h3>
+      <div class="form-incident">
+        <strong> <%= f.input :title %> </strong>
+        <strong><%= f.input :incident_type %></strong>
+        <strong><%= f.input :time %></strong>
+        <%= f.input :photo, as: :file %>
+        <strong><%= f.input :date %></strong>
+        <strong><%= f.input :description %></strong>
+      </div>
     </div>
     <div class="form-actions">
       <%= f.button :submit %>
     </div>
   <% end %>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+</body>
