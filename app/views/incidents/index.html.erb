@@ -10,19 +10,22 @@
     Recent Incidents
   </div>
 
-  <div class="incidents">
+  <div class="incident-cards">
     <% @incidents.each do |incident| %>
-      <div class="incident card" style="width: 18rem;">
-        <div >
-          <p class="incident card-text">
-            <%= incident.title %>
-            <%= incident.address %>
-            <%= incident.description %>
-            <%= incident.incident_type %>
-            <%= incident.time %>
-            <%= incident.date %>
-          </p>
-        </div>
+      <div class="incident-card" style="width: 18rem;">
+            <div class = "index-incident-foto" style="float:left">
+              <%= cl_image_tag incident.photo.key, height: 400, width: 300, crop: :thumb %>
+            </div>
+            <div class = "index-incident-body">
+              <p class="incident-card-text" >
+                <%= incident.title %>
+                <%= incident.address %>
+                <%= incident.description %>
+                <%= incident.incident_type %>
+                <%= incident.time %>
+                <%= incident.date %>
+              </p>
+            </div>
       </div>
     <% end %>
   </div>
@@ -30,9 +33,9 @@
 
 
 
- </div>
+
  <div name="map">
-<div style="width: 60%; height: 600px"
+  <div style="width: 60%; height: 600px"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>

@@ -202,10 +202,42 @@ border-color: transparent;
   background-image: image-url("white.png");
 
 }
-.incidents{
-  float: left
-}
+
 
 .map{
   float: right;
+}
+.incidents{
+
+}
+
+.incident-cards{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+
+
+.index-incident-foto{
+  padding:24px;
+  margin: 10px 12px;
+  height: 200px;
+width: 100px;
+object-fit: cover;
+}
+.incident-card-text{
+
+  margin: 0;
+}
+.index-incident-body{
+  position: absolute;
+padding:140px;
+margin-left: 200px;
+align-items: left;
+text-align: left;
+margin-right: 690px;
 }
