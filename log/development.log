@@ -56686,3 +56686,64 @@ Processing by IncidentsController#show as HTML
 Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 2.5ms | Allocations: 19323)
 
 
+Started GET "/" for 127.0.0.1 at 2022-06-09 19:32:28 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 16.1ms | Allocations: 6499)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 18800)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 8.9ms | Allocations: 20031)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2022-06-09 19:32:49 +0100
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1299)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 12153)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 1.5ms | Allocations: 15938)
+
+
+Started GET "/incidents" for 127.0.0.1 at 2022-06-09 19:32:50 +0100
+Processing by IncidentsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mIncident Load (1.1ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" WHERE (incidents.latitude IS NOT NULL AND incidents.longitude IS NOT NULL) ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/controllers/incidents_controller.rb:7:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/index.html.erb within layouts/application
+  [1m[36mIncident Load (1.3ms)[0m  [1m[34mSELECT "incidents".* FROM "incidents" ORDER BY "incidents"."created_at" DESC[0m
+  ↳ app/views/incidents/index.html.erb:4
+  Rendered incidents/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1918)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1212)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 13333)
+Completed 200 OK in 25ms (Views: 15.0ms | ActiveRecord: 3.5ms | Allocations: 17328)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-09 19:32:57 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 18517)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1213)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 30540)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.8ms | Allocations: 32570)
+
+
