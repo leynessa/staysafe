@@ -1,7 +1,9 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
 
-
+body{
+  background-color: white;
+}
 //block 1 banner
 .h1{
   font-family: "Epilogue", sans-serif;
@@ -81,7 +83,7 @@ background-repeat: no-repeat;
 background-size: cover;
 color: white;
 font-size: larger;
-
+background-color: #f4f4f4;
 }
 
 .works{
@@ -100,11 +102,15 @@ font-size: larger;
 
 
 .cards{
+  position: relative;
   background-color: transparent;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 60px;
   color: black;
+  border-style: none!important;
+  border: none !important;
+  border-color: #f4f4f4;
 
 }
 
@@ -116,6 +122,11 @@ text-align: justify;
 align-items: center;
 border-bottom: none;
 border: none;
+border-style: none!important;
+border: none !important;
+background-color: transparent;
+border-radius: 44px;
+border-color: transparent;
 
 
 
@@ -127,6 +138,8 @@ border: none;
   text-align: justify;
   align-items: center;
   border-bottom: none;
+  border-style: none!important;
+  border: none !important;
 
 
 
@@ -134,10 +147,11 @@ border: none;
 
 .alert-box{
   margin-top: 40px;
-
+  background-color: transparent;
   text-align: justify;
   align-items: center;
-  border: none;
+  border-style: none!important;
+  border: transparent !important;
 
 
 }
@@ -145,6 +159,9 @@ border: none;
 .card-text{
   padding: 5%;
   border-bottom: none;
+  border-style: none!important;
+  border: none !important;
+
 
 }
 .card-title{
@@ -167,7 +184,10 @@ border: none;
 .card-body{
  background-color: #011E30;
  border-radius:0 0 36px  36px;
- border: none;
+
+ border-style: none!important;
+ border: none !important;
+  border-color: #f4f4f4;
 
 }
 .card-header{
@@ -181,6 +201,8 @@ border: none;
 .card-header:first-child {
 border-radius: 35px 35px 0 0;
 border-color: transparent;
+border-style: none!important;
+border: none !important;
 }
 
 
@@ -204,40 +226,79 @@ border-color: transparent;
 }
 
 
-.map{
-  float: right;
+
+//index-incident page
+.report-incident{
+  background-color:#0579ce;
+  color: #f4f4f4;
+  border-radius: 5px;
+  margin-top: 16px;
+  align-items: center;
+  height: 42px;
+  margin-left: 80%;
+  outline-color:#0579ce ;
+  border-style: none!important;
+  border: none !important;
 }
-.incidents{
+
+.dashboard{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  cursor: grab;
+
+
 
 }
+
+.top-bar{
+  align-items: center;
+}
+
+.map{
+margin-right:-250px;
+  width: 600vw;
+  align-items: left;
+  padding-left: 30%;
+  border-radius: 36px;
+  margin-top: 10px;
+
+}
+
 
 .incident-cards{
   display: flex;
   flex-direction: column;
 
-
 }
-
-
 
 
 
 .index-incident-foto{
-  padding:24px;
-  margin: 10px 12px;
-  height: 200px;
-width: 100px;
-object-fit: cover;
-}
-.incident-card-text{
+  padding:4px;
+  margin: 4px 4px;
 
-  margin: 0;
+
+object-fit: cover;
+border-radius: 34px;
+background-color: white;
 }
+
+
 .index-incident-body{
   position: absolute;
-padding:140px;
-margin-left: 200px;
-align-items: left;
-text-align: left;
-margin-right: 690px;
+padding-right:32px;
+margin-left: 380px;
+
+
+margin-right: 590px;
+background-color: white;
+}
+
+.incident-card{
+margin: 16px;
+background-color: white;
+
 }

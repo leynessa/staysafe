@@ -1,47 +1,52 @@
-<div class="dashboard">
-
-   <div class="btn btn-primary">
-        <% if policy(Incident).create? %>
-          <%= link_to "report an incident", new_incident_path %>
-        <% end %>
-      </div>
-
-  <div class="title">
-    Recent Incidents
-  </div>
-
-  <div class="incident-cards">
-    <% @incidents.each do |incident| %>
-      <div class="incident-card" style="width: 18rem;">
-            <div class = "index-incident-foto" style="float:left">
-              <%= cl_image_tag incident.photo.key, height: 400, width: 300, crop: :thumb %>
-            </div>
-            <div class = "index-incident-body">
-              <p class="incident-card-text" >
-                <%= incident.title %>
-                <%= incident.address %>
-                <%= incident.description %>
-                <%= incident.incident_type %>
-                <%= incident.time %>
-                <%= incident.date %>
-              </p>
-            </div>
-      </div>
+<div class="top-bar">
+  <button class="report-incident">
+    <% if policy(Incident).create? %>
+        <%= link_to "report an incident", new_incident_path %>
     <% end %>
-  </div>
-
-
-
-
-
- <div name="map">
-  <div style="width: 60%; height: 600px"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  </button>
 </div>
- <div class="btn btn-primary">
+
+<div id = "dashboard "class="dashboard">
+
+  <h1> Recent Incidents</h1>
+  <div class="card flex-row">
+    <div class="incident-cards" >
+
+      <% @incidents.each do |incident| %>
+
+        <div class="incident-card " style="width: 18rem; margin: 84px">
+          <div class = "index-incident-foto" style="float:left">
+            <%= cl_image_tag incident.photo.key, height: 280, width: 350, crop: :thumb %>
+          </div>
+          <div class = "index-incident-body">
+            <p class="incident-card-text" >
+              <ul>
+                <strong> title: </strong> <%= incident.title %> <br>
+                <strong> address:</strong><%= incident.address %><br>
+                <strong> description:</strong> <%= incident.description %><br>
+                <strong> type:</strong> <%= incident.incident_type %><br>
+                <strong>time: </strong><%= incident.time %><br>
+                <strong>date: </strong><%= incident.date %><br>
+                <button type="button" class="btn btn-light">more details...</button>
+              </ul>
+              </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="map">
+      <div class = "card-img-left" style="width: 90%; height: 1000px; align-items: left; border-radius: 64px 0 0 64px"
+        data-controller="mapbox"
+        data-mapbox-markers-value="<%= @markers.to_json %>"
+        data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+    </div>
+  </div>
+</div>
+
+
+
+ <button class="report-incident">
         <% if policy(Incident).create? %>
           <%= link_to "report an incident", new_incident_path %>
         <% end %>
-      </div>
+  </button>
