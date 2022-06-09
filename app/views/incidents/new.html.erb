@@ -1,11 +1,15 @@
-<h1 class="incident-title">
-  Report an Incident
-</h1>
-<section class="ftco-section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center mb-5">
-        <h2 class="heading-section">Contact Form #08</h2>
+
+<div class="container">
+  <%= simple_form_for (@incident) do |f| %>
+    <div class="row-incident">
+      <h3 class="incident-title">Report an incident</h3>
+      <div class="form-incident">
+        <strong> <%= f.input :title %> </strong>
+        <strong><%= f.input :incident_type %></strong>
+        <strong><%= f.input :time %></strong>
+        <%= f.input :photo, as: :file %>
+        <strong><%= f.input :date %></strong>
+        <strong><%= f.input :description %></strong>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -59,21 +63,18 @@
         </div>
       </div>
     </div>
-  </div>
+  <% end %>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<%= simple_form_for (@incident) do |f| %>
-  <div class="form-group ">
-    <strong> <%= f.input :title %> </strong>
-    <strong><%= f.input :incident_type %></strong>
-    <strong><%= f.input :time %></strong>
-    <%= f.input :photo, as: :file %>
-    <strong><%= f.input :date %></strong>
-    <strong><%= f.input :description %></strong>
-  </div>
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
