@@ -48779,3 +48779,59 @@ Processing by IncidentsController#show as HTML
 Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 3.0ms | Allocations: 16483)
 
 
+Started GET "/" for 127.0.0.1 at 2022-06-09 17:22:25 +0100
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/andrejulio/code/andrejulio072/staysafe/app/controllers/application_controller.rb:3)
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 21.4ms | Allocations: 9308)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 223)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 204.6ms | Allocations: 63090)
+Completed 200 OK in 218ms (Views: 198.2ms | ActiveRecord: 9.5ms | Allocations: 67674)
+
+
+Started GET "/incidents/new" for 127.0.0.1 at 2022-06-09 17:22:29 +0100
+Processing by IncidentsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering incidents/new.html.erb within layouts/application
+  Rendered incidents/new.html.erb within layouts/application (Duration: 45.3ms | Allocations: 32233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1254)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 43785)
+Completed 200 OK in 82ms (Views: 56.9ms | ActiveRecord: 5.6ms | Allocations: 55040)
+
+
+Started GET "/incidents/js/jquery.min.js" for 127.0.0.1 at 2022-06-09 17:22:29 +0100
+Started GET "/incidents/js/popper.js" for 127.0.0.1 at 2022-06-09 17:22:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.min.js"):
+  
+Started GET "/incidents/js/bootstrap.min.js" for 127.0.0.1 at 2022-06-09 17:22:29 +0100
+Started GET "/incidents/js/main.js" for 127.0.0.1 at 2022-06-09 17:22:29 +0100
+Started GET "/incidents/js/jquery.validate.min.js" for 127.0.0.1 at 2022-06-09 17:22:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/js/jquery.validate.min.js"):
+  
+Started GET "/incidents/app/assets/images/staysafe.webp" for 127.0.0.1 at 2022-06-09 17:22:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/incidents/app/assets/images/staysafe.webp"):
+  
