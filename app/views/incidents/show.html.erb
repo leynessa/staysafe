@@ -1,27 +1,27 @@
-<div class="container-fluid">
+<div class="container-show">
   <div class='text-center'>
     <!-- Content here -->
-    <h1>Yours incidents reported</h1>
+    <h2>Yours incidents reported</h2>
     <%= cl_image_tag @incident.photo.key, height: 600, width: 1000, crop: :thumb %>
     <div class="information">
       <div class="card w-100">
         <h5 class="card-title">General information</h5>
         <p>Title:<%= @incident.title %></p>
-        <p>Adress:<%= @incident.address %></p>
+        <p>Address:<%= @incident.address %></p>
         <p>Incident Type:<%= @incident.incident_type %></p>
         <p>Time:<%= @incident.time %></p>
         <p>Date:<%= @incident.date %></p>
-        With supporting text below as a natural lead-in to additional content.</p>
+      </div>
       <div class="card w-100">
-        <h5 class="card-title">Description</h5>
+        <h5 class="card-title">Description:</h5>
         <p class="card-text">
-          <%= @incident.description %>
-        With supporting text below as a natural lead-in to additional content.</p>
-        </div>
+          <%= @incident.description %></p>
+      </div>
     </div>
     <div class="card w-100">
       <p>Location Information:</p>
       <div style="width: 100%; height: 600px;" data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>" data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
   </div>
+</div>
 </div>
