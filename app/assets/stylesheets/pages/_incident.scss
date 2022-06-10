@@ -1,4 +1,4 @@
-.container{
+.incident-new{
   color: white;
   background-color: #011E30;
   width: 1000px;
@@ -6,6 +6,11 @@
   font-size: medium;
   padding: 50px;
   border-radius: 4%;
+  align-items: center;
+  display: table;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .form-incident{

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="incident-new">
   <%= simple_form_for (@incident) do |f| %>
     <div class="row-incident">
       <h3 class="incident-title">Report an incident</h3>
@@ -11,24 +11,7 @@
         <strong><%= f.input :description %></strong>
       </div>
     </div>
-    <div class="form-actions">
-      <%= f.button :submit %>
-    </div>
+    <div class="text-center">
+      <input type="submit" value="Report an Incident" class="btn btn-primary"></div>
   <% end %>
 </div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/main.js"></script>
-</body>

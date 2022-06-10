@@ -1,7 +1,9 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
 
-
+body{
+  background-color: white;
+}
 //block 1 banner
 .h1{
   font-family: "Epilogue", sans-serif;
@@ -207,4 +209,7 @@ border-color: transparent;
   border-radius: 28px;
   margin-left: 16px;
 
+}
+.container .join{
+  background-color: white;
 }
