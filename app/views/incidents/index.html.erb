@@ -7,35 +7,34 @@
 </div>
 
 <div id = "dashboard "class="dashboard">
-
   <h1> Recent Incidents</h1>
   <div class="card flex-row">
     <div class="incident-cards" >
-
       <% @incidents.each do |incident| %>
-
-        <div class="incident-card " style="width: 18rem; margin: 84px">
+        <div class="card-product">
           <div class = "index-incident-foto" style="float:left">
             <%= cl_image_tag incident.photo.key, height: 280, width: 350, crop: :thumb %>
           </div>
-          <div class = "index-incident-body">
-            <p class="incident-card-text" >
-              <ul>
-                <strong> title: </strong> <%= incident.title %> <br>
-                <strong> address:</strong><%= incident.address %><br>
-                <strong> description:</strong> <%= incident.description %><br>
-                <strong> type:</strong> <%= incident.incident_type %><br>
-                <strong>time: </strong><%= incident.time %><br>
-                <strong>date: </strong><%= incident.date %><br>
-                <button type="button" class="btn btn-light">more details...</button>
-              </ul>
+          <div class="card-product-infos">
+            <div class = "index-incident-body">
+              <p class="incident-card-text" >
+                <ul>
+                  <strong> title: </strong> <%= incident.title %> <br>
+                  <strong> address:</strong><%= incident.address %><br>
+                  <strong> description:</strong> <%= incident.description %><br>
+                  <strong> type:</strong> <%= incident.incident_type %><br>
+                  <strong>time: </strong><%= incident.time %><br>
+                  <strong>date: </strong><%= incident.date %><br>
+                  <button type="button" class="btn btn-light"><%= link_to "more details..", incident_path(incident.id) %></button>
+                </ul>
               </p>
+            </div>
           </div>
         </div>
       <% end %>
     </div>
-    <div class="map">
-      <div class = "card-img-left" style="width: 90%; height: 1000px; align-items: left; border-radius: 64px 0 0 64px"
+    <div class="map" >
+      <div class = "card-img-left" id="map" style="width: 90%; height: 1000px; align-items: left; border-radius: 64px 0 0 64px"
         data-controller="mapbox"
         data-mapbox-markers-value="<%= @markers.to_json %>"
         data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
