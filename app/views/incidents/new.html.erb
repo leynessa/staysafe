@@ -10,9 +10,8 @@
         <%= f.input :photo, as: :file %>
         <strong><%= f.input :date %></strong>
         <strong><%= f.input :description %></strong>
-        <%= f.input :address,
-              input_html: { data: { geocoder_target: "address" }, class: "d-none" },
-              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
+        <strong><%= f.input :address, input_html: { data: { geocoder_target: "address" }, class: "d-none" },
+              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %></strong>
 
       </div>
 
@@ -20,4 +19,7 @@
     <div class="text-center">
       <input type="submit" value="Report an Incident" class="btn btn-primary"></div>
   <% end %>
+
+
+  <%= link_to 'back', incidents_path %>
 </div>

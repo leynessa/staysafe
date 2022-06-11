@@ -1,8 +1,9 @@
 .information{
-  background-color: aliceblue;
+  background-color: white;
   text-align: center;
   margin: 0 auto;
   color: black;
+  margin-left:100px;
 }
 
 .location {
@@ -16,9 +17,9 @@
   width: 100%;
   height: max-content;
   margin-top: 50px;
-  font-size: x-large;
+  font-size: large;
   border-radius: 4%;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Epilogue", sans-serif;
 }
 
 .logo-box{
@@ -27,4 +28,27 @@
   align-items: center;
   border-radius: 25px;
 color: white;
+}
+
+.h3{
+  font-weight: bolder;
+}
+
+.card-title-show{
+  padding: 2%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.card-show {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 40px;
 }
