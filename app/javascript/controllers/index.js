@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import MapboxController from "./mapbox_controller"
 application.register("mapbox", MapboxController)
+
+import GeocoderController from "./geocoder_controller"
+application.register("geocoder", GeocoderController)
