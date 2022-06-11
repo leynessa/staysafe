@@ -6,34 +6,32 @@
 }
 
 .nav-link {
-  color : #E4E0DC;
+  color: #E4E0DC;
   display: inline-block;
-align-items: center;
-  }
+  align-items: center;
+  padding: 3.5px;
+}
 
 .nav-item {
-  color : #E4E0DC;
+  color: #E4E0DC;
   text-decoration: none;
-
 }
-a {
 
-color: #E4E0DC;
-text-decoration: none;
+a {
+  color: #E4E0DC;
+  text-decoration: none;
 }
 
 
 .btn-login {
-  background-color:#efefef;
+  background-color: #efefef;
   border-radius: 10px;
   height: 30px;
   left: 1347px;
   mix-blend-mode: normal;
   top: 18px;
   width: 97px;
-  text-align: center ;
-  align-items: center;
-
+  text-align: center;
 }
 
 
@@ -49,7 +47,7 @@ text-decoration: none;
 }
 
 .where {
-  background-color:transparent;
+  background-color: transparent;
   color: #004B7A;
   font-family: 'Epilogue', sans-serif;
   font-size: 14px;
@@ -69,6 +67,4 @@ text-decoration: none;
 .nav-links-box {
   top: 9px;
   display: inline-block;
-
-
 }
