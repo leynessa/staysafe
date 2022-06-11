@@ -1,16 +1,23 @@
-<h1>
-use to report a incident page
-</h1>
-<%= simple_form_for (@incident) do |f| %>
-    <div class="form-group ">
-      <strong> <%= f.input :title %> </strong>
-      <strong><%= f.input :incident_type %></strong>
-      <strong><%= f.input :time %></strong>
-      <%= f.input :photo, as: :file %>
-      <strong><%= f.input :date %></strong>
-      <strong><%= f.input :description %></strong>
+
+<div class="incident-new">
+  <%= simple_form_for (@incident) do |f| %>
+    <div class="row-incident">
+      <h3 class="incident-title">Report an incident</h3>
+      <div class="form-incident">
+        <strong> <%= f.input :title %> </strong>
+        <strong><%= f.input :incident_type %></strong>
+        <strong><%= f.input :time %></strong>
+        <%= f.input :photo, as: :file %>
+        <strong><%= f.input :date %></strong>
+        <strong><%= f.input :description %></strong>
+        <%= f.input :address,
+              input_html: { data: { geocoder_target: "address" }, class: "d-none" },
+              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
+
+      </div>
+
     </div>
-    <div class="form-actions">
-      <%= f.button :submit %>
-    </div>
+    <div class="text-center">
+      <input type="submit" value="Report an Incident" class="btn btn-primary"></div>
   <% end %>
+</div>

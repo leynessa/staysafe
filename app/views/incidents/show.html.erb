@@ -1,9 +1,45 @@
-<h1>My page </h1>
-
-<%= cl_image_tag @incident.photo.key, height: 400, width: 300, crop: :thumb %>
-
-
-<div style="width: 100%; height: 600px;"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+<div class="container-show">
+  <div class="row">
+    <div class="col-10">
+      <div class='text-center'>
+        <!-- Content here -->
+        <h2>Yours incidents reported</h2>
+        <%= cl_image_tag @incident.photo.key, height: 600, width: 1000, crop: :thumb %>
+        <div class="information">
+          <div class="card w-100">
+            <h5 class="card-title">General information</h5>
+            <p>Title:<%= @incident.title %></p>
+            <p>Address:<%= @incident.address %></p>
+            <p>Incident Type:<%= @incident.incident_type %></p>
+            <p>Time:<%= @incident.time %></p>
+            <p>Date:<%= @incident.date %></p>
+          </div>
+          <div class="card w-100">
+            <h5 class="card-title">Description:</h5>
+            <p class="card-text">
+              <%= @incident.description %></p>
+          </div>
+        </div>
+        <div class="card w-100">
+          <p>Location Information:</p>
+          <div class="container" style="width: 100%; height: 600px;"
+      data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>"
+      data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="logo-box">
+        <div class="card" style="width: 20rem;background-color: #011E30;">
+          <div class="card-img" style="text-align: center;">
+            <img src="/assets/logo-be5c1e37a2ec66ceb869e99b6da404da4fb050884e712e72a4dc31b8b24f1844.png" style="width: 200px; height: 200px;">
+          </div>
+          <div class="container-content">
+            <h2 class="card-title"> <strong> STAYSAFE </strong></h2>
+            <p class="card-text">Get around the city without a care in the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,15 +1,15 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
 
-
+body{
+  background-color: white;
+}
 //block 1 banner
 .h1{
   font-family: "Epilogue", sans-serif;
   color: black;
   font-weight: bolder;
 }
-
-
 
 // block 2 about us
 .hero-h1 {
@@ -81,7 +81,7 @@ background-repeat: no-repeat;
 background-size: cover;
 color: white;
 font-size: larger;
-
+background-color: #f4f4f4;
 }
 
 .works{
@@ -100,11 +100,15 @@ font-size: larger;
 
 
 .cards{
+  position: relative;
   background-color: transparent;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 60px;
   color: black;
+  border-style: none!important;
+  border: none !important;
+  border-color: #f4f4f4;
 
 }
 
@@ -116,6 +120,11 @@ text-align: justify;
 align-items: center;
 border-bottom: none;
 border: none;
+border-style: none!important;
+border: none !important;
+background-color: transparent;
+border-radius: 44px;
+border-color: transparent;
 
 
 
@@ -127,6 +136,8 @@ border: none;
   text-align: justify;
   align-items: center;
   border-bottom: none;
+  border-style: none!important;
+  border: none !important;
 
 
 
@@ -134,10 +145,11 @@ border: none;
 
 .alert-box{
   margin-top: 40px;
-
+  background-color: transparent;
   text-align: justify;
   align-items: center;
-  border: none;
+  border-style: none!important;
+  border: transparent !important;
 
 
 }
@@ -145,6 +157,9 @@ border: none;
 .card-text{
   padding: 5%;
   border-bottom: none;
+  border-style: none!important;
+  border: none !important;
+
 
 }
 .card-title{
@@ -167,7 +182,10 @@ border: none;
 .card-body{
  background-color: #011E30;
  border-radius:0 0 36px  36px;
- border: none;
+
+ border-style: none!important;
+ border: none !important;
+  border-color: #f4f4f4;
 
 }
 .card-header{
@@ -181,6 +199,8 @@ border: none;
 .card-header:first-child {
 border-radius: 35px 35px 0 0;
 border-color: transparent;
+border-style: none!important;
+border: none !important;
 }
 
 
@@ -202,12 +222,98 @@ border-color: transparent;
   background-image: image-url("white.png");
 }
 
-.incident{
-  margin-top: 16px;
-  margin-bottom: 16px;
-  border-radius: 28px;
-  margin-left: 16px;
 
+
+//index-incident page
+.report-incident{
+  background-color:#0579ce;
+  color: #f4f4f4;
+  border-radius: 5px;
+  margin-top: 16px;
+  align-items: center;
+  height: 42px;
+  margin-left: 80%;
+  outline-color:#0579ce ;
+  border-style: none!important;
+  border: none !important;
+}
+
+.dashboard{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: white;
+  margin-left: 28px;
+
+
+  cursor: grab;
+
+
+
+}
+
+.top-bar{
+  align-items: center;
+}
+
+.map{
+  margin-right:-250px;
+  width: 600vw;
+  align-items: left;
+  padding-left: 4%;
+  border-radius: 36px;
+  margin-top: 2px;
+
+  margin-right: 10px;
+
+
+
+}
+#map{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+
+
+
+.card-product {
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  width: 800px;
+  border-radius: 16px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 220px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+.container .join{
+  background-color: white;
 }
 
 .card{
