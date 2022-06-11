@@ -44,3 +44,7 @@
     </div>
   </div>
 </div>
+
+<%= link_to 'edit', edit_incident_path(@incident) %>
+<%= link_to 'back', incidents_path %>
+<%= link_to "Destroy", @incidents, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>

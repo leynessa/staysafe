@@ -26,6 +26,7 @@ body {
   font-weight: bold;
   align-items: center;
   border: none;
+  font-family: "Epilogue", sans-serif;
 }
 
 .hero-image {
@@ -54,6 +55,7 @@ body {
   height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 
@@ -92,6 +94,7 @@ body {
   text-align: justify;
 }
 
+
 .container-work {
   margin-top: 644px;
 }
@@ -107,7 +110,6 @@ body {
   border-style: none !important;
   border: none !important;
   border-color: #f4f4f4;
-
 }
 
 
@@ -130,15 +132,11 @@ body {
 
 .dangerzone-box {
   margin-top: -190px;
-
   text-align: justify;
   align-items: center;
   border-bottom: none;
   border-style: none !important;
   border: none !important;
-
-
-
 }
 
 .alert-box {
@@ -190,11 +188,8 @@ body {
 
 .card-header {
   background-color: #011E30;
-
   border-collapse: separate;
   perspective: 1px;
-
-
 }
 
 .card-header:first-child {
@@ -217,12 +212,12 @@ body {
   margin-top: 150px;
   text-align: center;
   color: #011E30;
-
 }
 
-.boxes {
-  background-image: image-url("white.png");
 
+.boxes {
+
+  background-image: image-url("white.png");
 }
 
 
@@ -260,12 +255,9 @@ body {
   padding-left: 4%;
   border-radius: 36px;
   margin-top: 2px;
-
   margin-right: 10px;
-
-
-
 }
+
 
 #map {
   position: sticky;
@@ -315,6 +307,7 @@ body {
 .container .join {
   background-color: white;
 }
+
 
 .feedback-card {
   display: flex;
@@ -389,4 +382,5 @@ body {
 .team-card {
   text-align: center;
   align-items: center;
+
 }
