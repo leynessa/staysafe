@@ -3,6 +3,7 @@
 
 body{
   background-color: white;
+  font-family: "Epilogue", sans-serif;
 }
 //block 1 banner
 .h1{
@@ -22,6 +23,7 @@ body{
   font-weight: bold;
   align-items: center;
   border: none;
+  font-family: "Epilogue", sans-serif;
 }
 
 .hero-image {
@@ -50,10 +52,10 @@ body{
 
 .block3{
   background-color: white;
-   background-image: image-url("bckblock3.png");
-   height: 900px;
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: image-url("bckblock3.png");
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
@@ -94,8 +96,6 @@ background-color: #f4f4f4;
 
 .container-work{
  margin-top: 644px;
-
-
 }
 
 
@@ -109,7 +109,6 @@ background-color: #f4f4f4;
   border-style: none!important;
   border: none !important;
   border-color: #f4f4f4;
-
 }
 
 
@@ -132,15 +131,11 @@ border-color: transparent;
 
 .dangerzone-box{
   margin-top: -190px;
-
   text-align: justify;
   align-items: center;
   border-bottom: none;
   border-style: none!important;
   border: none !important;
-
-
-
 }
 
 .alert-box{
@@ -190,12 +185,10 @@ border-color: transparent;
 }
 .card-header{
   background-color: #011E30;
-
   border-collapse: separate;
   perspective: 1px;
-
-
 }
+
 .card-header:first-child {
 border-radius: 35px 35px 0 0;
 border-color: transparent;
@@ -216,11 +209,10 @@ border: none !important;
   margin-top: 200px;
   text-align: center;
   color: #011E30;
-
 }
+
 .boxes{
   background-image: image-url("white.png");
-
 }
 
 
@@ -244,12 +236,7 @@ border: none !important;
   margin-bottom: 8px;
   background-color: white;
   margin-left: 28px;
-
-
   cursor: grab;
-
-
-
 }
 
 .top-bar{
@@ -263,12 +250,9 @@ border: none !important;
   padding-left: 4%;
   border-radius: 36px;
   margin-top: 2px;
-
   margin-right: 10px;
-
-
-
 }
+
 #map{
   position: sticky;
   top: 0;
