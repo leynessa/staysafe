@@ -1,5 +1,5 @@
 .information{
-  background-color: aliceblue;
+  background-color: white;
   text-align: center;
   margin: 0 auto;
   color: black;
@@ -39,4 +39,16 @@ color: white;
   text-align: center;
   font-size: larger;
   font-weight: bolder;
+}
+
+.card-show {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 40px;
 }
