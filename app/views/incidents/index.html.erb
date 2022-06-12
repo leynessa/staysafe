@@ -13,7 +13,7 @@
       <% @incidents.each do |incident| %>
         <div class="card-product">
           <div class = "index-incident-foto" style="float:left">
-            <%= cl_image_tag incident.photo.key, height: 280, width: 350, crop: :thumb %>
+            <%= cl_image_tag incident.photo.key, height: 280, width: 350, crop: :thumb if incident.photo.attached? %>
           </div>
           <div class="card-product-infos">
             <div class = "index-incident-body">
@@ -25,7 +25,7 @@
                   <strong> type:</strong> <%= incident.incident_type %><br>
                   <strong>time: </strong><%= incident.time %><br>
                   <strong>date: </strong><%= incident.date %><br>
-                  <button type="button" class="btn btn-light"><%= link_to "more details..", incident_path(incident.id) %></button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm rounded"><%= link_to "more details...", incident_path(incident.id) %></button>
                 </ul>
               </p>
             </div>
@@ -41,6 +41,8 @@
     </div>
   </div>
 </div>
+
+
 
 
 

@@ -3,6 +3,11 @@ class IncidentsController < ApplicationController
 
 
   def index
+    route = params[:route]
+    if route.present?
+      @destination = route[:destination]
+      @location = Geocoder.search(@destination).first.coordinates
+    end
     @incidents = policy_scope(Incident).order(created_at: :desc)
     @markers = @incidents.geocoded.map do |incident|
       {
@@ -24,6 +29,10 @@ class IncidentsController < ApplicationController
     authorize @incident
   end
 
+  def edit
+	  @incident = Incident.find(params[:id])
+	end
+
   def create
     @incident = Incident.new(incident_params)
     authorize @incident
@@ -35,11 +44,15 @@ class IncidentsController < ApplicationController
   end
 
    def update
-
+    @incident = Incident.find(params[:id])
+	  @incident.update(incident_params)
+	  redirect_to incident_path(@incident)
   end
 
   def destroy
-
+    @incident = Incident.find(params[:id])
+		@incident.destroy
+		redirect_to incidents_path
   end
 
   private

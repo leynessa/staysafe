@@ -1,7 +1,13 @@
 <div class="info-window">
-  <h2><strong> Incident: </strong> <%= incident.title %> <br> </h2>
-    <p><strong> Address:</strong><%= incident.address %><br>
-    <strong> Type:</strong> <%= incident.incident_type %><br>
-    <strong>Time: </strong><%= incident.time %><br>
-    <strong>Date: </strong><%= incident.date %><br></p>
+  <div class="header_pic">
+    <div class= "header_card">
+      <h2><strong> Incident: </strong> <%= incident.title %> <br> </h2>
+    </div>
+    <div class="body-card">
+      <p><strong> Address:</strong><%= incident.address %><br>
+          <strong> Type:</strong> <%= incident.incident_type %><br>
+          <strong>Time: </strong><%= incident.time %><br>
+          <strong>Date: </strong><%= incident.date %><br></p>
+    </div>
+  </div>
 </div>
