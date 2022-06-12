@@ -5,7 +5,7 @@
         <!-- Content here -->
         <!-- -->
         <h1>Yours incidents reported</h1>
-        <%= cl_image_tag @incident.photo.key, height: 600, width: 800, crop: :thumb if incident.photo.attached? %>
+        <%= cl_image_tag @incident.photo.key, height: 600, width: 800, crop: :thumb if @incident.photo.attached? %>
         <div class="information">
           <div class="card-show w-100">
             <h3 class="card-title-show">General information</h3>
