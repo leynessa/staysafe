@@ -1,11 +1,14 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css?family=Raleway:700,500,900|Epilogue:400,700,900,300,500|Inter:400,600|Roboto:400|Playfair+Display:500,900");
 
-body{
+body {
   background-color: white;
+  font-family: "Epilogue", sans-serif;
+  color: black;
 }
+
 //block 1 banner
-.h1{
+.h1 {
   font-family: "Epilogue", sans-serif;
   color: black;
   font-weight: bolder;
@@ -16,12 +19,14 @@ body{
   font-family: "Epilogue", sans-serif;
   font-size: 400%;
 }
+
 .hero-btn {
   width: 150px;
   color: #0579ce;
   font-weight: bold;
   align-items: center;
   border: none;
+  font-family: "Epilogue", sans-serif;
 }
 
 .hero-image {
@@ -42,19 +47,14 @@ body{
   text-align: center;
   margin-top: 242px;
   margin-bottom: 9028px;
-
-
-
-
 }
 
-.block3{
+.block3 {
   background-color: white;
-   background-image: image-url("bckblock3.png");
-   height: 900px;
-background-repeat: no-repeat;
-background-size: cover;
-
+  background-image: image-url("bckblock3.png");
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -62,116 +62,113 @@ background-size: cover;
 // block 3- how it works
 
 .button {
-  background-color: #4CAF50;
-  border: none;
-  color: rgb(34, 10, 192);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  position: center;
-
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(72, 76, 122);
+  font-size: 14px;
+  height: 38px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-image: linear-gradient(180deg, #fff, #f5f5fa);
+  transition: all .2s ease-out;
 }
 
 
-.blue-background{
-background-image: image-url("bkblock4.png");
-height: 1400px;
-background-repeat: no-repeat;
-background-size: cover;
-color: white;
-font-size: larger;
-background-color: #f4f4f4;
+.blue-background {
+  background-image: image-url("bkblock4.png");
+  height: 1400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: larger;
+  background-color: #f4f4f4;
 }
 
-.works{
-
+.works {
   padding-top: 250px;
   margin-left: 450px;
   margin-right: 300px;
   text-align: justify;
 }
 
-.container-work{
- margin-top: 644px;
 
-
+.container-work {
+  margin-top: 644px;
 }
 
 
-.cards{
+.cards {
   position: relative;
   background-color: transparent;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 60px;
   color: black;
-  border-style: none!important;
+  border-style: none !important;
   border: none !important;
   border-color: #f4f4f4;
-
 }
 
 
 
-.last-box{
-margin-top: 100px;
-text-align: justify;
-align-items: center;
-border-bottom: none;
-border: none;
-border-style: none!important;
-border: none !important;
-background-color: transparent;
-border-radius: 44px;
-border-color: transparent;
-
-
-
-}
-
-.dangerzone-box{
-  margin-top: -190px;
-
+.last-box {
+  margin-top: 100px;
   text-align: justify;
   align-items: center;
   border-bottom: none;
-  border-style: none!important;
+  border: none;
+  border-style: none !important;
   border: none !important;
+  background-color: transparent;
+  border-radius: 44px;
+  border-color: transparent;
 
 
 
 }
 
-.alert-box{
+.dangerzone-box {
+  margin-top: -190px;
+  text-align: justify;
+  align-items: center;
+  border-bottom: none;
+  border-style: none !important;
+  border: none !important;
+}
+
+.alert-box {
   margin-top: 40px;
   background-color: transparent;
   text-align: justify;
   align-items: center;
-  border-style: none!important;
+  border-style: none !important;
   border: transparent !important;
 
 
 }
 
-.card-text{
+.card-text {
   padding: 5%;
   border-bottom: none;
-  border-style: none!important;
+  border-style: none !important;
   border: none !important;
 
 
 }
-.card-title{
+
+.card-title {
   padding: 5%;
   text-align: center;
   font-size: larger;
-  font-weight: 1500;
+  font-weight: bolder;
 }
 
 //block5
 
-.test-title{
+.test-title {
   color: black;
   font-weight: 5400;
   text-align: center;
@@ -179,97 +176,90 @@ border-color: transparent;
 
 }
 
-.card-body{
- background-color: #011E30;
- border-radius:0 0 36px  36px;
+.card-body {
+  background-color: #011E30;
+  border-radius: 0 0 36px 36px;
 
- border-style: none!important;
- border: none !important;
+  border-style: none !important;
+  border: none !important;
   border-color: #f4f4f4;
 
 }
-.card-header{
-  background-color: #011E30;
 
+.card-header {
+  background-color: #011E30;
   border-collapse: separate;
   perspective: 1px;
-
-
 }
+
 .card-header:first-child {
-border-radius: 35px 35px 0 0;
-border-color: transparent;
-border-style: none!important;
-border: none !important;
+  border-radius: 35px 35px 0 0;
+  border-color: transparent;
+  border-style: none !important;
+  border: none !important;
 }
 
 
 
-.bg-dark{
+.bg-dark {
   --bs-bg-opacity: 0;
 }
 
-.community{
+.community {
   display: absolute;
-  align-items:center ;
+  align-items: center;
   padding: 200px;
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
   color: #011E30;
-
 }
-.boxes{
-  background-image: image-url("white.png");
 
+
+.boxes {
+
+  background-image: image-url("white.png");
 }
 
 
 
 //index-incident page
-.report-incident{
-  background-color:#0579ce;
+.report-incident {
+  background-color: #0579ce;
   color: #f4f4f4;
   border-radius: 5px;
   margin-top: 16px;
   align-items: center;
   height: 42px;
   margin-left: 80%;
-  outline-color:#0579ce ;
-  border-style: none!important;
+  outline-color: #0579ce;
+  border-style: none !important;
   border: none !important;
 }
 
-.dashboard{
+.dashboard {
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: white;
   margin-left: 28px;
-
-
   cursor: grab;
-
-
-
 }
 
-.top-bar{
+.top-bar {
   align-items: center;
 }
 
-.map{
-  margin-right:-250px;
+.map {
+  margin-right: -250px;
   width: 600vw;
   align-items: left;
   padding-left: 4%;
   border-radius: 36px;
   margin-top: 2px;
-
   margin-right: 10px;
-
-
-
 }
-#map{
+
+
+#map {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -282,7 +272,7 @@ border: none !important;
   overflow: hidden;
   height: 200px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   margin-top: 16px;
@@ -313,6 +303,84 @@ border: none !important;
 .card-product .card-product-infos {
   padding: 16px;
 }
-.container .join{
+
+.container .join {
   background-color: white;
+}
+
+
+.feedback-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.feedback-card p {
+  text-align: center;
+  align-items: center;
+  margin: 0px;
+}
+
+
+.card {
+  flex: 0 1 24%;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+}
+
+.header img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  left: 1px;
+  top: 90px;
+}
+
+.about {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    height: 112px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 85px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #011E30;
+    text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  h5 {
+    margin-top: 30px;
+  }
+
+  p {
+    width: 1000px;
+  }
+}
+
+.team h2 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.team-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.team-card {
+  text-align: center;
+  align-items: center;
+
 }

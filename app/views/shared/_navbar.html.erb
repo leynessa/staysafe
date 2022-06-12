@@ -9,8 +9,10 @@
     <div></div>
     <div class="text-center">
       <div class="search-box">
-        <div class="where">🔍︎ Where Would Like To Go ?</div>
-      </div>
+
+      <div class="where">🔍︎ Where Would Like To Go?</div>
+
+       </div>
     </div>
     <div></div>
     <div class="nav-options">
@@ -30,7 +32,6 @@
           <li class="nav-item">
           </li>
           <li class="nav-item dropdown">
-
             ▼<%= image_tag "profile1.avif", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "See all Alerts", incidents_path, class: "dropdown-item" %>
@@ -40,7 +41,6 @@
         <% else %>
           <div class="btn-login">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-
           </div>
         <% end %>
       </ul>
