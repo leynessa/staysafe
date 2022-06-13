@@ -1,9 +1,10 @@
 .information {
-  background-color: white;
+  // background-color: white;
   text-align: center;
   margin: 0 auto;
   color: black;
-  margin-left: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .location {
@@ -16,9 +17,9 @@
   color: rgb(10, 1, 1);
   width: 100%;
   height: max-content;
-  margin-top: 50px;
+  // margin-top: 50px;
   font-size: large;
-  border-radius: 4%;
+  // border-radius: 4%;
   font-family: "Epilogue", sans-serif;
 }
 
@@ -47,9 +48,9 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color:#eff0f173;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 3px solid rgba(0, 0, 0, 60%);
   border-radius: 40px;
 }
 
@@ -64,3 +65,25 @@
     background-color: #011E30;
     border-color: white;
 }
+
+.show-background {
+  // background-image: url(https://congressoemfoco.uol.com.br/wp-content/uploads/2018/03/PM_RJ_T%C3%A2niaRego_Abr.jpg);
+  background-image: url(https://project-sherpa.eu/wp-content/uploads/2020/12/SEC0417-testing-feat-slide_900px.jpg);
+  background-color: white;
+  background-repeat: repeat;
+  // background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+#container {
+  display: inline-block;
+  position: relative;
+}
+
+#container figcaption {
+  position: absolute;
+  // top: 145px;
+  // right: 20px;
+  font-size: 100px;
+  color: black;
+  text-shadow: 0px 0px 5px black;}
