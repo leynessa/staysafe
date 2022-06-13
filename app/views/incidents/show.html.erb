@@ -1,6 +1,3 @@
-<div class="header">
-  <img src="https://congressoemfoco.uol.com.br/wp-content/uploads/2018/03/PM_RJ_T%C3%A2niaRego_Abr.jpg">
-</div>
 <div class="show-background">
   <div class="container-show">
     <div class="row">
@@ -33,15 +30,12 @@
               data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>"
               data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
           </div>
-          <button><%= link_to 'Edit', edit_incident_path(@incident) %>
-          </button>
-          <button>
-            <%= link_to 'Back', incidents_path %></button>
-          <button><%= link_to "Delete #{@incident.title}",
+          <button><%= link_to 'Edit', edit_incident_path(@incident) %></button>
+          <button><%= link_to 'Back', incidents_path %></button>
+          <button> <%= link_to "Delete #{@incident.title}",
             incident_path(@incident),
             method: :delete,
-            data: { confirm: "Are you sure?" } %>
-          </button>
+            data: { confirm: "Are you sure?" } %></button>
         </div>
       </div>
       <div class="col-2">
