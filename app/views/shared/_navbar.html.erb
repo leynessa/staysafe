@@ -9,6 +9,7 @@
     <div></div>
     <div class="text-center">
       <div class="search-box">
+<div id="geocoder" class = "geocoder"> </div>
 
       <div class="where">🔍︎ Where Would Like To Go?</div>
 
@@ -32,7 +33,7 @@
           <li class="nav-item">
           </li>
           <li class="nav-item dropdown">
-            ▼<%= image_tag "profile1.avif", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            ▼<%= image_tag "https://upengenhariaej.com.br/wp-content/uploads/2020/10/1.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "See all Alerts", incidents_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>

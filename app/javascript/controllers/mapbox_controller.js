@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import mapboxgl from "!mapbox-gl"
-//import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions'
 
 
@@ -14,7 +14,7 @@ export default class extends Controller {
 
   connect() {
     mapboxgl.accessToken = this.apiKeyValue;
-    console.log(this.apiKeyValue)
+
 
 
 
@@ -26,6 +26,7 @@ export default class extends Controller {
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
   this.#addDirectionToMap()
+  this.#addsearchbar()
 
 
   }
@@ -55,4 +56,15 @@ export default class extends Controller {
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
 
+#addsearchbar(){
+  const geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl,
+
+    zoom: 15,
+  })
+ this.map.addControl(geocoder);
+ geocoder.addTo('#geocoder');
+ document.getElementById('geocoder').appendChild(this.geocoder.onAdd(map))
+}
 };
