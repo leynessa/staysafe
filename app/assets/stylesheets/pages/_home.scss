@@ -430,3 +430,56 @@ font-size: 36px;
   border-color: transparent;
 
 }
+
+
+///  the popup cards
+* {
+  color: #011E30;
+}
+
+a {
+  color: #011E30;
+}
+a:active {
+  color: #011E30;
+}
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: justify ;
+
+}
+
+.card-trip > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h3 {
+  font-size: 32px;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  color: #011E30 !important;
+  a{
+    color: #011E30 !important;
+  }
+}
+
+.card-trip h6 {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}

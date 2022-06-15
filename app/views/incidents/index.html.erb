@@ -23,7 +23,7 @@
                   <strong> <%= incident.title.upcase %></strong>  <br>
                   <i class="fas fa-map-pin"></i>   <%= incident.address %><br>
                   <i class="fas fa-edit"></i>   <%= incident.description.first(35) %><br>
-                  <i class="fa fa-th"></i>  <%= incident.incident_type %><br>
+                  <i class="fas fa-circle"></i>  <%= incident.incident_type %><br>
                   <i class="far fa-clock"></i>  <%= incident.time %><br>
                   <i class="far fa-calendar-alt"></i> <%= incident.date %><br>
                   <button type="button" class="btn btn-info btn-sm rounded-pill"><%= link_to "more details...", incident_path(incident.id) %></button>
