@@ -7,26 +7,26 @@
 </div>
 
 <div id = "dashboard "class="dashboard">
-  <h1 class ="index_page_title" > Recent Incidents</h1>
-  <p class = "index_page_info">Here are the recent incidents in your area. You can also enter you destination in our map and we will inform you of any incidents in you area</p>
+  <h1 class ="index_page_title" > <strong>Recent Incidents in your Vicinty</strong></h1>
+  <p class = "index_page_info"> Enter you destination in our map and we will inform you of any incidents in your area</p>
   <div class="card flex-row">
     <div class="incident-cards" >
       <% @incidents.each do |incident| %>
         <div class="card-product">
           <div class = "index-incident-foto" style="float:left">
-            <%= cl_image_tag incident.photo.key, height: 280, width: 350, crop: :thumb if incident.photo.attached? %>
+            <%= cl_image_tag incident.photo.key, height: 220, width: 165, crop: :thumb if incident.photo.attached? %>
           </div>
           <div class="card-product-infos">
             <div class = "index-incident-body">
               <p class="incident-card-text" >
                 <ul>
-                  <strong> title: </strong> <%= incident.title %> <br>
-                  <strong> address:</strong><%= incident.address %><br>
-                  <strong> description:</strong> <%= incident.description %><br>
-                  <strong> type:</strong> <%= incident.incident_type %><br>
-                  <strong>time: </strong><%= incident.time %><br>
-                  <strong>date: </strong><%= incident.date %><br>
-                  <button type="button" class="btn btn-outline-secondary btn-sm rounded"><%= link_to "more details...", incident_path(incident.id) %></button>
+                  <strong> <%= incident.title.upcase %></strong>  <br>
+                  <i class="fas fa-map-pin"></i>   <%= incident.address %><br>
+                  <i class="fas fa-edit"></i>   <%= incident.description.first(35) %><br>
+                  <i class="fa fa-th"></i>  <%= incident.incident_type %><br>
+                  <i class="far fa-clock"></i>  <%= incident.time %><br>
+                  <i class="far fa-calendar-alt"></i> <%= incident.date %><br>
+                  <button type="button" class="btn btn-info btn-sm rounded-pill"><%= link_to "more details...", incident_path(incident.id) %></button>
                 </ul>
               </p>
             </div>
@@ -41,14 +41,10 @@
         data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
   </div>
-</div>
-
-
-
-
-
- <button class="report-incident">
+   <button class="report-incident">
         <% if policy(Incident).create? %>
           <%= link_to "report an incident", new_incident_path %>
         <% end %>
   </button>
+
+</div>

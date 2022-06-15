@@ -283,40 +283,46 @@ font-size: 36px;
 }
 
 .index_page_info h1{
- font-size: 24px;
+ font-size: 14px;
+ color: #011E30;
+
 }
 .index_page_title p{
-  font-size: 34px;
+  font-size: 10px;
+  color: #011E30;
 }
 
 
 .card-product {
   overflow: hidden;
-  height: 230px;
+  height: 200px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   margin-top: 16px;
-  width: 750px;
+  width: 550px;
   border-radius: 16px;
+  padding-top: 22%;
+  padding-bottom: 22%;
+  color: #011E30;
 
 }
 
 .card-product img {
-  height: 110%;
-  width: 220px;
+  height: 100%;
+
   object-fit: cover;
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
