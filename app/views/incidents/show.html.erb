@@ -2,13 +2,13 @@
   <div class="container-show">
     <div class="row">
       <div class="col-10">
-        <div class='text-center'>
           <!-- Content here -->
           <!-- -->
-          <h1 style="color: #030212b3;font-family: monospace;text-shadow: 3px 0px #00018d;">Yours incidents reported</h1>
-          <%= cl_image_tag @incident.photo.key, height: 800, width: 1000, crop: :thumb if @incident.photo.attached? %>
+          <div class="details-box">
+          <h1>Incident Details</h1>
+          <img class="image"><%= cl_image_tag @incident.photo.key, height: 200, width: 400, crop: :thumb if @incident.photo.attached? %></img>
           <div class="information">
-            <div class="card-show w-100">
+            <div class="box">
               <h3 class="card-title-show">General information</h3>
               <p><strong>Title: </strong><%= @incident.title %></p>
               <p><strong>Address: </strong><%= @incident.address %></p>
@@ -16,20 +16,22 @@
               <p><strong>Time: </strong><%= @incident.time %></p>
               <p><strong>Date: </strong><%= @incident.date %></p>
             </div>
-            <div class="card-show w-100" style="height: 200px;">
+            <div class="box">
               <h3 class="card-title-show">Description:</h3>
               <p class="card-text">
                 <%= @incident.description %></p>
             </div>
           </div>
-          <div class="card-show w-100" style="margin-left: 55px;">
+          </div>
+          <div>
             <strong>
-              <p style="margin-right: 100px;">Location Information:</p>
+              <p class="location-title">Location Information:</p>
             </strong>
-            <div class="container" style="width: 100%; height: 600px;"
+            <div class="map-box" style="height: 600px;"
               data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>"
               data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
           </div>
+          <div class='text-center'>
           <div class="btn btn-submit">
             <%= link_to 'Edit', edit_incident_path(@incident) %></div>
           <div class="btn btn-submit">
