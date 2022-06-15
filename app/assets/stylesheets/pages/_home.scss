@@ -6,21 +6,27 @@ body {
   font-family: "Epilogue";
   color: black;
 }
-.carossel-two{
+
+.carossel-two {
   font-size: 44px;
 }
-.hero-top-header{
-font-size: 36px;
+
+.hero-top-header {
+  font-size: 36px;
 }
 
-.d-block img {
-  filter: brightness(50%);
-}
-.carousel-caption h1{
+.carousel-caption h1 {
   font-family: "Epilogue";
   font-size: bolder;
+  text-shadow: 0px 4px 5px #414141;
 }
-.carossel-one{
+
+.carousel-caption p {
+  text-shadow: 0px 4px 5px #414141;
+  align-items: center;
+}
+
+.carossel-one .carossel-two {
   font-size: larger;
 }
 
@@ -231,7 +237,7 @@ font-size: 36px;
   color: #011E30;
 }
 
-.boxes{
+.boxes {
 
   background-image: image-url("white.png");
 }
@@ -282,10 +288,11 @@ font-size: 36px;
   height: 100vh;
 }
 
-.index_page_info h1{
- font-size: 24px;
+.index_page_info h1 {
+  font-size: 24px;
 }
-.index_page_title p{
+
+.index_page_title p {
   font-size: 34px;
 }
 
@@ -409,18 +416,21 @@ font-size: 36px;
   align-items: center;
 
 }
+
 //info card
-.header_card{
+.header_card {
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
   font-weight: 100;
 
 }
-.body-card{
+
+.body-card {
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
 }
-.card{
+
+.card {
   border-color: transparent;
 
 }
