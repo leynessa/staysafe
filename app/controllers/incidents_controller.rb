@@ -15,7 +15,8 @@ class IncidentsController < ApplicationController
       {
         lat: incident.latitude,
         lng: incident.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { incident: incident })
+        info_window: render_to_string(partial: "info_window", locals: { incident: incident }),
+        image_url: helpers.asset_url("alert.png")
       }
 
     end
@@ -28,7 +29,8 @@ class IncidentsController < ApplicationController
   @markers = [{
     lat: @incident.latitude,
     lng: @incident.longitude,
-    info_window: render_to_string(partial: "info_window", locals: { incident: @incident })
+    info_window: render_to_string(partial: "info_window", locals: { incident: @incident }),
+    image_url: helpers.asset_url("alert.png")
   }]
 
   authorize @incident

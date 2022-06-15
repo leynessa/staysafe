@@ -283,40 +283,46 @@ font-size: 36px;
 }
 
 .index_page_info h1{
- font-size: 24px;
+ font-size: 14px;
+ color: #011E30;
+
 }
 .index_page_title p{
-  font-size: 34px;
+  font-size: 10px;
+  color: #011E30;
 }
 
 
 .card-product {
   overflow: hidden;
-  height: 230px;
+  height: 200px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   margin-top: 16px;
-  width: 750px;
+  width: 550px;
   border-radius: 16px;
+  padding-top: 22%;
+  padding-bottom: 22%;
+  color: #011E30;
 
 }
 
 .card-product img {
-  height: 110%;
-  width: 220px;
+  height: 100%;
+
   object-fit: cover;
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -423,4 +429,57 @@ font-size: 36px;
 .card{
   border-color: transparent;
 
+}
+
+
+///  the popup cards
+* {
+  color: #011E30;
+}
+
+a {
+  color: #011E30;
+}
+a:active {
+  color: #011E30;
+}
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: justify ;
+
+}
+
+.card-trip > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h3 {
+  font-size: 32px;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  color: #011E30 !important;
+  a{
+    color: #011E30 !important;
+  }
+}
+
+.card-trip h6 {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
 }
