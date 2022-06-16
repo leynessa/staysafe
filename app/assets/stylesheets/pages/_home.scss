@@ -434,14 +434,11 @@ font-size: 36px;
 
 ///  the popup cards
 
-
-
-
 .card-trip {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 300px;
+  width: 200px;
   text-align: justify ;
 
 }
@@ -453,17 +450,18 @@ font-size: 36px;
 }
 
 .card-trip h3 {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: bolder;
   align-items: center;
   text-align: center;
   color: #011E30 !important;
+  margin-bottom: 0;
   a{
     color: #011E30 !important;
   }
 }
 
-.card-trip h6 {
+.card-trip h5 {
   font-size: 12px;
   opacity: .7;
   margin: 0;
@@ -476,4 +474,19 @@ font-size: 36px;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+}
+
+// homepage animation
+
+.box{
+  transform: translateX(200%);
+  transition: transform 0.8s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(0);
+
 }
