@@ -1,13 +1,15 @@
-<div class="info-window">
-  <div class="header_pic">
-    <div class= "header_card">
-      <h2><strong> Incident: </strong> <%= incident.title %> <br> </h2>
+<div class="card-trip">
+
+ <img src="https://media.istockphoto.com/photos/car-thief-car-theft-picture-id521975548?b=1&k=20&m=521975548&s=170667a&w=0&h=wK5tJbNcmuMCoa6p_zqXt7vkibDtLXZ1HnEiEL7wqS4=" />
+ <div>
+      <h3><strong> <%= link_to " #{incident.title.upcase}", incident_path(incident.id) %></strong> <br> </h3>
     </div>
+  <div class="card-trip-infos">
+
     <div class="body-card">
-      <p><strong> Address:</strong><%= incident.address %><br>
-          <strong> Type:</strong> <%= incident.incident_type %><br>
-          <strong>Time: </strong><%= incident.time %><br>
-          <strong>Date: </strong><%= incident.date %><br></p>
+      <h5><i class="fas fa-map-pin"></i>   <%= incident.address %><br>
+                  <i class="fas fa-edit"></i>   <%= incident.description.first(35) %><br>
+                  <i class="fas fa-circle"></i>  <%= incident.incident_type.capitalize %><br>
+                  <i class="far fa-calendar-alt"></i> <%= incident.date %><br></h5>
     </div>
   </div>
-</div>

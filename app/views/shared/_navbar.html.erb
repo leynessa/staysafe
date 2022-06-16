@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="staysafe-logo">
       <%= link_to "#", class: "navbar-brand" do %>
-        <a class="navbar-brand" href="#"><%= image_tag "logo.png" %><a href="/" class="title">StaySafe</a></a>
+        <a class="navbar-brand" href="#"><%= image_tag "favicon-32x32.png" %><a href="/" class="title">StaySafe</a></a>
       <% end %>
     </div>
     <div></div>
@@ -41,7 +41,7 @@
           <li class="nav-item">
           </li>
           <li class="nav-item dropdown">
-            ▼<%= image_tag "https://upengenhariaej.com.br/wp-content/uploads/2020/10/1.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            ▼<%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHn2z7r_YL3GXWi6BJzX5LwtfphQGkUpWWBA&usqp=CAU", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "See all Alerts", incidents_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>

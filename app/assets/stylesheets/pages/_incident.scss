@@ -14,6 +14,17 @@
 
 }
 
+.index_page_title {
+  color: #011E30;
+}
+
+.index_page_info {
+  color: #011E30;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
 .form-incident {
   align-items: center;
   width: max-content;
@@ -79,7 +90,7 @@ h4 {
 }
 
 #contact-form {
-  background-color: rgba(72, 72, 72, 0.9);
+  <<<<<<< HEAD background-color: rgba(72, 72, 72, 0.9);
   color: white;
   padding: 10px 20px 30px 20px;
   max-width: 100%;
@@ -93,6 +104,21 @@ h4 {
   -moz-border-radius: 7px;
   text-align: center;
   align-items: center;
+  =======background-color: rgba(34, 95, 151, 0.822);
+  color: white;
+  padding: 10px 20px 30px 20px;
+  max-width: 100%;
+  float: left;
+  left: 44%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  text-align: center;
+  align-items: center;
+  >>>>>>>master
 }
 
 #contact-form input,

@@ -1,57 +1,32 @@
- <!--
- <div class="incident-new">
-  <%= simple_form_for (@incident) do |f| %>
-    <div class="row-incident">
-      <h3 class="incident-title" style="margin-left: 30px">Report an incident</h3>
-      <div class="form-incident">
-        <strong> <%= f.input :title %> </strong>
-        <strong><%= f.input :incident_type %></strong>
-        <strong><%= f.input :time %></strong>
-        <%= f.input :photo, as: :file %>
-        <strong><%= f.input :date %></strong>
-        <strong><%= f.input :description %></strong>
-        <strong><%= f.input :address, input_html: { data: { geocoder_target: "address" }, class:"d-none" },
-              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %></strong>
-
-      </div>
-
-    </div>
-    <div class="text-center" style="margin-left: 50px">
-      <input type="submit" value="Report an Incident" class="btn btn-submit"></div>
-  <% end %>
-
-  <div style="margin-left: -900px">
-  <button type="button" class="btn btn-back"><%=  link_to 'Back', incidents_path %></button></div>
-</div>
--->
-
 <div class="myBackground">
-  <div id="contact-form" style="width: 700px; height: 850px;">
+  <div id="contact-form" style="width: 750px; height: 910px;">
     <div>
-      <h1>Nice to Meet You!</h1>
+      <h1>Hey!</h1>
+      <h4>let´s keep our community safe!</h4>
     </div>
-    <p id="failure">Oopsie...message not sent.</p>
-    <p id="success">Your message was sent successfully. Thank you!</p>
+      <p id="failure">Oopsie...incident not saved.</p>
+    <p id="success">Your incident was save successfully. Thank you!</p>
     <%= simple_form_for (@incident) do |f| %>
       <div class="row-incident">
-        <h3 class="incident-title" style="margin-left: -20px">Report an incident</h3>
-        <div class="form-incident">
-          <strong> <%= f.input :title %> </strong>
-          <strong><%= f.input :incident_type %></strong>
-          <strong><%= f.input :time %></strong>
-          <%= f.input :photo, as: :file %>
-          <strong><%= f.input :date %></strong>
-          <strong><%= f.input :description %></strong>
+        <h3 class="incident-title" style="margin-left: -25px">Report an incident</h3>
+        <div class="form-incident" style="margin-left: 140px">
+          <strong> <%= f.input :title, label: 'What happened?'  %> </strong>
+          <strong><%= f.select :incident_type, ['Choose the type of incident','Armed Robbery', 'assault', 'Group Robbery','hate crime','Looting','police opperation','Shooting', 'theft', 'other'] %></strong>
+          <strong><%= f.input :time,default: Time.parse('8:00'), ignore_date: true %></strong>
+          <%= f.input :photo,label: 'Add a photo',  as: :file %>
+          <strong><%= f.input :date,  as: :date, html5: true %></strong>
+          <strong><%= f.input :description, label: 'Describe the incident', input_html: {style: 'height:110px; width:450px;'} %></strong>
           <strong><%= f.input :address, input_html: { data: { geocoder_target: "address" }, class:"d-none" },
               wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %></strong>
         </div>
       </div>
       <div class="text-center" style="margin-left: 0px">
-        <input type="submit" value="Report an Incident" class="btn btn-back" style="
-    width: 200px;
-    margin-left: -40px;"></div>
+        <input type="submit"  value="Report a Incident" class="btn btn-info" style="
+    width: 200px; margin-left: -40px;"></div>
+
+    </div>
     <% end %>
     <div style="margin-left: -590px">
-      <button type="button" class="btn btn-back"><%=  link_to 'Back', incidents_path %></button></div>
+      <button type="button" class="btn btn-info"><%=  link_to 'Back', incidents_path %></button></div>
   </div>
 </div>
