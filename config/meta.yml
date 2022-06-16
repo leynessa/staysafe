@@ -1,0 +1,6 @@
+meta_product_name: "Staysafe"
+meta_title: "StaySafe - Product tagline"
+meta_description: "StaySafe is a personal safety navigation network that empowers you to protect yourself and the people and places you care about. It helps you route and share your journey while keeping safe. "
+meta_image: "logo.png" # should exist in `app/assets/images/`
+meta_type: "safety app"
+meta_url: "https://www.staysaferio.me/"

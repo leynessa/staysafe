@@ -10,18 +10,31 @@ class IncidentsController < ApplicationController
       @location = Geocoder.search(@destination).first.coordinates
     end
     @incidents = policy_scope(Incident).order(created_at: :desc)
+
     @markers = @incidents.geocoded.map do |incident|
       {
         lat: incident.latitude,
         lng: incident.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { incident: incident })
+        info_window: render_to_string(partial: "info_window", locals: { incident: incident }),
+        image_url: helpers.asset_url("alert.png")
       }
+
     end
+
   end
 
  def show
   @incident = Incident.find(params[:id])
+  @incident.geocode
+  @markers = [{
+    lat: @incident.latitude,
+    lng: @incident.longitude,
+    info_window: render_to_string(partial: "info_window", locals: { incident: @incident }),
+    image_url: helpers.asset_url("alert.png")
+  }]
+
   authorize @incident
+
  end
 
 
@@ -36,7 +49,9 @@ class IncidentsController < ApplicationController
 
   def create
     @incident = Incident.new(incident_params)
+
     authorize @incident
+
    if @incident.save
     redirect_to incident_path(@incident)
    else
@@ -56,9 +71,9 @@ class IncidentsController < ApplicationController
 		redirect_to incidents_path
   end
 
-  private
+private
 
   def incident_params
-    params.require(:incident).permit(:title, :incident_type, :date, :time, :description, :photo)
+    params.require(:incident).permit(:title, :incident_type, :date, :address, :time, :description, :photo)
   end
 end

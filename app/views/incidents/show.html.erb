@@ -10,11 +10,11 @@
           <div class="information">
             <div class="box">
               <h3 class="card-title-show">General information</h3>
-              <p><strong>Title: </strong><%= @incident.title %></p>
-              <p><strong>Address: </strong><%= @incident.address %></p>
+              <p><strong><%= @incident.title %> </strong></p>
+              <p><i class="fas fa-map-pin"></i> <%= @incident.address %></p>
               <p><strong>Incident Type: </strong><%= @incident.incident_type %></p>
-              <p><strong>Time: </strong><%= @incident.time %></p>
-              <p><strong>Date: </strong><%= @incident.date %></p>
+              <p><i class="far fa-clock"></i> <%= @incident.time %></p>
+              <p><i class="far fa-calendar-alt"></i> <%= @incident.date %></p>
             </div>
             <div class="box">
               <h3 class="card-title-show">Description:</h3>
@@ -29,7 +29,11 @@
             </strong>
             <div class="map-box" style="height: 600px;"
               data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>"
-              data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+              data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+            </div>
+          </div>
+          <div class="btn btn-info">
+            <%= link_to 'Edit', edit_incident_path(@incident) %>
           </div>
           <div class='text-center'>
           <div class="btn btn-submit">
@@ -41,7 +45,12 @@
             incident_path(@incident),
             method: :delete,
             data: { confirm: "Are you sure?" } %>
+          <div class="btn btn-info">
+            <%= link_to 'Back', incidents_path %>
           </div>
+          <button id="sweet-alert" class="btn btn-info"><%= link_to 'Destroy', incident_path(@incident), method: :delete, id: "delete-link", class: "hidden"%> this incident</button>
+
+
         </div>
       </div>
       <div class="col-2">
