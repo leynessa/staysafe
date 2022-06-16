@@ -14,7 +14,7 @@
       <% @incidents.each do |incident| %>
         <div class="card-product">
           <div class = "index-incident-foto" style="float:left">
-            <%= cl_image_tag incident.photo.key, height: 220, width: 165, crop: :thumb if incident.photo.attached? %>
+            <%= cl_image_tag incident.photo.key, height: 240, width: 165, crop: :thumb if incident.photo.attached? %>
           </div>
           <div class="card-product-infos">
             <div class = "index-incident-body">
