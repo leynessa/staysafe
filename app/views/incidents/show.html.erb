@@ -2,6 +2,7 @@
   <div class="container-show">
     <div class="row">
       <div class="col-10">
+
         <div class='text-center'>
         <h1><strong>Incident Details </strong></h1>
           <%= cl_image_tag @incident.photo.key, height: 800, width: 1000, crop: :thumb if @incident.photo.attached? %>
@@ -13,9 +14,9 @@
               <p><i class="fas fa-map-pin"></i> <%= @incident.address %></p>
               <p><strong>Incident Type: </strong><%= @incident.incident_type %></p>
               <p><i class="far fa-clock"></i> <%= @incident.time.strftime("%H:%M") %></p>
-              <p><i class="far fa-calendar-alt"></i> <%= @incident.date.strftime("%d-%m-%Y")
- %></p>
+              <p><i class="far fa-calendar-alt"></i> <%= @incident.date&.strftime("%d-%m-%Y")%></p>
             </div>
+
             </div>
             <div class="show-box">
             <div class="card-show w-100" style="height: 200px;">
@@ -25,25 +26,29 @@
             </div>
             </div>
           </div>
-          <div class="card-show w-100" style="margin-left: 55px;">
+          </div>
+          <div>
             <strong>
-              <p style="margin-right: 100px;">Location Information:</p>
+              <p class="location-title">Location Information:</p>
             </strong>
-            <div class="container" style="width: 100%; height: 600px;"
+            <div class="map-box" style="height: 600px;"
               data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>"
               data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
             </div>
           </div>
+<div class="all-btn-show">
           <div id= btn-show class="btn btn-info">
             <%= link_to 'Edit', edit_incident_path(@incident) %>
           </div>
+
           <div id= btn-show class="btn btn-info">
             <%= link_to 'Back', incidents_path %>
           </div>
+
           <button id="sweet-alert" class="btn btn-info"><%= link_to 'Destroy', incident_path(@incident), method: :delete, id: "delete-link", class: "hidden"%> this incident</button>
+</div>
 
 
-        </div>
       </div>
       <div class="col-2">
         <div class="logo-box">

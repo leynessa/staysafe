@@ -6,21 +6,27 @@ body {
   font-family: "Epilogue";
   color: black;
 }
-.carossel-two{
+
+.carossel-two {
   font-size: 44px;
 }
-.hero-top-header{
-font-size: 36px;
+
+.hero-top-header {
+  font-size: 36px;
 }
 
-.d-block img {
-  filter: brightness(50%);
-}
-.carousel-caption h1{
+.carousel-caption h1 {
   font-family: "Epilogue";
   font-size: bolder;
+  text-shadow: 0px 4px 5px #414141;
 }
-.carossel-one{
+
+.carousel-caption p {
+  text-shadow: 0px 4px 5px #414141;
+  align-items: center;
+}
+
+.carossel-one .carossel-two {
   font-size: larger;
 }
 
@@ -251,7 +257,7 @@ font-size: 36px;
   color: #011E30;
 }
 
-.boxes{
+.boxes {
 
   background-image: image-url("white.png");
 }
@@ -302,16 +308,13 @@ font-size: 36px;
   height: 100vh;
 }
 
-.index_page_info h1{
- font-size: 14px;
- color: #011E30;
-
-}
-.index_page_title p{
-  font-size: 10px;
-  color: #011E30;
+.index_page_info h1 {
+  font-size: 24px;
 }
 
+.index_page_title p {
+  font-size: 34px;
+}
 
 .card-product {
   overflow: hidden;
@@ -435,18 +438,21 @@ font-size: 36px;
   align-items: center;
 
 }
+
 //info card
-.header_card{
+.header_card {
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
   font-weight: 100;
 
 }
-.body-card{
+
+.body-card {
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
 }
-.card{
+
+.card {
   border-color: transparent;
 
 }
@@ -457,13 +463,13 @@ font-size: 36px;
 .card-trip {
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 200px;
-  text-align: justify ;
+  text-align: justify;
 
 }
 
-.card-trip > img {
+.card-trip>img {
   height: 100px;
   width: 100%;
   object-fit: cover;
@@ -476,7 +482,8 @@ font-size: 36px;
   text-align: center;
   color: #011E30 !important;
   margin-bottom: 0;
-  a{
+
+  a {
     color: #011E30 !important;
   }
 }
@@ -498,10 +505,11 @@ font-size: 36px;
 
 // homepage animation
 
-.box{
+.box {
   transform: translateX(200%);
   transition: transform 0.8s ease;
 }
+
 .box:nth-of-type(even) {
   transform: translateX(-200%);
 }
@@ -509,4 +517,7 @@ font-size: 36px;
 .box.show {
   transform: translateX(0);
 
+}
+.index_page_title{
+  text-align: center;
 }
