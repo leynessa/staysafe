@@ -1,5 +1,7 @@
 <div class="card-trip">
-<%= cl_image_tag incident.photo.key, height: 140, width: 135, crop: :thumb if incident.photo.attached? %>
+<div class="popup-img"><%= cl_image_tag incident.photo.key, height: 140, width: 200, crop: :thumb if incident.photo.attached? %>
+</div>
+
   <div>
       <h3><strong> <%= link_to " #{incident.title.upcase}", incident_path(incident.id) %></strong> <br> </h3>
     </div>
