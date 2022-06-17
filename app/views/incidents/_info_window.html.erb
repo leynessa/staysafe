@@ -1,7 +1,6 @@
 <div class="card-trip">
-
- <img src="https://media.istockphoto.com/photos/car-thief-car-theft-picture-id521975548?b=1&k=20&m=521975548&s=170667a&w=0&h=wK5tJbNcmuMCoa6p_zqXt7vkibDtLXZ1HnEiEL7wqS4=" />
- <div>
+<%= cl_image_tag incident.photo.key, height: 140, width: 135, crop: :thumb if incident.photo.attached? %>
+  <div>
       <h3><strong> <%= link_to " #{incident.title.upcase}", incident_path(incident.id) %></strong> <br> </h3>
     </div>
   <div class="card-trip-infos">

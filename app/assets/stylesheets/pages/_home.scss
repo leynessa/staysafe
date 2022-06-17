@@ -32,9 +32,29 @@ font-size: 36px;
 }
 
 // block 2 about us
+.carossel-two {
+  font-size: 44px;
+}
+.hero-top-header {
+  font-size: 46px;
+  text-shadow: 0px 1px 8px #B2B2B2;
+}
+.d-block img {
+  filter: brightness(50%);
+}
+.carousel-caption h1 {
+  font-family: "Epilogue";
+  font-size: bolder;
+}
+.carossel-one {
+  font-size: larger;
+  text-shadow: 0px 1px 8px #707070;
+}
+
 .hero-h1 {
   font-family: "Epilogue", sans-serif;
   font-size: 400%;
+  text-shadow: 0px 1px 8px #707070;
 }
 
 .hero-btn {

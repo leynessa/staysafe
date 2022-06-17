@@ -12,7 +12,7 @@
         <div class="form-incident" style="margin-left: 140px">
           <strong> <%= f.input :title, label: 'What happened?'  %> </strong>
           <strong><%= f.select :incident_type, ['Choose the type of incident','Armed Robbery', 'assault', 'Group Robbery','hate crime','Looting','police opperation','Shooting', 'theft', 'other'] %></strong>
-          <strong><%= f.input :time,default: Time.parse('8:00'), ignore_date: true %></strong>
+          <strong><%= f.input :time, as: :time, html5: true %></strong>
           <%= f.input :photo,label: 'Add a photo',  as: :file %>
           <strong><%= f.input :date,  as: :date, html5: true %></strong>
           <strong><%= f.input :description, label: 'Describe the incident', input_html: {style: 'height:110px; width:450px;'} %></strong>

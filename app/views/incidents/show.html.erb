@@ -3,21 +3,26 @@
     <div class="row">
       <div class="col-10">
         <div class='text-center'>
-          <h1 style="color: #030212b3;font-family: monospace;text-shadow: 3px 0px #00018d;">Yours incidents reported</h1>
+        <h1><strong>Incident Details </strong></h1>
           <%= cl_image_tag @incident.photo.key, height: 800, width: 1000, crop: :thumb if @incident.photo.attached? %>
           <div class="information">
+          <div class="show-box">
             <div class="card-show w-100">
-              <h3 class="card-title-show">General information</h3>
+              <h3 class="card-title-show">Incident Details</h3>
               <p><strong><%= @incident.title %> </strong></p>
               <p><i class="fas fa-map-pin"></i> <%= @incident.address %></p>
               <p><strong>Incident Type: </strong><%= @incident.incident_type %></p>
-              <p><i class="far fa-clock"></i> <%= @incident.time %></p>
-              <p><i class="far fa-calendar-alt"></i> <%= @incident.date %></p>
+              <p><i class="far fa-clock"></i> <%= @incident.time.strftime("%H:%M") %></p>
+              <p><i class="far fa-calendar-alt"></i> <%= @incident.date.strftime("%d-%m-%Y")
+ %></p>
             </div>
+            </div>
+            <div class="show-box">
             <div class="card-show w-100" style="height: 200px;">
               <h3 class="card-title-show">Description:</h3>
               <p class="card-text">
                 <%= @incident.description %></p>
+            </div>
             </div>
           </div>
           <div class="card-show w-100" style="margin-left: 55px;">
@@ -29,10 +34,10 @@
               data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
             </div>
           </div>
-          <div class="btn btn-info">
+          <div id= btn-show class="btn btn-info">
             <%= link_to 'Edit', edit_incident_path(@incident) %>
           </div>
-          <div class="btn btn-info">
+          <div id= btn-show class="btn btn-info">
             <%= link_to 'Back', incidents_path %>
           </div>
           <button id="sweet-alert" class="btn btn-info"><%= link_to 'Destroy', incident_path(@incident), method: :delete, id: "delete-link", class: "hidden"%> this incident</button>
