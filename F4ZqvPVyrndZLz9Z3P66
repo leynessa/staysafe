@@ -1,0 +1,1724 @@
+[33mcommit af56ad4436a1d5b16e2686222a6353ef7d3e38ef[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 16 23:39:10 2022 +0100
+
+    fixed conflit
+
+[33mcommit b9bfeb5e74e290e3a10fd3fb6114b42ddebef74d[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 16 23:34:59 2022 +0100
+
+    resolved
+
+[33mcommit 2e5c09e77303f129687961551ea3231030e22256[m
+Merge: 2ea650f 682963f
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 16 23:33:14 2022 +0100
+
+    fixed
+
+[33mcommit 682963fea3bf11517e5a968d9191d03aad2ebfae[m
+Merge: 5b0bd14 9e66aa0
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Thu Jun 16 19:32:15 2022 -0300
+
+    Merge pull request #41 from leynessa/buttons
+    
+    buttons and carousel
+
+[33mcommit 9e66aa0a436a51a3ea01b0ccb79fe992c32461a8[m
+Merge: 6eb2519 5b0bd14
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Thu Jun 16 19:31:04 2022 -0300
+
+    buttons
+
+[33mcommit 5b0bd148fac50468e7c2ad3610ffbea14daab466[m
+Merge: 487d873 314e16a
+Author: ACChreem <97064445+ACChreem@users.noreply.github.com>
+Date:   Thu Jun 16 18:25:08 2022 -0400
+
+    Merge pull request #38 from leynessa/feature/style-incident-page
+    
+    style incident page
+
+[33mcommit 314e16a685c4d1646bea72c453ae553e5a889bad[m
+Merge: 7a0017b 487d873
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Thu Jun 16 19:24:13 2022 -0300
+
+    fixed conflits
+
+[33mcommit 2ea650fc6a5204f35c9c47c1a88ec84913eefd9f[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 16 21:42:56 2022 +0100
+
+    changes
+
+[33mcommit 487d8739716326aa5cb1c8b98cac6dbc7108ec9b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:55:47 2022 -0300
+
+    passing test
+
+[33mcommit ad5f33f258d622ab57f32a9afa331a00470025eb[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:41:04 2022 -0300
+
+    passing test
+
+[33mcommit cd31856916b61c99a4cbc459bd9898cdecca793c[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:33:11 2022 -0300
+
+    passing test
+
+[33mcommit f1c6b85b54996ef086c50c3c8018d45a00d835a3[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:23:28 2022 -0300
+
+    passing test
+
+[33mcommit 844c4e2b69481e9ce55af1601904ccb8bebdfe6b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:12:09 2022 -0300
+
+    paasing test
+
+[33mcommit 46ea132fc5edea7aa71dacea7e6750dbee3f2682[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:09:22 2022 -0300
+
+    paasing test
+
+[33mcommit c18d3885fbfe6a7d1c172cf87afbfbac21397e3a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:05:14 2022 -0300
+
+    paasing test
+
+[33mcommit 686713b78a5984669bf804bcc4b3042d65525ca9[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 05:01:21 2022 -0300
+
+    paasing test
+
+[33mcommit bd7d94f64b4cefb3e78f07d3b8e5437c7db5bb14[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 04:42:05 2022 -0300
+
+    adding the favicon
+
+[33mcommit 0da56ea16bdefc251432dede12287cbe040a1d70[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 01:01:18 2022 -0300
+
+    logs
+
+[33mcommit 7cfbc92524db00c6ea477d31203b3578d9812248[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 00:42:05 2022 -0300
+
+    ajust incident foto size
+
+[33mcommit 5096c153622623a08165336ac9aa7fcea4c684bb[m
+Merge: 209ca07 deb8155
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Thu Jun 16 00:39:07 2022 -0300
+
+    Merge pull request #40 from leynessa/animation
+    
+    animation to homepage and sweetalerts added
+
+[33mcommit deb81555e71404f92641f5e6db596550d4a467da[m[33m ([m[1;31morigin/animation[m[33m)[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 16 00:38:06 2022 -0300
+
+    animation to homepage and sweetalerts added
+
+[33mcommit 209ca07f45e54310378e5cc23799c116a79cecc0[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Wed Jun 15 16:35:08 2022 -0300
+
+    change background color of form to blue
+
+[33mcommit 68eb9b13f6dd2e543be6684174e129492361973d[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Wed Jun 15 16:16:16 2022 -0300
+
+    links to white
+
+[33mcommit b550eb2556cbea0ff0397031bbe22571371554d1[m
+Merge: aca5dbc 77f1f1f
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Wed Jun 15 16:14:04 2022 -0300
+
+    Merge pull request #39 from leynessa/editpage
+    
+    creaed edit page, changes to index page . changes to form
+
+[33mcommit 77f1f1f9a8e4c71b8dda9392630f9e5ace194ae7[m[33m ([m[1;31morigin/editpage[m[33m)[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Wed Jun 15 16:13:12 2022 -0300
+
+    popup box
+
+[33mcommit f6d1290c390fc48604dd2979e224e665dc2f6053[m
+Merge: 3a87353 aca5dbc
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Wed Jun 15 14:22:37 2022 -0300
+
+    log file
+
+[33mcommit 3a87353bfca681f9c95dfa7a7c0e033b9a58ddc3[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Wed Jun 15 14:21:24 2022 -0300
+
+    creaed edit page, changes to index page . changes to form
+
+[33mcommit aca5dbcf7a176cb2c4dcb596f0df72ebb2679e56[m
+Merge: 5e43f77 a98a73d
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 15 11:32:40 2022 +0100
+
+    a
+
+[33mcommit 7a0017b27935ceb7a6849bb280d7002077210f01[m[33m ([m[1;31morigin/feature/style-incident-page[m[33m, [m[1;32mfeature/style-incident-page[m[33m)[m
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Wed Jun 15 02:51:26 2022 -0300
+
+    style incident page
+
+[33mcommit a98a73db81b1e681406da9eeb6ac8175dda72832[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 23:40:43 2022 -0300
+
+    adding space in navbar
+
+[33mcommit 6eb25191b40cc60e509b5c25c070d1df92a7d1e3[m[33m ([m[1;31morigin/buttons[m[33m)[m
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Tue Jun 14 22:46:16 2022 -0300
+
+    buttons and carousel
+
+[33mcommit 5e43f77facf3e4293cede2c0ac5a855c8ef55071[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 15 02:40:00 2022 +0100
+
+    a
+
+[33mcommit df358062461c4ff2b54a743858a6843319978a5f[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 15 02:23:31 2022 +0100
+
+    Add dotenv - Protect my secret data in .env file
+
+[33mcommit aca29e92a340eeb645f12a5810ca881d5d4bbc71[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 22:02:17 2022 -0300
+
+    secondhome page and logs
+
+[33mcommit 0fc3ed4c251a977d1414fa0d2e99455ff45c8af9[m
+Merge: 22e6437 e347a09
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 21:56:16 2022 -0300
+
+    merge conflicts
+
+[33mcommit 22e643754f271346576389043296a9a1de187d8d[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 21:54:36 2022 -0300
+
+    homepage
+
+[33mcommit e347a0999bb25aefc8875919c83115251ee221d8[m
+Merge: d4062bb d1a8839
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Wed Jun 15 01:34:49 2022 +0100
+
+    Merge pull request #37 from leynessa/about
+    
+    fixed
+
+[33mcommit 2d598db7ca4a46ffd35787dd1e2288b49830cb5b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 21:33:37 2022 -0300
+
+    homepage
+
+[33mcommit d1a88398772fb7d79a434bece75349d87b5d4f8a[m[33m ([m[1;31morigin/about[m[33m)[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 15 01:07:47 2022 +0100
+
+    fixed
+
+[33mcommit d4062bbb223386eb3b5e87697cc712bbaaf8827a[m
+Merge: fbec66b 611715e
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Tue Jun 14 23:53:46 2022 +0100
+
+    Merge pull request #36 from leynessa/background
+    
+    background
+
+[33mcommit 611715ed0f99f39be82c7f7c2cb5ea393d97620d[m[33m ([m[1;31morigin/background[m[33m)[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 23:52:08 2022 +0100
+
+    background
+
+[33mcommit fbec66bceb9a47005ff288ad0211c1d18b7ad05b[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 20:24:28 2022 +0100
+
+    a
+
+[33mcommit 97027ac2d496608b5cb182a389207a5a74006787[m
+Merge: 77f7112 455c0bd
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Tue Jun 14 20:20:50 2022 +0100
+
+    Merge pull request #35 from leynessa/form-template
+    
+    Form template
+
+[33mcommit 455c0bdf038e6e68e83c8b934261c90e8beb47e6[m[33m ([m[1;31morigin/form-template[m[33m)[m
+Merge: a0f716b 96fd6bd
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 20:20:29 2022 +0100
+
+    fixed
+
+[33mcommit a0f716bf723c060e89e6e8a2354b950d7479c4ae[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 20:08:03 2022 +0100
+
+    resolve conflits
+
+[33mcommit 7836248c37ef370ca631bc2555bc4e5f1ab5a598[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 20:06:56 2022 +0100
+
+    forma final
+
+[33mcommit 4f41fc77f5d5e52b48bbe1e11cdbcb1bcb3d317d[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 19:46:54 2022 +0100
+
+    melhorado
+
+[33mcommit 96fd6bdde12d40540082135a0064fbb6cc68e22b[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 19:39:07 2022 +0100
+
+    b
+
+[33mcommit 77f7112bf877f4d0dab876e009f6d836f93c3040[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 00:25:29 2022 -0300
+
+    resolving merge conflicts
+
+[33mcommit 33a55710d15251a3e5fe486b56bc48c3787b887e[m
+Merge: 0586475 caad2e5
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 14 00:04:46 2022 -0300
+
+    logs
+
+[33mcommit 05864753f83421ec7531a1d2f81a63a559adf9c6[m
+Merge: 02b9f85 39bafeb
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Tue Jun 14 00:00:39 2022 -0300
+
+    Merge pull request #34 from leynessa/search
+    
+    Search
+
+[33mcommit 39bafeb333afe5b660fffb70afe613463df524db[m[33m ([m[1;31morigin/search[m[33m)[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 23:59:27 2022 -0300
+
+    adding mapbox search  bar
+
+[33mcommit 1a3c567f0b128f0cd4fb03758802f40814731e43[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 22:21:59 2022 -0300
+
+    incident page with details
+
+[33mcommit 8d15738fa656f1dbde9d0f78fabf09df2632e1e0[m
+Merge: 6ddf2a2 02b9f85
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 22:20:57 2022 -0300
+
+    Merge branch 'master' of github.com:leynessa/staysafe into search
+
+[33mcommit 02b9f8501dc3debea2cb57b540d9bf422bf3fab0[m
+Merge: 92ccbbe b1d11a3
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 22:19:21 2022 -0300
+
+    cache
+
+[33mcommit 92ccbbeb637e73ffdf0c8119826ffc4da91bdad7[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 22:18:19 2022 -0300
+
+    add the pictures to homepage
+
+[33mcommit 9cdd1b82cbaf2c99899db1a450c2991a68c352e3[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 20:25:31 2022 -0300
+
+    adding picture to carrosel
+
+[33mcommit b1d11a3401c6c07fd3cb7927884a7d54f2c0df01[m
+Merge: ef34de4 370d882
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Tue Jun 14 00:24:40 2022 +0100
+
+    Merge pull request #33 from leynessa/dropdown
+    
+    foto perfil dropbox alterada
+
+[33mcommit 370d882e8f9c2ea2c2ebb2de1f4fe91d0c1c5cce[m[33m ([m[1;31morigin/dropdown[m[33m)[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 14 00:24:02 2022 +0100
+
+    foto perfil dropbox alterada
+
+[33mcommit 433707e3ebe84c84c8758c63293c20fd3d55e384[m
+Merge: 3c1b1bc ef34de4
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 20:06:47 2022 -0300
+
+    logs
+
+[33mcommit 3c1b1bc9a66d8f29cad982e79829cade4a387463[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon Jun 13 20:05:46 2022 -0300
+
+    logs
+
+[33mcommit ef34de4039240528bb6720d93f2a51e0bf995936[m
+Merge: ef300ff c329a72
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Tue Jun 14 00:00:28 2022 +0100
+
+    Merge pull request #32 from leynessa/form-template
+    
+    Form template
+
+[33mcommit c329a72f410a0f218d527153f3159f9b45438b7a[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon Jun 13 22:32:20 2022 +0100
+
+    reformulado
+
+[33mcommit f1a80bf6927ee7551e553899e617cb275344838e[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon Jun 13 21:24:54 2022 +0100
+
+    a
+
+[33mcommit 9c672997aa66e5f75eef7371e1aa05a2cde58aa5[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon Jun 13 21:04:47 2022 +0100
+
+    atualizado
+
+[33mcommit cadc88c8fc69c0fafec970fc5ce10ebdf7b99322[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 22:39:46 2022 +0100
+
+    a
+
+[33mcommit 6c145c47f4dfe7a36d38492b0772bf290a1e47d6[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 22:24:00 2022 +0100
+
+    novo template
+
+[33mcommit aa4e3d75d65db0b011689fee488c56c4afb8e30b[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 22:15:06 2022 +0100
+
+    reformulando
+
+[33mcommit a74f6c2a4708266afbc742f4f544d0f3a821963e[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 21:43:21 2022 +0100
+
+    a
+
+[33mcommit badaf6b5c7a9720124c0e11a29725ea538410752[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 18:45:02 2022 +0100
+
+    a
+
+[33mcommit 3dda13de375a3c52f1c6f8bd1475f848aec2bdb6[m
+Merge: 64e1d20 ef300ff
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 18:39:04 2022 +0100
+
+    a
+
+[33mcommit 64e1d20e0f68041ef427dc670212362869d33e1b[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sun Jun 12 18:38:33 2022 +0100
+
+    a
+
+[33mcommit 6ddf2a22b271cdada0964eb1abd2efc968a54214[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun Jun 12 01:51:44 2022 -0300
+
+    git push homepage alteration, make cards wider
+
+[33mcommit ef300ffb616c39efd8f17242eecde4e8e86e5e0d[m
+Merge: b7c1a2e 0cdcc6f
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Sun Jun 12 01:45:45 2022 -0300
+
+    Merge pull request #31 from leynessa/search
+    
+    Search
+
+[33mcommit 0cdcc6fab75b2327bbd30c40cec1babbbca2cda3[m
+Merge: 4d0192d b7c1a2e
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun Jun 12 01:45:10 2022 -0300
+
+    git push homepage alteration, make cards wider
+
+[33mcommit 4d0192dd3eef2b764519b3a64da20e31c87d946a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun Jun 12 01:43:54 2022 -0300
+
+    git push homepage alteration, make cards wider
+
+[33mcommit b7c1a2ec3b95bc2ce78b66dc852e122f517efb6c[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 21:03:11 2022 -0300
+
+    logs
+
+[33mcommit 1fa83df94296dad326e7e8a4e8eb9b7656cbaecf[m
+Merge: 38a1a1a 0bfc714
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 21:00:36 2022 -0300
+
+    Merge branch 'master' of github.com:leynessa/staysafe
+
+[33mcommit f9e75a66eb88a4bbe674c1e604f9a1ca099ff5be[m
+Merge: 5fe285b 0bfc714
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 20:57:10 2022 -0300
+
+    index page- mapbox format
+
+[33mcommit 5fe285b041269241f525567fdbf1a7e55a9283ba[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 20:56:12 2022 -0300
+
+    index page- mapbox format
+
+[33mcommit 0bfc714f8895cda522a4b21bf56d569eb22dcf28[m
+Merge: 6c3c5d6 ef917d1
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Sat Jun 11 20:12:32 2022 -0300
+
+    Merge pull request #30 from leynessa/search
+    
+    search bar
+
+[33mcommit ef917d17b88db9066dfd05bbd188678eefcf20ca[m
+Merge: 047f5a0 6c3c5d6
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Sat Jun 11 20:09:16 2022 -0300
+
+    Merge branch 'master' into search
+
+[33mcommit 047f5a03de7eddb928cb6a0a8c4269bbabb069d6[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 20:06:00 2022 -0300
+
+    index page- mapbox format
+
+[33mcommit 6c3c5d6fdeff2c009d6ad75b0a7eb32cf504cca1[m
+Merge: 1a32303 0a0f9fa
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 11 23:40:09 2022 +0100
+
+    Merge pull request #29 from leynessa/andre
+    
+    Andre
+
+[33mcommit 0a0f9fa99e6a48f0de891b37438d38279b175e0c[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 23:39:16 2022 +0100
+
+    a
+
+[33mcommit 74a9eb3074d8d4ab48fad92c921ad4bf48513d10[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 21:31:13 2022 +0100
+
+    button
+
+[33mcommit caad2e5f2b80bb40c6cceed3b1cbe29ead0d43f0[m
+Merge: 09a3114 f6e38b9
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 20:14:35 2022 +0100
+
+    c
+
+[33mcommit 09a31142dc9a0e699e175d1373292b64ef128281[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 20:13:31 2022 +0100
+
+    a
+
+[33mcommit 99a2d0d2f3f959a7b0f12e120ab1b0e8055df9cc[m
+Merge: 03a22a5 1a32303
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 20:04:57 2022 +0100
+
+    Merge branch 'master' of github.com:leynessa/staysafe
+
+[33mcommit 1a323037e04adf4124dd88dcc2c61afbb79fc67c[m
+Merge: 85f7eb2 02075f8
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 11 20:04:29 2022 +0100
+
+    Merge pull request #28 from leynessa/incidents-show
+    
+    a
+
+[33mcommit 02075f8347efce3b8290a15b5372285bc7da3d09[m[33m ([m[1;31morigin/incidents-show[m[33m)[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 20:02:05 2022 +0100
+
+    a
+
+[33mcommit 03a22a528018537e05a31cacf74d5be2385bbf17[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 18:49:24 2022 +0100
+
+    changes
+
+[33mcommit 85f7eb216d46c3bd52544cff97dea8d28d44acad[m
+Merge: 543d858 146f3ef
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 11 18:28:42 2022 +0100
+
+    Merge pull request #27 from leynessa/abouts_page_and_cards
+    
+    Abouts page and cards
+
+[33mcommit 146f3efea0a881e32fde8ba07b1e6a87beca8826[m[33m ([m[1;31morigin/abouts_page_and_cards[m[33m)[m
+Merge: 6da988e 543d858
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Sat Jun 11 14:26:47 2022 -0300
+
+    adjusting
+
+[33mcommit 543d858497cd427d28769559eea3f423869071a1[m
+Merge: c54182d 0e5cf32
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Sat Jun 11 14:18:46 2022 -0300
+
+    about us page and cards
+
+[33mcommit 6da988e0c95abbd69ee1c31143be07ced4729b66[m
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Sat Jun 11 14:13:43 2022 -0300
+
+    created the abouts us page and adjusted the cards
+
+[33mcommit 0e5cf32d8ed2d6bd5e8d1a18952f92538dc546f8[m
+Merge: 46bcfa4 d8d41e2
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 11 17:14:43 2022 +0100
+
+    Merge pull request #26 from leynessa/incidents-show
+    
+    Incidents show
+
+[33mcommit d8d41e2df85d514b053d132f8043cbe81fff7add[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 17:14:11 2022 +0100
+
+    fixed
+
+[33mcommit 214e203e744da6721e036d3b3bdb35dd5ed2e19b[m
+Merge: 135309c 46bcfa4
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 17:13:14 2022 +0100
+
+    fixed
+
+[33mcommit 135309c7188037f6ed777b0b40f09d7d8f36a3f1[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 17:10:19 2022 +0100
+
+    done
+
+[33mcommit 38a1a1a88313a1d1b32d62570d443e5496366ab6[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 13:03:50 2022 -0300
+
+    log
+
+[33mcommit e267319c86c9e6f321fa65c437605e19d5edea54[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 12:58:48 2022 -0300
+
+    phot attached
+
+[33mcommit c74d42b0eb1e84ca2e63e4add31618fdbf98485f[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 16:56:02 2022 +0100
+
+    terminando e podando
+
+[33mcommit c690fd02b7e7ffc7eb4d4d47c5597b35bdbb851b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 12:55:48 2022 -0300
+
+    search bar
+
+[33mcommit 8e9f992224a65b97a9030d50318eca64683e080e[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 16:38:00 2022 +0100
+
+    reformulado
+
+[33mcommit 94e02a8f6cd6b939d60d9f389a1ed5ab258d574d[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 15:29:00 2022 +0100
+
+    repair
+
+[33mcommit ed07a417ac3457e246e26e26a4004b845781773b[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 11 15:17:01 2022 +0100
+
+    login page polished
+
+[33mcommit 46bcfa421de8b0f5b45e106b70e5c3722a98bfd8[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 11:10:58 2022 -0300
+
+    mapbox
+
+[33mcommit c54182d558d5ac1b8a46166d36bf6c1312c2f219[m
+Author: Juliana Ferreira <julianaferreiralp@outlook.com>
+Date:   Sat Jun 11 09:40:37 2022 -0300
+
+    Add dotenv - Protect my secret data in .env file
+
+[33mcommit c78bc3f989a72a31879e018149f325ab605edc73[m
+Merge: f6e38b9 5478f6a
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 11 09:32:30 2022 -0300
+
+    logs
+
+[33mcommit 5478f6a5d240a2da31e7fcbb292473914e536592[m
+Merge: 08beac4 2807abc
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Fri Jun 10 11:37:47 2022 +0100
+
+    a
+
+[33mcommit 08beac4dff8ef8b70bda9cee87837c1246080e03[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Fri Jun 10 11:37:04 2022 +0100
+
+    a
+
+[33mcommit f6e38b92ffd3f5e2b9a12d8aff92c815d945f06c[m
+Merge: 2807abc b0a7706
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 22:21:06 2022 -0300
+
+    logs
+
+[33mcommit 2807abce945a8d1748bc0c688bb9eaa62b5c3c35[m
+Merge: 2319147 8223f0d
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 22:12:56 2022 -0300
+
+    logs
+
+[33mcommit 8223f0d2977c4783b03943aff5b8cc325ceb9631[m
+Merge: 601bced 35ff0a3
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Thu Jun 9 22:11:37 2022 -0300
+
+    Merge pull request #24 from leynessa/incidents-index
+    
+    Incidents index
+
+[33mcommit 35ff0a3aa1337837637007371c2003907f8875ea[m[33m ([m[1;31morigin/incidents-index[m[33m)[m
+Merge: 6042317 601bced
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 22:11:01 2022 -0300
+
+    merge conflicts
+
+[33mcommit 2319147c200e9685a44278d1f70b11d525925b89[m
+Merge: 36b2341 601bced
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 22:03:33 2022 -0300
+
+    logs
+
+[33mcommit 604231742745b2e6d42efeb8ffac69d325cf872f[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 22:02:13 2022 -0300
+
+    incident page
+
+[33mcommit 601bced325acb4b05f906ea1bffc7ddd7b09884d[m
+Merge: 6e67dbc 1a89b99
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Fri Jun 10 01:55:33 2022 +0100
+
+    Merge pull request #25 from leynessa/border
+    
+    Border
+
+[33mcommit 1a89b99a63b56287a940626903abb00153937e39[m[33m ([m[1;31morigin/border[m[33m)[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Fri Jun 10 01:43:35 2022 +0100
+
+    a
+
+[33mcommit 3d2b13d4a942b18ff79d5782499981dd85eb54db[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Fri Jun 10 01:37:17 2022 +0100
+
+    atualizado
+
+[33mcommit 846b07c116387fbd3fdf34f6c827186bba933eb0[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Fri Jun 10 01:14:41 2022 +0100
+
+    alterado
+
+[33mcommit b4dd572d3eaa39aa5628fa6d1f24818c640f4076[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 20:45:40 2022 -0300
+
+    mapbox done
+
+[33mcommit 6e67dbc5d02e6f575b7160d8ceacab8b135967eb[m
+Merge: e4ddd01 a68e721
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Thu Jun 9 19:39:10 2022 +0100
+
+    Merge pull request #23 from leynessa/inc
+    
+    Inc
+
+[33mcommit a68e7212f446f2e82d38d585e75fea6b4755bbf8[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 19:37:21 2022 +0100
+
+    done
+
+[33mcommit b638c438e444788dba8e493dacddb02e91727e51[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 19:24:37 2022 +0100
+
+    reforumlado
+
+[33mcommit e4ddd0158e53a60acec1ad058057dd814830ea17[m
+Merge: c8724ce 65e61fe
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Thu Jun 9 18:44:22 2022 +0100
+
+    Merge pull request #22 from leynessa/inc
+    
+    Inc
+
+[33mcommit 65e61fe99fa51ad80c2a69db2933cc7245088a4d[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 18:43:33 2022 +0100
+
+    done
+
+[33mcommit 515994646da73feb5240015947f8735b7a8f3283[m
+Merge: 98d19df c8724ce
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 18:26:39 2022 +0100
+
+    a
+
+[33mcommit c8724ce853c018b797612944d51ff4de7aecc113[m
+Merge: 92c5d7b ab7a7ad
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Thu Jun 9 18:24:59 2022 +0100
+
+    Merge pull request #21 from leynessa/incidents-template
+    
+    Incidents template
+
+[33mcommit ab7a7adb2b0453e4073ad3ff746ff05b2895c67e[m
+Merge: d1fc034 92c5d7b
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Thu Jun 9 18:24:49 2022 +0100
+
+    Merge branch 'master' into incidents-template
+
+[33mcommit d1fc034c115f69530b02b46c115c92eb895df024[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 17:56:37 2022 +0100
+
+    show incidents
+
+[33mcommit 98d19df8575df94b4b70e43c48a123614f7d98c4[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 17:25:48 2022 +0100
+
+    a
+
+[33mcommit 5bb3342a3cd12e2f5d301c5454f80dbf6df918b5[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 9 17:23:19 2022 +0100
+
+    a
+
+[33mcommit 36b2341c8ed9295328a1da2df4570b6016bc81e3[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 11:41:57 2022 -0300
+
+    logs
+
+[33mcommit 6a1898c61c83bff63a6a258fd26ae92a3306f44d[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 9 11:23:06 2022 -0300
+
+    incident page
+
+[33mcommit 92c5d7bcc002a6cfda6dc52c7dfe1dc17643cef1[m
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Wed Jun 8 04:37:20 2022 -0300
+
+    fixed margin on incidents page
+
+[33mcommit bbd65ef91d02541ca8f6dc8dd2834aa11f2afa02[m
+Merge: c3f2151 a98c1e5
+Author: ACChreem <97064445+ACChreem@users.noreply.github.com>
+Date:   Wed Jun 8 03:30:50 2022 -0400
+
+    Merge pull request #20 from leynessa/feature/style-login-pages
+    
+    style login pages
+
+[33mcommit a98c1e51ec8f58f5a8c6bb79b280adfa0bb0f761[m
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Wed Jun 8 04:24:09 2022 -0300
+
+    style login pages
+
+[33mcommit c3f21511c4bdf4eab4c0858d47dc7ba7c7534552[m
+Merge: 641f605 a37f1f0
+Author: ACChreem <97064445+ACChreem@users.noreply.github.com>
+Date:   Tue Jun 7 21:48:49 2022 -0400
+
+    Merge pull request #19 from leynessa/style-incidents-page
+    
+    Style incidents page
+
+[33mcommit a37f1f0becfd443b5d7b9b4a07474656f06670ba[m[33m ([m[1;31morigin/style-incidents-page[m[33m)[m
+Merge: 962f06e 641f605
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Tue Jun 7 22:46:54 2022 -0300
+
+    resolve conflits
+
+[33mcommit 962f06ed1a8ff413a455897857fac1f21ca14014[m
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Tue Jun 7 22:41:51 2022 -0300
+
+    resolve conflits
+
+[33mcommit ba2ed74f23959adefcfd32c644901fc78945f630[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 8 02:35:13 2022 +0100
+
+    new template
+
+[33mcommit ca2ac23f335e516933646ec35aef06854795ebb6[m
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Tue Jun 7 22:31:23 2022 -0300
+
+    style incident page
+
+[33mcommit 23de79f165d14c27a3ce1f7e566a24a2bd3d6cbb[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 8 01:46:05 2022 +0100
+
+    incidents link
+
+[33mcommit c086c38f177bfa68b0de893ed3bb2b3fe50bb70a[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 8 00:43:48 2022 +0100
+
+    incidents report
+
+[33mcommit 641f60585583ab69ba6afa06bd7f3000baf3c7c3[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue Jun 7 19:45:10 2022 -0300
+
+    height
+
+[33mcommit 51413fbb1208bc5a518b47df9d06bdce3c04de68[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue Jun 7 00:01:04 2022 +0100
+
+    some cards
+
+[33mcommit 1178d4d2c8ab61726b1c3a16b95b5420bb4d7ae5[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon Jun 6 23:39:40 2022 +0100
+
+    alterando template incidents report
+
+[33mcommit b0a77064fc7ddbafc16d6178d66157104d44eaed[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon Jun 6 19:28:13 2022 +0100
+
+    make it better7
+
+[33mcommit 0092f50df3dc20ee0bcd88bbb085ab7f754080e5[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun Jun 5 02:09:49 2022 -0300
+
+    mapbox
+
+[33mcommit ddd4823965b9f82c8fb2b8a84994c0de6953e98f[m
+Merge: 9cd9ba7 36baccf
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun Jun 5 01:26:25 2022 -0300
+
+    caches
+
+[33mcommit 9cd9ba799a481b58407d457f32a6bafeb6d360d1[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun Jun 5 01:25:23 2022 -0300
+
+    mapbox commits
+
+[33mcommit 36baccf45c4f22220e188b43d670ace95a9a8f99[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 23:20:37 2022 -0300
+
+    log
+
+[33mcommit 9e78f4c9455c13c15cd3d721cf04c5427961951a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 19:01:41 2022 -0300
+
+     add to heroku
+
+[33mcommit fbaf2ce364771d7928920e90a0c72b10a24420de[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 18:04:58 2022 -0300
+
+    log
+
+[33mcommit 44be5f0e2938b52da439b24c79ae88410d4e35c0[m
+Merge: 43fa8d5 af7f2ef
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 17:58:29 2022 -0300
+
+    logs
+
+[33mcommit 43fa8d56bdebea6604608136ed46e209f8d107a4[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 17:56:59 2022 -0300
+
+    migrations
+
+[33mcommit af7f2efb6673daf3ec2adcbbeca30851f15f4149[m
+Merge: d123942 a5eddae
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 4 21:56:48 2022 +0100
+
+    Merge pull request #18 from leynessa/show-incidents
+    
+    incidents page
+
+[33mcommit a5eddae0f99c37379cb9b24c945fce0af972faa9[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 4 21:49:29 2022 +0100
+
+    incidents page
+
+[33mcommit d123942a21744e5b8794bd414d94c07226efa2c1[m
+Merge: 6c85a62 34a9587
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 4 21:45:38 2022 +0100
+
+    Merge pull request #17 from leynessa/migration-new
+    
+    fixed
+
+[33mcommit 34a95878c7c1f878c2b94b89a8a4f364e57bffaf[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 4 21:45:02 2022 +0100
+
+    fixed
+
+[33mcommit 6c85a6211bc584d08bcece2188b3cb9bb9355f35[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 4 21:16:25 2022 +0100
+
+    fixed
+
+[33mcommit 2fd8eaf8fff6af706083f20af56033dbb47de92a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 16:02:49 2022 -0300
+
+    mapbox
+
+[33mcommit 77ea538bede2e94ff4b449c731635aa43c4a3518[m
+Merge: b7f771a 8bc8a1d
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 4 19:12:15 2022 +0100
+
+    Merge pull request #16 from leynessa/incidents
+    
+    Incidents
+
+[33mcommit 8bc8a1d6a2b6e9f1e96c43400693f6e5bdbe155f[m
+Merge: 98bcdec b7f771a
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat Jun 4 19:12:04 2022 +0100
+
+    Merge branch 'master' into incidents
+
+[33mcommit b7f771ab5d6038ba510418b15eef998b10d10fc8[m
+Merge: a26f533 6178061
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 15:04:49 2022 -0300
+
+    cache
+
+[33mcommit a26f533f81120437bd1e3832d0fb3f189ed97d14[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 15:02:21 2022 -0300
+
+    cache
+
+[33mcommit 98bcdec1e42ef7310cfc9b39e34fa445859ae524[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 4 18:53:59 2022 +0100
+
+    incidents report created
+
+[33mcommit 617806138ff022c5fb16ac1700132ad5850394a9[m
+Merge: 83e0ea9 a933c1e
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Sat Jun 4 14:53:47 2022 -0300
+
+    Merge pull request #14 from leynessa/incidents-index
+    
+    Incidents index
+
+[33mcommit a933c1e9886321dd8e7e453c7e33d50b7de0bad6[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 14:50:48 2022 -0300
+
+    mapbox for index incidents
+
+[33mcommit 2198138b449506b4ffff77305723f204fd08d24c[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 4 18:36:56 2022 +0100
+
+    Add dotenv - Protect my secret data in .env file
+
+[33mcommit e6e4f312f44c37135bce52f57461e48c8129a25f[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat Jun 4 18:21:36 2022 +0100
+
+    incident page
+
+[33mcommit 069535422d64357e445b2be6548720c5b31f632b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 11:28:58 2022 -0300
+
+    cache
+
+[33mcommit a9b3791d2171f652ddcdb165bb114f7ebfd775ca[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat Jun 4 11:23:34 2022 -0300
+
+    adding mapbox
+
+[33mcommit 2d4a7b3e6c31c549d37f813e036f0d68f97eed85[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri Jun 3 14:23:41 2022 -0300
+
+    Add dotenv - Protect my secret data in .env file
+
+[33mcommit 9fd09e002f5517c627e715f224f1fb3ea1890b85[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri Jun 3 14:22:49 2022 -0300
+
+    Add dotenv - Protect my secret data in .env file
+
+[33mcommit 7e4e06ac5dd9f2b14261ffb82ac9abb7d5efc2b4[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri Jun 3 12:15:21 2022 -0300
+
+    logs
+
+[33mcommit 8a206ddb363c0328f439c395543c206d8017905a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri Jun 3 12:12:35 2022 -0300
+
+    logs of files
+
+[33mcommit 83e0ea98bb259e7be1577be1ada902937f26e87f[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 2 22:46:16 2022 -0300
+
+    change login back to white
+
+[33mcommit 045416002983258047c47aed291b8c098e5a085b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 2 22:33:03 2022 -0300
+
+    logs
+
+[33mcommit 8a754cc5fd9f44032a846ed0d45e8c2315f1d4d2[m
+Merge: f787d54 f6d89b3
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 2 22:10:36 2022 -0300
+
+    Merge branch 'master' of github.com:leynessa/staysafe
+
+[33mcommit f787d5482ae80b800c473c4a20b349c24de0a50d[m
+Merge: 1f69f50 ad455bd
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 2 22:08:18 2022 -0300
+
+    logs
+
+[33mcommit f6d89b35880b7d6a4352ac4d81b84cc76afe0821[m
+Merge: 1f69f50 b37e98c
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Thu Jun 2 22:04:17 2022 -0300
+
+    Merge pull request #13 from leynessa/homepage-content
+    
+    homepage
+
+[33mcommit b37e98cfed6f42f12afb6483e2350a9ce5b9523a[m[33m ([m[1;31morigin/homepage-content[m[33m)[m
+Merge: be5b4bf 1f69f50
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 2 22:03:03 2022 -0300
+
+    log
+
+[33mcommit be5b4bf5f5b55d3d80c8fbde3052bd792a6cc481[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu Jun 2 21:57:31 2022 -0300
+
+    homepage
+
+[33mcommit 1f69f503ff0d5b5f15388861000698aeff612f51[m
+Merge: ea8a43d 92f81f6
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Fri Jun 3 01:06:51 2022 +0100
+
+    Merge pull request #12 from leynessa/pundit
+    
+    about resolve
+
+[33mcommit 92f81f6a867d86fd95c6812eec1cf00c40f6a116[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Fri Jun 3 01:05:58 2022 +0100
+
+    about resolve
+
+[33mcommit ea8a43db668e5aca229efe53516145b57e26de9e[m
+Merge: 1c211c8 4ca7927
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Fri Jun 3 00:19:01 2022 +0100
+
+    Merge pull request #11 from leynessa/adjusting_migrations
+    
+    fixing migrations
+
+[33mcommit 4ca792734a7a1dced626571b2ae4cfa4e6c0102a[m[33m ([m[1;31morigin/adjusting_migrations[m[33m)[m
+Author: juliana ferreira <julianaferreiralp@outlook.com>
+Date:   Thu Jun 2 20:09:38 2022 -0300
+
+    fixing migrations
+
+[33mcommit 1c211c89ab487578c18567485fe4baf4061e436e[m
+Merge: 2bc45a8 2fdc75e
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Thu Jun 2 22:52:00 2022 +0100
+
+    Merge pull request #10 from leynessa/pundit
+    
+    pundit;
+
+[33mcommit 2bc45a8a36a3a5d4ab49ccf1eb5d99805583a973[m
+Merge: 631c058 b63e017
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Thu Jun 2 22:50:53 2022 +0100
+
+    Merge pull request #9 from leynessa/record
+    
+    Record
+
+[33mcommit b63e017cbfeb584b7d95c7a008d6be69a00f4997[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 2 17:30:53 2022 +0100
+
+    locations
+
+[33mcommit ccdc128b7bc16b466943547654bdd3bf0bce038e[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 2 17:26:37 2022 +0100
+
+    locations
+
+[33mcommit 295f175bc5e8777aaf1dfc00cf1e3d814006d21d[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Thu Jun 2 16:54:23 2022 +0100
+
+    has_many
+
+[33mcommit 2fdc75e65cf8460dd58b257e8fa931417786aecf[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 10:56:37 2022 +0100
+
+    pundit;
+
+[33mcommit 631c058ddbef50d44863f5c000df4c91d680b779[m
+Merge: 4b1b6ee 1f3f127
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Wed Jun 1 10:35:25 2022 +0100
+
+    Merge pull request #7 from leynessa/pundit
+    
+    Pundit
+
+[33mcommit 1f3f127f1d936de14812a3c4b7aa818507fbb895[m
+Merge: f8c7d58 4b1b6ee
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 10:34:13 2022 +0100
+
+    merge resolve
+
+[33mcommit 4b1b6eed737c053cef06fcebe154db1626cca8cd[m
+Merge: 52e84b9 71d05c4
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Wed Jun 1 01:07:46 2022 +0100
+
+    Merge pull request #8 from leynessa/sign
+    
+    atualizado
+
+[33mcommit 71d05c45d542136b4a849d493436b17db65f8191[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 01:06:06 2022 +0100
+
+    atualizado
+
+[33mcommit 52e84b9930f5e9ef7b26bb5edf9755ff1d25c9f3[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 01:00:26 2022 +0100
+
+    config
+
+[33mcommit be1f9de992a0edf11c65d76e9310224965f2537e[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 00:38:35 2022 +0100
+
+    l
+
+[33mcommit f8c7d58480f9c0f383b96d19fe69ea8546300240[m
+Merge: c011235 17ce7a9
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 00:34:56 2022 +0100
+
+    merge;
+
+[33mcommit 17ce7a9d52f32d8e71acd83ec3a615822ca865ab[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 00:32:31 2022 +0100
+
+    log
+
+[33mcommit c011235ad82110560fe3d1fe0d25ba31d25201d7[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 00:29:14 2022 +0100
+
+    pundit
+
+[33mcommit 0181e9b08cf7735dde6fbe82d1a2bd6733f2be0c[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 00:22:11 2022 +0100
+
+    incidents controller done
+
+[33mcommit 0b6287e08f71eabd5b7176c33fc4ccbbd0bdb3d7[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Wed Jun 1 00:15:33 2022 +0100
+
+    doing pundit incident
+
+[33mcommit 0a96290793773909f9e8cbddaa24685fdfd07732[m
+Merge: cedb9d1 c180f24
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Tue May 31 19:56:32 2022 -0300
+
+    Merge pull request #5 from leynessa/homepage-content
+    
+    links of the homepage
+
+[33mcommit c180f246fae1f0737fe81590de4640a170858b09[m
+Merge: 7cacfdd cedb9d1
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue May 31 19:55:43 2022 -0300
+
+    log files
+
+[33mcommit cedb9d111a5a579baf2be361c15eabfb910da2cc[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Tue May 31 23:39:04 2022 +0100
+
+    log
+
+[33mcommit ad455bd6a86d3562438f3dca5ef77a6bb7973edc[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon May 30 21:45:04 2022 +0100
+
+    heroku
+
+[33mcommit a1f028602c22215dd6571dd1a5eddb7796fe24d6[m
+Merge: ae37fc0 14d16d5
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Mon May 30 21:27:05 2022 +0100
+
+    Merge pull request #6 from leynessa/signup
+    
+    Signup
+
+[33mcommit 14d16d5a713a0029a573da0eb7b3f345550e38fe[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon May 30 20:47:32 2022 +0100
+
+    atualizado
+
+[33mcommit e4cd164dd759a2cb792a73287539dd6d71c6e3ce[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon May 30 20:39:19 2022 +0100
+
+    atualizacao da pagina de login
+
+[33mcommit ba51b064ffaa8cc7d84bc96a55ffa2f8edd1cf0c[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon May 30 20:23:26 2022 +0100
+
+    reformulando sign up page
+
+[33mcommit 2c97ad309230e49e90842c7fd8354a9d12f76958[m
+Merge: db34abf ae37fc0
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Mon May 30 19:22:41 2022 +0100
+
+    Merge branch 'master' of github.com:leynessa/staysafe
+
+[33mcommit 7cacfdd79b18d8621e5bac9cdf2d90a945d3f8ad[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon May 30 15:06:33 2022 -0300
+
+    links of the homepage
+
+[33mcommit db572e907cdf52dfab471ffbe95880bd58996b02[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Mon May 30 01:50:03 2022 -0300
+
+    links of the homepage
+
+[33mcommit ae37fc075a7f97b86fdb4e56cb70df12a971f27a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun May 29 02:13:23 2022 -0300
+
+    dev log
+
+[33mcommit bad1b5268e1877277d03a99818cfa47780729bf8[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun May 29 02:11:39 2022 -0300
+
+    homepage edits
+
+[33mcommit 416c5f4da12d0899d1a8b2d95838f7bae5bc5adc[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sun May 29 02:10:11 2022 -0300
+
+    editing homepage
+
+[33mcommit 8466a67eef49e80bb736a027381e08bb88f2db2d[m
+Merge: 4a8a665 f3f5ae4
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 21:01:43 2022 -0300
+
+    merge conflicts
+
+[33mcommit 4a8a665bbbe97e1a96b181ac4fed1439b576b731[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 20:42:21 2022 -0300
+
+    merge conflicts
+
+[33mcommit 4f308209e1ac7ab056012a137ed8b9f444a01ece[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 20:02:59 2022 -0300
+
+    logs
+
+[33mcommit 086e2c0437afed2f40bfcdca783e847635022b95[m
+Merge: 30afabc 807a1a5
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 19:59:52 2022 -0300
+
+    log merging
+
+[33mcommit 30afabc6cf2c7156738060b9664d5028b3a13158[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 19:58:33 2022 -0300
+
+    logs
+
+[33mcommit db34abf2bb645b7a92245a4c860bc7ea02166f6a[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 21:59:56 2022 +0100
+
+    heroku
+
+[33mcommit 807a1a58cc80ec06b6db45d3cf443447e45ca0e8[m
+Merge: 24a87dc 77f411e
+Author: Andre Julio Clementino Garcia <85296705+andrejulio072@users.noreply.github.com>
+Date:   Sat May 28 21:57:02 2022 +0100
+
+    Merge pull request #3 from leynessa/login
+    
+    Login
+
+[33mcommit 77f411e19dd27a3999c02917daa489629f8b3b84[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 21:51:07 2022 +0100
+
+    login
+
+[33mcommit 635f56e144a38687e1f6d27640e5e221cc4db960[m
+Merge: a6ddfb9 98f42e7
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 21:45:13 2022 +0100
+
+    resolve conflicts
+
+[33mcommit 6de36a925618057e01b9f3aa9b166c195e4b0c72[m
+Merge: 7ecc618 24a87dc
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 17:29:36 2022 -0300
+
+    log
+
+[33mcommit 98f42e73fc7282f6d68b017fd1c60a871777ae3d[m
+Merge: 033bec8 24a87dc
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 21:26:37 2022 +0100
+
+    log
+
+[33mcommit 7ecc618e9bb2cac220661d96b0c14346746a83ce[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 17:24:21 2022 -0300
+
+    log
+
+[33mcommit e1d6b10c4ab326afc6736f95841353a5438d344a[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 17:23:35 2022 -0300
+
+    log
+
+[33mcommit 033bec82e778bb7e740b375eabc8d3ae078fd388[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 21:19:29 2022 +0100
+
+    login
+
+[33mcommit 24a87dc8c80998a0f3b31e7515237a520042f849[m
+Merge: 8f243cc 9b70361
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Sat May 28 17:17:18 2022 -0300
+
+    Merge pull request #4 from leynessa/homepage
+    
+    Homepage
+
+[33mcommit 9b70361dee0af0c8eaccd06a82e86c1a75325510[m
+Merge: 5b4412b 8f243cc
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 17:16:03 2022 -0300
+
+    homepage edits
+
+[33mcommit 5b4412bef93595c0e65277efac11db2eb870ca31[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 17:07:23 2022 -0300
+
+    hompage editing
+
+[33mcommit a6ddfb9df3536222b5c11e95677c901f00d92b77[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 21:04:04 2022 +0100
+
+    login page
+
+[33mcommit f3f5ae43fafae0ca8d3cc2303f670b4ef39181c0[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 19:43:54 2022 +0100
+
+    stay safe heroku
+
+[33mcommit 9c980b5aae6b8683abd0e95774dde36837a61bd7[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 15:35:30 2022 -0300
+
+    heroku add
+
+[33mcommit e9d06ffe2090a01581198b5de3340985adf0a56b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 15:27:54 2022 -0300
+
+    homepage text
+
+[33mcommit 5064d3babc0cd8a16b3af716c69d42e864fd456d[m
+Author: Andre Garcia <andrejulio072@hotmail.com>
+Date:   Sat May 28 18:48:50 2022 +0100
+
+    login
+
+[33mcommit 8f243cc9c7c693d8c26e8f68804b873ad715d663[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 14:16:50 2022 -0300
+
+    adding to heroku
+
+[33mcommit 61b584a03f91f9ef361ca59e8c84a89f92ad017c[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 13:59:14 2022 -0300
+
+    layout changes to homepage
+
+[33mcommit e7f3374ea9e8ae44ae8470939da35fdc11527b63[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 12:43:02 2022 -0300
+
+    fixing heroku
+
+[33mcommit a9eca49439be6e9d6744fa297f18dca8e8d67c97[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 12:35:13 2022 -0300
+
+    Precompile assets
+
+[33mcommit 08fcb1fb7e58f337ffb5aad96b04bf0d3e86f512[m
+Author: carol chreem <carolinachreem@gmail.com>
+Date:   Sat May 28 11:35:50 2022 -0300
+
+    fixed config and conflits
+
+[33mcommit 831d459ffb196e825f062795daa15afce7891bc2[m
+Merge: 63c2753 ea60f08
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Sat May 28 09:44:59 2022 -0300
+
+    Merge pull request #1 from leynessa/homepage
+    
+    Homepage
+
+[33mcommit ea60f0833621be46db555c071b5fe5118dab89c3[m
+Merge: 028e6ce 63c2753
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Sat May 28 09:18:56 2022 -0300
+
+    homepage
+
+[33mcommit 028e6cea79aa1efd27f8610351cd1f3ab0e7157d[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri May 27 19:17:41 2022 -0300
+
+    navbar and footer
+
+[33mcommit 11a23699e52ea9789305b5a640590455554f7048[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri May 27 03:37:04 2022 -0300
+
+    navbar + homepage skeleton + footer preview
+
+[33mcommit 63c2753cfc3216a55c8135d65aa6804c6d3cf433[m
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Fri May 27 02:51:40 2022 -0300
+
+    Delete .env
+
+[33mcommit 5b84a5bb2763b4d77b45878d2375b32aa71b36ce[m
+Author: Ashley Williams <67218352+leynessa@users.noreply.github.com>
+Date:   Fri May 27 02:51:02 2022 -0300
+
+    Delete master.key
+
+[33mcommit 89e071b84eabc875c1e7f0190f5aab734a065edd[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Fri May 27 00:11:18 2022 -0300
+
+    homepage
+
+[33mcommit 8b89b46c5a414cf4ceecd9244311f05666aca877[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu May 26 20:56:52 2022 -0300
+
+    Precompile assets
+
+[33mcommit 8a19689555976e2e8dfe08669fed6dd94baf966b[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Thu May 26 19:50:34 2022 -0300
+
+    created incident model and controller
+
+[33mcommit e08ed45735be2b94c3c6f5fb07d6f4c6db904063[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue May 24 21:58:18 2022 -0300
+
+    new rails
+
+[33mcommit cd5b96b6e68328662da3c3114a3d1b4470913dcb[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue May 24 21:39:49 2022 -0300
+
+    new rails
+
+[33mcommit cd32f11e76418508eb4f340b04b696ee8c573fd1[m
+Author: ashley williams <leynessa1@gmail.com>
+Date:   Tue May 24 21:34:20 2022 -0300
+
+    Initial commit with devise template from https://github.com/lewagon/rails-templates
