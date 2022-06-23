@@ -2,70 +2,75 @@
   <div class="container-show">
     <div class="row">
       <div class="col-10">
-          <!-- Content here -->
-          <!-- -->
-          <div class="details-box">
+        <!-- Content here -->
+        <!-- -->
+        <div class="details-box">
           <h1>Incident Details</h1>
           <img class="image"><%= cl_image_tag @incident.photo.key, height: 200, width: 400, crop: :thumb if @incident.photo.attached? %></img>
-          <div class="information">
-            <div class="box">
-              <h3 class="card-title-show">General information</h3>
-              <p><strong><%= @incident.title %> </strong></p>
-              <p><i class="fas fa-map-pin"></i> <%= @incident.address %></p>
-              <p><strong>Incident Type: </strong><%= @incident.incident_type %></p>
-              <p><i class="far fa-clock"></i> <%= @incident.time %></p>
-              <p><i class="far fa-calendar-alt"></i> <%= @incident.date %></p>
-            </div>
-            <div class="box">
+        <div class="information">
+          <div class="box">
+            <h3 class="card-title-show">General information</h3>
+            <p><strong><%= @incident.title %> </strong></p>
+            <p><i class="fas fa-map-pin"></i> <%= @incident.address %></p>
+            <p><strong>Incident Type: </strong><%= @incident.incident_type %></p>
+            <p><i class="far fa-clock"></i> <%= @incident.time.strftime("%H:%M") %></p>
+            <p><i class="far fa-calendar-alt"></i> <%= @incident.date&.strftime("%d-%m-%Y")%></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="show-box">
+            <div class="card-show w-100" style="height: 200px;">
               <h3 class="card-title-show">Description:</h3>
               <p class="card-text">
                 <%= @incident.description %></p>
             </div>
           </div>
-          </div>
-          <div>
-            <strong>
-              <p class="location-title">Location Information:</p>
-            </strong>
-            <div class="map-box" style="height: 600px;"
+        </div>
+      </div>
+    </div>
+    <div>
+      <strong>
+        <p class="location-title">Location Information:</p>
+      </strong>
+      <div class="map-box" style="height: 600px;"
               data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>"
               data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-            </div>
-          </div>
-          <div class="btn btn-info">
-            <%= link_to 'Edit', edit_incident_path(@incident) %>
-          </div>
-          <div class='text-center'>
-          <div class="btn btn-submit">
-            <%= link_to 'Edit', edit_incident_path(@incident) %></div>
-          <div class="btn btn-submit">
-            <%= link_to 'Back', incidents_path %></div>
-          <div class="btn btn-submit">
-            <%= link_to "Delete: #{@incident.title}",
+      </div>
+    </div>
+    <div class="all-btn-show">
+      <div id= btn-show class="btn btn-info">
+        <%= link_to 'Edit', edit_incident_path(@incident) %>
+      </div>
+      <div class='text-center'>
+        <div class="btn btn-submit">
+          <%= link_to 'Edit', edit_incident_path(@incident) %></div>
+        <div class="btn btn-submit">
+          <%= link_to 'Back', incidents_path %></div>
+        <div class="btn btn-submit">
+          <%= link_to "Delete: #{@incident.title}",
             incident_path(@incident),
             method: :delete,
             data: { confirm: "Are you sure?" } %>
           <div class="btn btn-info">
-            <%= link_to 'Back', incidents_path %>
-          </div>
-          <button id="sweet-alert" class="btn btn-info"><%= link_to 'Destroy', incident_path(@incident), method: :delete, id: "delete-link", class: "hidden"%> this incident</button>
-
-
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="logo-box">
-          <div class="card-show" style="width: 14rem;background-color: #011E30;">
-            <div class="card-img" style="text-align: center;">
-              <img src="/assets/logo-be5c1e37a2ec66ceb869e99b6da404da4fb050884e712e72a4dc31b8b24f1844.png" style="width: 150px; height: 150px;">
+            <div id= btn-show class="btn btn-info">
+              <%= link_to 'Back', incidents_path %>
             </div>
-            <div class="container-content">
-              <h2 class="card-title"> <strong> STAYSAFE </strong></h2>
-              <p class="card-text">Get around the city without a care in the world.</p>
+            <button id="sweet-alert" class="btn btn-info"><%= link_to 'Destroy', incident_path(@incident), method: :delete, id: "delete-link", class: "hidden"%> this incident</button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="logo-box">
+            <div class="card-show" style="width: 14rem;background-color: #011E30;">
+              <div class="card-img" style="text-align: center;">
+                <img src="/assets/logo-be5c1e37a2ec66ceb869e99b6da404da4fb050884e712e72a4dc31b8b24f1844.png" style="width: 150px; height: 150px;">
+              </div>
+              <div class="container-content">
+                <h2 class="card-title"> <strong> STAYSAFE </strong></h2>
+                <p class="card-text">Get around the city without a care in the world.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
